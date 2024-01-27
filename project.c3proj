@@ -121,7 +121,8 @@
 			"Debug",
 			"DetectorAtaqueSalto",
 			"RunnaldDetectorSalto",
-			"Audio"
+			"Audio",
+			"Sprite"
 		],
 		"subfolders": []
 	},
@@ -133,7 +134,8 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Layout 1",
+			"Franco"
 		],
 		"subfolders": []
 	},
@@ -213,14 +215,6 @@
 					"name": "PayasoDaniado.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 139081945885478,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "SCREAM.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 725255573604517,
 					"file-info": {
 						"purpose": "none"
 					}
