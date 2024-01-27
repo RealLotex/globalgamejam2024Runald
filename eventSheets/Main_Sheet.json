@@ -237,6 +237,78 @@
 				}
 			],
 			"sid": 915192494562227
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 340694434217441,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "TryAgain"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "TryAgain",
+					"sid": 886287801774574,
+					"parameters": {
+						"color": "rgbEx(50, 50, 50)"
+					}
+				}
+			],
+			"sid": 886411812987512
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-button-released",
+					"objectClass": "Mouse",
+					"sid": 129772537776287,
+					"parameters": {
+						"mouse-button": "left"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "TryAgain",
+					"sid": 690612485536710,
+					"parameters": {
+						"object": "Jugador"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 695192254815499
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 924218989541007,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 328024172249563,
+					"parameters": {
+						"variable": "GameState",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 476600178113233
 		}
 	],
 	"sid": 750949231229755

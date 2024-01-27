@@ -50,6 +50,61 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-movement",
+					"objectClass": "Mouse",
+					"sid": 661521483245976
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "Jugador",
+					"sid": 453692737663264,
+					"parameters": {
+						"x": "lerp(Self.x,Mouse.X,.1)",
+						"y": "lerp(Self.y,Mouse.Y,.1)"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Jugador",
+					"sid": 968307820629045,
+					"parameters": {
+						"x": "lerp(Self.x,Mouse.X,.1)",
+						"y": "lerp(Self.y,Mouse.y,.1)"
+					}
+				}
+			],
+			"sid": 737509370908820
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-button-released",
+					"objectClass": "Mouse",
+					"sid": 298402937563087,
+					"parameters": {
+						"mouse-button": "left"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "TryAgain",
+					"sid": 197033070815688,
+					"parameters": {
+						"color": "rgbEx(100, 100, 100)"
+					}
+				}
+			],
+			"sid": 782911781349468
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
 					"sid": 345269508393233,
@@ -178,40 +233,17 @@
 						{
 							"callFunction": "CambiarASuelta",
 							"sid": 756341315639722
+						},
+						{
+							"id": "set-default-color",
+							"objectClass": "TryAgain",
+							"sid": 523030482412657,
+							"parameters": {
+								"color": "rgbEx(100, 100, 100)"
+							}
 						}
 					],
 					"sid": 248978740735327
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-movement",
-							"objectClass": "Mouse",
-							"sid": 151640566893719
-						}
-					],
-					"actions": [
-						{
-							"id": "set-angle-toward-position",
-							"objectClass": "Jugador",
-							"sid": 508053180096843,
-							"parameters": {
-								"x": "lerp(Self.x,Mouse.X,.1)",
-								"y": "lerp(Self.y,Mouse.Y,.1)"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "Jugador",
-							"sid": 702125733456909,
-							"parameters": {
-								"x": "lerp(Self.x,Mouse.X,.1)",
-								"y": "lerp(Self.y,Mouse.y,.1)"
-							}
-						}
-					],
-					"sid": 182222313818419
 				},
 				{
 					"functionName": "CambiarASuelta",

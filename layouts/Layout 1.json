@@ -256,6 +256,69 @@
 			"global": false
 		},
 		{
+			"name": "CartelesFINALES",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "GameOver",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 21,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 960,
+						"y": 419,
+						"width": 1200,
+						"height": 900,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 533957763825112,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
 			"name": "PERSONAJES",
 			"overriden": 0,
 			"subLayers": [],
@@ -428,53 +491,6 @@
 					}
 				},
 				{
-					"type": "Jugador",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Normal",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 4,
-					"instanceVariables": {},
-					"behaviors": {
-						"Parpadeo": {
-							"properties": {}
-						}
-					},
-					"effects": {
-						"UltimateDropShadowColor": {
-							"isEnabled": true,
-							"parameters": {
-								"distance": 10,
-								"angle": 45,
-								"opacity": 1,
-								"hue": 180,
-								"saturation": 0,
-								"brightness": 0,
-								"blurradius": 50
-							}
-						}
-					},
-					"world": {
-						"x": 1412,
-						"y": 565,
-						"width": 134.16,
-						"height": 114.24,
-						"originX": 0.46393762183235865,
-						"originY": 0.6,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Vidas",
 					"properties": {
 						"initially-visible": true,
@@ -507,8 +523,8 @@
 						}
 					},
 					"world": {
-						"x": 1412,
-						"y": 386,
+						"x": 26,
+						"y": -742,
 						"width": 200,
 						"height": 200,
 						"originX": 0.5,
@@ -586,60 +602,44 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				}
-			],
-			"sid": 327176197337981,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"isInitiallyInteractive": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				1,
-				1,
-				1,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"renderingMode": "3d",
-			"drawOrder": "z-order",
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"zElevation": 0,
-			"global": false
-		},
-		{
-			"name": "CartelesFINALES",
-			"overriden": 0,
-			"subLayers": [],
-			"instances": [
+				},
 				{
-					"type": "GameOver",
+					"type": "Jugador",
 					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
+						"initially-visible": true,
+						"initial-animation": "Normal",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 21,
+					"uid": 4,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Parpadeo": {
+							"properties": {}
+						}
+					},
+					"effects": {
+						"UltimateDropShadowColor": {
+							"isEnabled": true,
+							"parameters": {
+								"distance": 10,
+								"angle": 45,
+								"opacity": 1,
+								"hue": 180,
+								"saturation": 0,
+								"brightness": 0,
+								"blurradius": 50
+							}
+						}
+					},
 					"world": {
-						"x": 960,
-						"y": 540,
-						"width": 1200,
-						"height": 900,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 1412,
+						"y": 565,
+						"width": 134.16,
+						"height": 114.24,
+						"originX": 0.46393762183235865,
+						"originY": 0.6,
 						"color": [
 							1,
 							1,
@@ -651,7 +651,7 @@
 					}
 				}
 			],
-			"sid": 533957763825112,
+			"sid": 327176197337981,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,

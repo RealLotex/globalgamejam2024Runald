@@ -479,6 +479,7 @@
 							"id": "play",
 							"objectClass": "Audio",
 							"sid": 792399745409118,
+							"disabled": true,
 							"parameters": {
 								"audio-file": "SALTO",
 								"loop": "not-looping",
@@ -715,9 +716,9 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 858037930255432,
+									"sid": 550895673005782,
 									"parameters": {
-										"audio-file": "honk simple",
+										"audio-file": "slash payaso",
 										"loop": "not-looping",
 										"volume": "5",
 										"stereo-pan": "0",
@@ -934,6 +935,19 @@
 									"sid": 825336532717839,
 									"parameters": {
 										"visibility": "visible"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 885794456705620,
+									"parameters": {
+										"object-to-create": "TryAgain",
+										"layer": "0",
+										"x": "960",
+										"y": "824",
+										"create-hierarchy": false,
+										"template-name": "\"\""
 									}
 								}
 							],
