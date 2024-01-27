@@ -11,74 +11,70 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-x",
-					"objectClass": "Fondo",
-					"sid": 655513555247366,
-					"parameters": {
-						"comparison": 2,
-						"x-co-ordinate": "-3839"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-x",
-					"objectClass": "Fondo",
-					"sid": 347202874884536,
-					"parameters": {
-						"x": "0"
-					}
-				}
-			],
-			"sid": 304917417840216
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 565187008517088
-				}
-			],
+			"conditions": [],
 			"actions": [
 				{
 					"id": "set-text",
 					"objectClass": "Debug",
-					"sid": 152816445383949,
+					"sid": 422321712680656,
 					"parameters": {
-						"text": "RunnaldTimeDirectlyUnderPlayer"
+						"text": "\"gamestate es play\""
 					}
 				}
 			],
-			"sid": 656697906339125
-		},
-		{
-			"eventType": "block",
-			"conditions": [
+			"sid": 556509642851593,
+			"children": [
 				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 825035274268598
-				}
-			],
-			"actions": [
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "Fondo",
+							"sid": 151231141734494,
+							"parameters": {
+								"comparison": 2,
+								"x-co-ordinate": "-3839"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "Fondo",
+							"sid": 652961244429764,
+							"parameters": {
+								"x": "0"
+							}
+						}
+					],
+					"sid": 272553036679667
+				},
 				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 621665353964144,
-					"parameters": {
-						"audio-file": "MUSICA PAYASESCA",
-						"loop": "looping",
-						"volume": "-3",
-						"stereo-pan": "0",
-						"tag-optional": "\"music\""
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 372548544935682
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 888350935990000,
+							"parameters": {
+								"audio-file": "MUSICA PAYASESCA",
+								"loop": "looping",
+								"volume": "-6",
+								"stereo-pan": "0",
+								"tag-optional": "\"music\""
+							}
+						}
+					],
+					"sid": 943535297714208
 				}
-			],
-			"sid": 559555640858639
+			]
 		}
 	],
 	"sid": 750949231229755

@@ -27,6 +27,11 @@
 			"behaviorId": "Platform",
 			"name": "Platform",
 			"sid": 867817291101876
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Parpadeo",
+			"sid": 392834662453145
 		}
 	],
 	"effectTypes": [],
@@ -266,7 +271,7 @@
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 12
+				"speed": 10
 			},
 			{
 				"frames": [
@@ -427,7 +432,7 @@
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 12
+				"speed": 10
 			},
 			{
 				"frames": [
@@ -517,14 +522,14 @@
 						"imageSpriteId": 5209706,
 						"collisionPoly": {
 							"points": [
+								0.41599987792968773,
 								0.25,
-								0.5840001220703123,
+								0.6760000000000003,
 								0.25,
-								0.32399999999999973,
+								0.6800001220703126,
 								0.6,
-								0.3199998779296874,
-								0.6,
-								0.5840000000000001
+								0.416,
+								0.6
 							]
 						},
 						"useCollisionPoly": true,
@@ -542,14 +547,14 @@
 						"imageSpriteId": 4584555,
 						"collisionPoly": {
 							"points": [
+								0.41599987792968773,
 								0.25,
-								0.5840001220703123,
+								0.6760000000000003,
 								0.25,
-								0.32399999999999973,
+								0.6800001220703126,
 								0.6,
-								0.3199998779296874,
-								0.6,
-								0.5840000000000001
+								0.416,
+								0.6
 							]
 						},
 						"useCollisionPoly": true,
@@ -567,14 +572,14 @@
 						"imageSpriteId": 5796210,
 						"collisionPoly": {
 							"points": [
+								0.41599987792968773,
 								0.25,
-								0.5840001220703123,
+								0.6760000000000003,
 								0.25,
-								0.32399999999999973,
+								0.6800001220703126,
 								0.6,
-								0.3199998779296874,
-								0.6,
-								0.5840000000000001
+								0.416,
+								0.6
 							]
 						},
 						"useCollisionPoly": true,
@@ -588,7 +593,43 @@
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 12
+				"speed": 10
+			},
+			{
+				"frames": [
+					{
+						"width": 500,
+						"height": 500,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5631650,
+						"collisionPoly": {
+							"points": [
+								0.41599987792968773,
+								0.25,
+								0.6760000000000003,
+								0.25,
+								0.6800001220703126,
+								0.6,
+								0.416,
+								0.6
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 201151465395693,
+				"name": "RunnaldDamaged",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
 			}
 		],
 		"subfolders": []

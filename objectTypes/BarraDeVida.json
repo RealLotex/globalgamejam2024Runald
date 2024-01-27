@@ -1,0 +1,54 @@
+{
+	"name": "BarraDeVida",
+	"plugin-id": "Sprite",
+	"sid": 317768877217514,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1600,
+						"height": 320,
+						"originX": 0.074375,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3375420,
+						"collisionPoly": {
+							"points": [
+								0.50375,
+								0.00625,
+								0.9425,
+								0.190625,
+								0.920625,
+								0.74375,
+								0.496875,
+								0.89375,
+								0.05625,
+								0.703125,
+								0.080625,
+								0.15625
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 977040525435441,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

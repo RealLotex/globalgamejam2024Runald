@@ -27,138 +27,65 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Runnald",
-					"sid": 323670882905215,
-					"parameters": {
-						"object": "Item"
-					}
-				},
-				{
-					"id": "compare-velocity",
-					"objectClass": "Item",
-					"sid": 940774712557300,
-					"behaviorType": "Physics",
-					"parameters": {
-						"which": "overall-velocity",
-						"comparison": 4,
-						"value": "500"
-					}
-				},
-				{
-					"id": "is-dragging",
-					"objectClass": "Item",
-					"sid": 736968662673872,
-					"behaviorType": "DragDrop",
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"callFunction": "ShakeScreen",
-					"sid": 756043918632493,
-					"parameters": [
-						"4",
-						".1"
-					]
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 899262059282785,
-					"parameters": {
-						"audio-file": "PayasoDaniado",
-						"loop": "not-looping",
-						"volume": "0",
-						"stereo-pan": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "subtract-from-eventvar",
-					"objectClass": "System",
-					"sid": 730278383409106,
-					"parameters": {
-						"variable": "RunnaldVida",
-						"value": "1"
-					}
-				}
-			],
-			"sid": 185767195811574
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 267839115084114
-				}
-			],
-			"actions": [
-				{
-					"id": "set-instvar-value",
-					"objectClass": "Runnald",
-					"sid": 136401729943365,
-					"parameters": {
-						"instance-variable": "Estados",
-						"value": "\"LeftRightLeft\""
-					}
-				},
-				{
-					"callFunction": "OnEnteredLeftRightLeft",
-					"sid": 334907271419740
-				}
-			],
-			"sid": 969862933500948
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "Runnald",
-					"sid": 831818334891022,
-					"parameters": {
-						"instance-variable": "Estados",
-						"comparison": 0,
-						"value": "\"LeftRightLeft\""
-					}
-				}
-			],
+			"conditions": [],
 			"actions": [],
-			"sid": 515802458598907,
+			"sid": 523142110300956,
 			"children": [
+				{
+					"eventType": "variable",
+					"name": "lastAnim",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 473906880696908
+				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-timeline-finished-by-tags",
-							"objectClass": "TimelineController",
-							"sid": 613090410681401,
+							"id": "on-collision-with-another-object",
+							"objectClass": "Runnald",
+							"sid": 757255439417759,
 							"parameters": {
-								"tags": "\"LeftRight\""
+								"object": "Item"
 							}
+						},
+						{
+							"id": "compare-velocity",
+							"objectClass": "Item",
+							"sid": 423527278231435,
+							"behaviorType": "Physics",
+							"parameters": {
+								"which": "overall-velocity",
+								"comparison": 4,
+								"value": "500"
+							}
+						},
+						{
+							"id": "is-dragging",
+							"objectClass": "Item",
+							"sid": 609668943959872,
+							"behaviorType": "DragDrop",
+							"isInverted": true
 						}
 					],
 					"actions": [
 						{
-							"id": "play-timeline",
-							"objectClass": "TimelineController",
-							"sid": 303072031357194,
-							"parameters": {
-								"timeline": "AtaqueRightLeft",
-								"tags": "\"RightLeft\""
-							}
+							"callFunction": "ShakeScreen",
+							"sid": 711639830932660,
+							"parameters": [
+								"4",
+								".1"
+							]
 						},
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 896926991137505,
+							"sid": 606896157386687,
 							"parameters": {
-								"audio-file": "slash payaso",
+								"audio-file": "PAYASO GOLPEADO",
 								"loop": "not-looping",
 								"volume": "0",
 								"stereo-pan": "0",
@@ -166,253 +93,344 @@
 							}
 						},
 						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 807517007512715,
+							"parameters": {
+								"variable": "RunnaldVida",
+								"value": "1"
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "Runnald",
+							"sid": 256109328102515,
+							"behaviorType": "Parpadeo",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 473487022243120,
+							"parameters": {
+								"variable": "lastAnim",
+								"value": "Runnald.AnimationName"
+							}
+						},
+						{
 							"id": "set-animation",
 							"objectClass": "Runnald",
-							"sid": 982269717757808,
+							"sid": 592800394695402,
 							"parameters": {
-								"animation": "\"RunnaldJumping\"",
+								"animation": "\"RunnaldDamaged\"",
 								"from": "beginning"
 							}
 						},
 						{
-							"id": "set-mirrored",
-							"objectClass": "Runnald",
-							"sid": 669567636991207,
-							"parameters": {
-								"state": "mirrored"
-							}
-						}
-					],
-					"sid": 106773792875556
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-timeline-finished-by-tags",
-							"objectClass": "TimelineController",
-							"sid": 289982094180313,
-							"parameters": {
-								"tags": "\"RightLeft\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "OnEnteredLeftRightLeft",
-							"sid": 294212118744177
-						}
-					],
-					"sid": 881376480577695
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 579629394891362,
-					"parameters": {
-						"variable": "PlayerTimeInUpperSpace",
-						"comparison": 4,
-						"value": "3"
-					}
-				},
-				{
-					"id": "is-playing-by-tags",
-					"objectClass": "TimelineController",
-					"sid": 407675348365434,
-					"parameters": {
-						"tags": "\"AtaqueLeftRight\""
-					},
-					"isInverted": true
-				},
-				{
-					"id": "is-playing-by-tags",
-					"objectClass": "TimelineController",
-					"sid": 400120756590356,
-					"parameters": {
-						"tags": "\"AtaqueRightLeft\""
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-instvar-value",
-					"objectClass": "Runnald",
-					"sid": 844976073857328,
-					"parameters": {
-						"instance-variable": "Estados",
-						"value": "\"AtaqueSalto\""
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 361038318458163,
-					"parameters": {
-						"variable": "PlayerTimeInUpperSpace",
-						"value": "0"
-					}
-				}
-			],
-			"sid": 757595768672837
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "Runnald",
-					"sid": 841148115908596,
-					"parameters": {
-						"instance-variable": "Estados",
-						"comparison": 0,
-						"value": "\"AtaqueSalto\""
-					}
-				}
-			],
-			"actions": [],
-			"sid": 662666816194148,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
+							"id": "set-time-scale",
 							"objectClass": "System",
-							"sid": 588497416835747,
+							"sid": 683744338571312,
+							"disabled": true,
 							"parameters": {
-								"first-value": "Jugador.x",
-								"comparison": 4,
-								"second-value": "Runnald.X"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-mirrored",
-							"objectClass": "Runnald",
-							"sid": 929040519087589,
-							"parameters": {
-								"state": "not-mirrored"
-							}
-						}
-					],
-					"sid": 254552800102072
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 302324608188133,
-							"parameters": {
-								"first-value": "Jugador.x",
-								"comparison": 2,
-								"second-value": "Runnald.X"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-mirrored",
-							"objectClass": "Runnald",
-							"sid": 878220808330673,
-							"parameters": {
-								"state": "mirrored"
-							}
-						}
-					],
-					"sid": 815650662196087
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-animation-playing",
-							"objectClass": "Runnald",
-							"sid": 560992636498895,
-							"parameters": {
-								"animation": "\"RunnaldJumpingUp\""
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation-speed",
-							"objectClass": "Runnald",
-							"sid": 641928816032006,
-							"parameters": {
-								"speed": "16"
+								"time-scale": "0"
 							}
 						},
 						{
-							"id": "set-x",
-							"objectClass": "Runnald",
-							"sid": 637175795849745,
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 800970247561777,
+							"disabled": true,
 							"parameters": {
-								"x": "lerp(Self.x,Mouse.X,.1)"
+								"seconds": ".017"
 							}
 						},
 						{
-							"id": "set-x",
-							"objectClass": "RunnaldDetectorSalto",
-							"sid": 849232768164630,
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 145494092534485,
+							"disabled": true,
 							"parameters": {
-								"x": "Runnald.X-50"
+								"time-scale": "1"
 							}
 						},
 						{
 							"id": "set-animation",
 							"objectClass": "Runnald",
-							"sid": 359356700053160,
+							"sid": 885599471599441,
+							"parameters": {
+								"animation": "lastAnim",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 860204607918817
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 130321476907469
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Runnald",
+							"sid": 776414286854548,
+							"parameters": {
+								"instance-variable": "Estados",
+								"value": "\"LeftRightLeft\""
+							}
+						},
+						{
+							"callFunction": "OnEnteredLeftRightLeft",
+							"sid": 464292478394871
+						}
+					],
+					"sid": 255986120989069
+				},
+				{
+					"functionName": "OnEnteredLeftRightLeft",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Runnald",
+							"sid": 580233333528304,
 							"parameters": {
 								"animation": "\"RunnaldRunning\"",
 								"from": "beginning"
 							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Runnald",
+							"sid": 292316524707369,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						},
+						{
+							"id": "set-animation-speed",
+							"objectClass": "Runnald",
+							"sid": 869697750507370,
+							"parameters": {
+								"speed": "10"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "Runnald",
+							"sid": 332246477936917,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetX",
+								"end-value": "290",
+								"time": "2",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 268413878921579,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 777094173542303,
+							"parameters": {
+								"audio-file": "honk doble",
+								"loop": "not-looping",
+								"volume": "-5",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 305581911936764,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "play-timeline",
+							"objectClass": "TimelineController",
+							"sid": 445642912066274,
+							"parameters": {
+								"timeline": "AtaqueLeftRight",
+								"tags": "\"LeftRight\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 540072465167414,
+							"parameters": {
+								"audio-file": "slash payaso",
+								"loop": "not-looping",
+								"volume": "-5",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Runnald",
+							"sid": 665942574922086,
+							"parameters": {
+								"animation": "\"RunnaldJumping\"",
+								"from": "beginning"
+							}
 						}
 					],
-					"sid": 682302653785419
+					"sid": 701483319823759
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "RunnaldDetectorSalto",
-							"sid": 698817969844594,
+							"id": "compare-instance-variable",
+							"objectClass": "Runnald",
+							"sid": 885728002179006,
 							"parameters": {
-								"object": "Jugador"
+								"instance-variable": "Estados",
+								"comparison": 0,
+								"value": "\"LeftRightLeft\""
 							}
+						}
+					],
+					"actions": [],
+					"sid": 499835962551693,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-timeline-finished-by-tags",
+									"objectClass": "TimelineController",
+									"sid": 547731791707237,
+									"parameters": {
+										"tags": "\"LeftRight\""
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Runnald",
+									"sid": 756574025307127,
+									"parameters": {
+										"instance-variable": "Estados",
+										"comparison": 0,
+										"value": "\"AtaqueSalto\""
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "Runnald",
+									"sid": 508666675174654,
+									"parameters": {
+										"state": "mirrored"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 711902937565279,
+									"parameters": {
+										"seconds": ".1"
+									}
+								},
+								{
+									"id": "play-timeline",
+									"objectClass": "TimelineController",
+									"sid": 256313047273514,
+									"parameters": {
+										"timeline": "AtaqueRightLeft",
+										"tags": "\"RightLeft\""
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 465986617711033,
+									"parameters": {
+										"audio-file": "slash payaso",
+										"loop": "not-looping",
+										"volume": "-5",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Runnald",
+									"sid": 171032456754250,
+									"parameters": {
+										"animation": "\"RunnaldJumping\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 728563334402499
 						},
 						{
-							"id": "is-animation-playing",
-							"objectClass": "Runnald",
-							"sid": 931606816052510,
-							"parameters": {
-								"animation": "\"RunnaldJumpingUp\""
-							},
-							"isInverted": true
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-timeline-finished-by-tags",
+									"objectClass": "TimelineController",
+									"sid": 546489605233720,
+									"parameters": {
+										"tags": "\"RightLeft\""
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Runnald",
+									"sid": 121789110052391,
+									"parameters": {
+										"instance-variable": "Estados",
+										"comparison": 0,
+										"value": "\"AtaqueSalto\""
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "OnEnteredLeftRightLeft",
+									"sid": 910855798557254
+								}
+							],
+							"sid": 153170389691467
 						}
-					],
-					"actions": [
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 794889121932534,
-							"parameters": {
-								"variable": "RunnaldTimeDirectlyUnderPlayer",
-								"value": "dt"
-							}
-						}
-					],
-					"sid": 785170149149965
+					]
 				},
 				{
 					"eventType": "block",
@@ -420,11 +438,56 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 688536916370419,
+							"sid": 903953795044180,
 							"parameters": {
-								"variable": "RunnaldTimeDirectlyUnderPlayer",
+								"variable": "PlayerTimeInUpperSpace",
 								"comparison": 4,
-								"value": "1"
+								"value": "3"
+							}
+						},
+						{
+							"id": "is-playing-by-tags",
+							"objectClass": "TimelineController",
+							"sid": 504274489405757,
+							"parameters": {
+								"tags": "\"AtaqueLeftRight\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-playing-by-tags",
+							"objectClass": "TimelineController",
+							"sid": 898945453880730,
+							"parameters": {
+								"tags": "\"AtaqueRightLeft\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Runnald",
+							"sid": 942823318061324,
+							"parameters": {
+								"instance-variable": "Estados",
+								"value": "\"AtaqueSalto\""
+							}
+						}
+					],
+					"sid": 283334053505861
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Runnald",
+							"sid": 459234330418966,
+							"parameters": {
+								"instance-variable": "Estados",
+								"comparison": 0,
+								"value": "\"AtaqueSalto\""
 							}
 						}
 					],
@@ -432,272 +495,344 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 989032783931999,
+							"sid": 679941970411980,
 							"parameters": {
-								"variable": "RunnaldTimeDirectlyUnderPlayer",
+								"variable": "PlayerTimeInUpperSpace",
 								"value": "0"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "Runnald",
-							"sid": 838778436951370,
-							"parameters": {
-								"animation": "\"RunnaldJumpingUp\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "play-timeline",
-							"objectClass": "TimelineController",
-							"sid": 193201104523560,
-							"parameters": {
-								"timeline": "AtaqueSalto",
-								"tags": "\"AtaqueSalto\""
 							}
 						}
 					],
-					"sid": 942219242129285
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-animation-finished",
-					"objectClass": "Runnald",
-					"sid": 887712031055015,
-					"parameters": {
-						"animation": "\"RunnaldJumpingUp\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 378994261857894,
-					"parameters": {
-						"seconds": ".2"
-					}
-				},
-				{
-					"id": "set-flipped",
-					"objectClass": "Runnald",
-					"sid": 284923765166098,
-					"parameters": {
-						"state": "flipped"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 898040552476766,
-					"parameters": {
-						"seconds": ".3"
-					}
-				},
-				{
-					"id": "set-flipped",
-					"objectClass": "Runnald",
-					"sid": 632629092843438,
-					"parameters": {
-						"state": "not-flipped"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "Runnald",
-					"sid": 361314856683601,
-					"parameters": {
-						"instance-variable": "Estados",
-						"value": "\"LeftRightLeft\""
-					}
-				},
-				{
-					"callFunction": "OnEnteredLeftRightLeft",
-					"sid": 501881243392045
-				}
-			],
-			"sid": 404240123247166
-		},
-		{
-			"functionName": "OnEnteredLeftRightLeft",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionCopyPicked": false,
-			"functionIsAsync": false,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Runnald",
-					"sid": 336938607872732,
-					"parameters": {
-						"animation": "\"RunnaldRunning\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-mirrored",
-					"objectClass": "Runnald",
-					"sid": 699322930104039,
-					"parameters": {
-						"state": "not-mirrored"
-					}
-				},
-				{
-					"id": "set-animation-speed",
-					"objectClass": "Runnald",
-					"sid": 831322786550919,
-					"parameters": {
-						"speed": "12"
-					}
-				},
-				{
-					"id": "tween-one-property",
-					"objectClass": "Runnald",
-					"sid": 721292109204750,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetX",
-						"end-value": "290",
-						"time": "2",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no",
-						"repeat-count": "1"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 557074969384313,
-					"parameters": {
-						"seconds": "1"
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 428256282467861,
-					"parameters": {
-						"audio-file": "honk doble",
-						"loop": "not-looping",
-						"volume": "0",
-						"stereo-pan": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 231523842922067,
-					"parameters": {
-						"seconds": "1"
-					}
-				},
-				{
-					"id": "play-timeline",
-					"objectClass": "TimelineController",
-					"sid": 652812976272432,
-					"parameters": {
-						"timeline": "AtaqueLeftRight",
-						"tags": "\"LeftRight\""
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 958336517311668,
-					"parameters": {
-						"audio-file": "slash payaso",
-						"loop": "not-looping",
-						"volume": "0",
-						"stereo-pan": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "Runnald",
-					"sid": 409728187838448,
-					"parameters": {
-						"animation": "\"RunnaldJumping\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 585969353316043
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Runnald",
-					"sid": 575542741983655,
-					"parameters": {
-						"object": "Jugador"
-					}
-				},
-				{
-					"id": "is-flashing",
-					"objectClass": "Jugador",
-					"sid": 650958505059659,
-					"behaviorType": "Parpadeo",
-					"isInverted": true
-				},
-				{
-					"id": "is-animation-playing",
-					"objectClass": "Jugador",
-					"sid": 783166296333916,
-					"parameters": {
-						"animation": "\"Suelta\""
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 692771343598112,
-					"parameters": {
-						"audio-file": "JugadorDaniado",
-						"loop": "not-looping",
-						"volume": "0",
-						"stereo-pan": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"callFunction": "ShakeScreen",
-					"sid": 519620781453127,
-					"parameters": [
-						"5",
-						".1"
+					"sid": 939948488729096,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 647102700097608,
+									"parameters": {
+										"first-value": "Jugador.x",
+										"comparison": 4,
+										"second-value": "Runnald.X"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "Runnald",
+									"sid": 955792198200869,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								}
+							],
+							"sid": 142994002471539
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 822702555375982,
+									"parameters": {
+										"first-value": "Jugador.x",
+										"comparison": 2,
+										"second-value": "Runnald.X"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "Runnald",
+									"sid": 706012644348242,
+									"parameters": {
+										"state": "mirrored"
+									}
+								}
+							],
+							"sid": 977150549257682
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Runnald",
+									"sid": 275629031311749,
+									"parameters": {
+										"animation": "\"RunnaldJumpingUp\""
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-speed",
+									"objectClass": "Runnald",
+									"sid": 429445634594249,
+									"parameters": {
+										"speed": "16"
+									}
+								},
+								{
+									"id": "set-x",
+									"objectClass": "Runnald",
+									"sid": 607013700506951,
+									"parameters": {
+										"x": "lerp(Self.x,Mouse.X,.1)"
+									}
+								},
+								{
+									"id": "set-x",
+									"objectClass": "RunnaldDetectorSalto",
+									"sid": 235212995946532,
+									"parameters": {
+										"x": "Runnald.X-50"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Runnald",
+									"sid": 871067871078907,
+									"parameters": {
+										"animation": "\"RunnaldRunning\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 592897620283225
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "RunnaldDetectorSalto",
+									"sid": 797297553344724,
+									"parameters": {
+										"object": "Jugador"
+									}
+								},
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Runnald",
+									"sid": 804948132399445,
+									"parameters": {
+										"animation": "\"RunnaldJumpingUp\""
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 140768450714217,
+									"parameters": {
+										"variable": "RunnaldTimeDirectlyUnderPlayer",
+										"value": "dt"
+									}
+								}
+							],
+							"sid": 933365584884546
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 470035530368932,
+									"parameters": {
+										"variable": "RunnaldTimeDirectlyUnderPlayer",
+										"comparison": 4,
+										"value": "1"
+									}
+								},
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Runnald",
+									"sid": 513374199056342,
+									"parameters": {
+										"animation": "\"RunnaldJumpingUp\""
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 499776930866957,
+									"parameters": {
+										"variable": "RunnaldTimeDirectlyUnderPlayer",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Runnald",
+									"sid": 226423954382380,
+									"parameters": {
+										"animation": "\"RunnaldJumpingUp\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "play-timeline",
+									"objectClass": "TimelineController",
+									"sid": 570714704166222,
+									"parameters": {
+										"timeline": "AtaqueSalto",
+										"tags": "\"AtaqueSalto\""
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 858037930255432,
+									"parameters": {
+										"audio-file": "honk simple",
+										"loop": "not-looping",
+										"volume": "5",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 374447980585314
+						}
 					]
 				},
 				{
-					"id": "flash",
-					"objectClass": "Jugador",
-					"sid": 850749802531995,
-					"behaviorType": "Parpadeo",
-					"parameters": {
-						"on-time": "0.1",
-						"off-time": "0.1",
-						"duration": "1.0"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "Runnald",
+							"sid": 314787114841923,
+							"parameters": {
+								"animation": "\"RunnaldJumpingUp\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 427031919892556,
+							"parameters": {
+								"seconds": ".2"
+							}
+						},
+						{
+							"id": "set-flipped",
+							"objectClass": "Runnald",
+							"sid": 258865479903047,
+							"parameters": {
+								"state": "flipped"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 189661309454298,
+							"parameters": {
+								"seconds": ".3"
+							}
+						},
+						{
+							"id": "set-flipped",
+							"objectClass": "Runnald",
+							"sid": 828400004706948,
+							"parameters": {
+								"state": "not-flipped"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Runnald",
+							"sid": 996217925709455,
+							"parameters": {
+								"instance-variable": "Estados",
+								"value": "\"LeftRightLeft\""
+							}
+						},
+						{
+							"callFunction": "OnEnteredLeftRightLeft",
+							"sid": 614647699033021
+						}
+					],
+					"sid": 325859118598033
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Runnald",
+							"sid": 430250768976206,
+							"parameters": {
+								"object": "Jugador"
+							}
+						},
+						{
+							"id": "is-flashing",
+							"objectClass": "Jugador",
+							"sid": 560000229191524,
+							"behaviorType": "Parpadeo",
+							"isInverted": true
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Jugador",
+							"sid": 333702058535179,
+							"parameters": {
+								"animation": "\"Suelta\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 912039052186464,
+							"parameters": {
+								"audio-file": "JugadorDaniado",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"callFunction": "ShakeScreen",
+							"sid": 924082130324860,
+							"parameters": [
+								"5",
+								".1"
+							]
+						},
+						{
+							"id": "flash",
+							"objectClass": "Jugador",
+							"sid": 988166836464915,
+							"behaviorType": "Parpadeo",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						}
+					],
+					"sid": 677614121411078
 				}
-			],
-			"sid": 785010760561743
+			]
 		}
 	],
 	"sid": 587650480772100

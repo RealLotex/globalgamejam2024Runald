@@ -11,7 +11,12 @@
 			"sid": 809976681925298
 		}
 	],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "highlightshadow",
+			"name": "BrilloSombra"
+		}
+	],
 	"animations": {
 		"items": [
 			{

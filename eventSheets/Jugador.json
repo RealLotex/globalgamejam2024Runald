@@ -38,245 +38,279 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-click",
-					"objectClass": "Mouse",
-					"sid": 676230486825049,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Jugador",
-					"sid": 334509051880163,
-					"parameters": {
-						"animation": "\"Grab\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 724142461311100
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-button-released",
-					"objectClass": "Mouse",
-					"sid": 995762625548174,
-					"parameters": {
-						"mouse-button": "left"
-					}
-				},
-				{
-					"id": "is-dragging",
-					"objectClass": "Item",
-					"sid": 494694637994068,
-					"behaviorType": "DragDrop"
-				}
-			],
-			"actions": [
-				{
-					"id": "apply-impulse-at-angle",
-					"objectClass": "Item",
-					"sid": 962957808642608,
-					"behaviorType": "Physics",
-					"parameters": {
-						"impulse": "3",
-						"angle": "Jugador.Angle",
-						"image-point": "0"
-					}
-				}
-			],
-			"sid": 617619450187771
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-dragging",
-					"objectClass": "Item",
-					"sid": 148835790146395,
-					"behaviorType": "DragDrop"
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "Item",
-					"sid": 708829408233042,
-					"parameters": {
-						"x": "Mouse.X",
-						"y": "Mouse.Y"
-					}
-				}
-			],
-			"sid": 712801815016818
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-button-released",
-					"objectClass": "Mouse",
-					"sid": 755535048050285,
-					"parameters": {
-						"mouse-button": "left"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Jugador",
-					"sid": 243679327958430,
-					"parameters": {
-						"animation": "\"Suelta\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 170884148178906,
-					"parameters": {
-						"seconds": ".5"
-					}
-				},
-				{
-					"callFunction": "CambiarASuelta",
-					"sid": 966554334259523
-				}
-			],
-			"sid": 937440573083498
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-movement",
-					"objectClass": "Mouse",
-					"sid": 827305177855196
-				}
-			],
-			"actions": [
-				{
-					"id": "set-angle-toward-position",
-					"objectClass": "Jugador",
-					"sid": 664149859919874,
-					"parameters": {
-						"x": "lerp(Self.x,Mouse.X,.1)",
-						"y": "lerp(Self.y,Mouse.Y,.1)"
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "Jugador",
-					"sid": 269146202104109,
-					"parameters": {
-						"x": "lerp(Self.x,Mouse.X,.1)",
-						"y": "lerp(Self.y,Mouse.y,.1)"
-					}
-				}
-			],
-			"sid": 418485558711473
-		},
-		{
-			"functionName": "CambiarASuelta",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionCopyPicked": false,
-			"functionIsAsync": false,
-			"functionParameters": [],
-			"eventType": "function-block",
 			"conditions": [],
 			"actions": [],
-			"sid": 323792361305976,
+			"sid": 449801523891278,
 			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "mouse-button-is-down",
+							"id": "on-click",
 							"objectClass": "Mouse",
-							"sid": 382491123454653,
+							"sid": 887218718121433,
 							"parameters": {
-								"mouse-button": "left"
-							},
-							"isInverted": true
+								"mouse-button": "left",
+								"click-type": "clicked"
+							}
 						}
 					],
 					"actions": [
 						{
 							"id": "set-animation",
 							"objectClass": "Jugador",
-							"sid": 446128243648408,
+							"sid": 185570798840525,
 							"parameters": {
-								"animation": "\"Normal\"",
+								"animation": "\"Grab\"",
 								"from": "beginning"
 							}
 						}
 					],
-					"sid": 603930443898428
+					"sid": 719576832873169
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-released",
+							"objectClass": "Mouse",
+							"sid": 460500245790385,
+							"parameters": {
+								"mouse-button": "left"
+							}
+						},
+						{
+							"id": "is-dragging",
+							"objectClass": "Item",
+							"sid": 314811011380977,
+							"behaviorType": "DragDrop"
+						}
+					],
+					"actions": [
+						{
+							"id": "apply-impulse-at-angle",
+							"objectClass": "Item",
+							"sid": 772480941194889,
+							"behaviorType": "Physics",
+							"parameters": {
+								"impulse": "20",
+								"angle": "Jugador.Angle",
+								"image-point": "0"
+							}
+						}
+					],
+					"sid": 308531718118943
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-dragging",
+							"objectClass": "Item",
+							"sid": 513319667110155,
+							"behaviorType": "DragDrop"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Item",
+							"sid": 528187998395733,
+							"parameters": {
+								"x": "Mouse.X",
+								"y": "Mouse.Y"
+							}
+						}
+					],
+					"sid": 651677419282687
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-released",
+							"objectClass": "Mouse",
+							"sid": 330822146630029,
+							"parameters": {
+								"mouse-button": "left"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Jugador",
+							"sid": 460608967043570,
+							"parameters": {
+								"animation": "\"Suelta\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 673108598211420,
+							"parameters": {
+								"seconds": ".5"
+							}
+						},
+						{
+							"callFunction": "CambiarASuelta",
+							"sid": 756341315639722
+						}
+					],
+					"sid": 248978740735327
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-movement",
+							"objectClass": "Mouse",
+							"sid": 151640566893719
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle-toward-position",
+							"objectClass": "Jugador",
+							"sid": 508053180096843,
+							"parameters": {
+								"x": "lerp(Self.x,Mouse.X,.1)",
+								"y": "lerp(Self.y,Mouse.Y,.1)"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Jugador",
+							"sid": 702125733456909,
+							"parameters": {
+								"x": "lerp(Self.x,Mouse.X,.1)",
+								"y": "lerp(Self.y,Mouse.y,.1)"
+							}
+						}
+					],
+					"sid": 182222313818419
+				},
+				{
+					"functionName": "CambiarASuelta",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 341211255916838,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "mouse-button-is-down",
+									"objectClass": "Mouse",
+									"sid": 257331346981108,
+									"parameters": {
+										"mouse-button": "left"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Jugador",
+									"sid": 435058150254243,
+									"parameters": {
+										"animation": "\"Normal\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 938179525369064
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Jugador",
+							"sid": 203150085855531,
+							"parameters": {
+								"object": "DetectorAtaqueSalto"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 379894602709072,
+							"parameters": {
+								"variable": "PlayerTimeInUpperSpace",
+								"value": "dt"
+							}
+						}
+					],
+					"sid": 883325985858154
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Jugador",
+							"sid": 513322992536475,
+							"parameters": {
+								"object": "DetectorAtaqueSalto"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 308795740973296,
+							"parameters": {
+								"variable": "PlayerTimeInUpperSpace",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 622487257792361
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drag-start",
+							"objectClass": "Item",
+							"sid": 732402975125801,
+							"behaviorType": "DragDrop"
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 708122375916087,
+							"parameters": {
+								"audio-file": "ITEM",
+								"loop": "not-looping",
+								"volume": "8",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 257271854827315
 				}
 			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Jugador",
-					"sid": 896463890528283,
-					"parameters": {
-						"object": "DetectorAtaqueSalto"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 869180672322019,
-					"parameters": {
-						"variable": "PlayerTimeInUpperSpace",
-						"value": "dt"
-					}
-				}
-			],
-			"sid": 992264115000059
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Jugador",
-					"sid": 295336513661085,
-					"parameters": {
-						"object": "DetectorAtaqueSalto"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 232463166507823,
-					"parameters": {
-						"variable": "PlayerTimeInUpperSpace",
-						"value": "0"
-					}
-				}
-			],
-			"sid": 793300225656577
 		}
 	],
 	"sid": 969552890602450

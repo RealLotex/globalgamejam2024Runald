@@ -20,7 +20,7 @@
 					"behaviors": {
 						"Bullet": {
 							"properties": {
-								"speed": -1600,
+								"speed": -1200,
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": false,
@@ -42,6 +42,64 @@
 							1,
 							1,
 							0.75
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BarraDeVidaBG",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 17,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 960,
+						"y": 220,
+						"width": 1600,
+						"height": 320,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BarraDeVida",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 18,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 279,
+						"y": 220,
+						"width": 1600,
+						"height": 320,
+						"originX": 0.074375,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -212,13 +270,16 @@
 								"default-controls": true,
 								"enabled": false
 							}
+						},
+						"Parpadeo": {
+							"properties": {}
 						}
 					},
 					"world": {
-						"x": 290,
-						"y": 768,
-						"width": 500,
-						"height": 500,
+						"x": 289.4271374067691,
+						"y": 768.519038076674,
+						"width": 700,
+						"height": 700,
 						"originX": 0.572289156626506,
 						"originY": 0.48148148148148145,
 						"color": [
@@ -247,9 +308,18 @@
 							"properties": {}
 						}
 					},
+					"effects": {
+						"BrilloSombra": {
+							"isEnabled": true,
+							"parameters": {
+								"shadow-factor": 0,
+								"highlight-factor": 1
+							}
+						}
+					},
 					"world": {
-						"x": 1373,
-						"y": 582,
+						"x": 1409,
+						"y": 595,
 						"width": 134.16,
 						"height": 114.24,
 						"originX": 0.46393762183235865,
@@ -533,7 +603,7 @@
 			"instance": {
 				"isEnabled": false,
 				"parameters": {
-					"vibrance": 1
+					"vibrance": 0.4
 				}
 			}
 		},
@@ -543,8 +613,8 @@
 			"instance": {
 				"isEnabled": true,
 				"parameters": {
-					"start-radius": 0.7,
-					"end-radius": 0.75
+					"start-radius": 0.5,
+					"end-radius": 0.8
 				}
 			}
 		}

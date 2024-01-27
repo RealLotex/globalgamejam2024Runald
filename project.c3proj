@@ -106,6 +106,13 @@
 		},
 		{
 			"type": "effect",
+			"id": "highlightshadow",
+			"name": "Brillo sombra",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
 			"id": "vibrance",
 			"name": "Intensidad",
 			"author": "Evan Wallace",
@@ -136,7 +143,9 @@
 			"DetectorAtaqueSalto",
 			"RunnaldDetectorSalto",
 			"Audio",
-			"Sprite"
+			"Sprite",
+			"BarraDeVidaBG",
+			"BarraDeVida"
 		],
 		"subfolders": []
 	},
@@ -237,6 +246,38 @@
 					"name": "JugadorDaniado.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 278881163696358,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ITEM.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 734410444793135,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "SALTO.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 987062338740786,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "WINNNER.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 140266101499234,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PAYASO GOLPEADO.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 405120311644333,
 					"file-info": {
 						"purpose": "none"
 					}
