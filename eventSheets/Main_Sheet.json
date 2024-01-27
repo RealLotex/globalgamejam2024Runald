@@ -2,6 +2,16 @@
 	"name": "Main_Sheet",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "GameState",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 691827578620750
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "Jugador"
 		},
@@ -11,7 +21,18 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [],
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 303600346271026,
+					"parameters": {
+						"variable": "GameState",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
 			"actions": [],
 			"sid": 556509642851593,
 			"children": [
@@ -73,8 +94,76 @@
 						}
 					],
 					"sid": 943535297714208
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 641476923422420,
+							"parameters": {
+								"interval-seconds": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 875905996940964,
+							"parameters": {
+								"object-to-create": "Item",
+								"layer": "1",
+								"x": "random(100,1820)",
+								"y": "972",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 565876066340545
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Item",
+					"sid": 633638682498385
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Item",
+					"sid": 456832250311271,
+					"parameters": {
+						"width": "350",
+						"height": "350"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 331734400402650,
+					"parameters": {
+						"seconds": ".1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Item",
+					"sid": 304102977754577,
+					"parameters": {
+						"width": "300",
+						"height": "300"
+					}
+				}
+			],
+			"sid": 658301738611093
 		}
 	],
 	"sid": 750949231229755

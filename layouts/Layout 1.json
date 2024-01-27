@@ -399,8 +399,8 @@
 					"world": {
 						"x": 1220,
 						"y": 635,
-						"width": 275.5980861244019,
-						"height": 275.5980861244019,
+						"width": 300,
+						"height": 300,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -427,9 +427,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 957,
-						"y": 201,
+						"y": 416,
 						"width": 1954,
-						"height": 472,
+						"height": 902,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

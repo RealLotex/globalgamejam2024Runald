@@ -38,7 +38,18 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [],
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 345269508393233,
+					"parameters": {
+						"variable": "GameState",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
 			"actions": [],
 			"sid": 449801523891278,
 			"children": [

@@ -37,7 +37,18 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [],
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 616966298719842,
+					"parameters": {
+						"variable": "GameState",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
 			"actions": [],
 			"sid": 523142110300956,
 			"children": [
@@ -141,6 +152,14 @@
 							}
 						},
 						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 149512150485373,
+							"parameters": {
+								"seconds": ".1"
+							}
+						},
+						{
 							"id": "set-animation",
 							"objectClass": "Runnald",
 							"sid": 885599471599441,
@@ -206,6 +225,14 @@
 					"eventType": "function-block",
 					"conditions": [],
 					"actions": [
+						{
+							"id": "set-default-color",
+							"objectClass": "Runnald",
+							"sid": 828819148279292,
+							"parameters": {
+								"color": "rgbEx(100,100,100)"
+							}
+						},
 						{
 							"id": "set-animation",
 							"objectClass": "Runnald",
@@ -482,6 +509,26 @@
 							"parameters": {
 								"instance-variable": "Estados",
 								"value": "\"AtaqueSalto\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 792399745409118,
+							"parameters": {
+								"audio-file": "SALTO",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-default-color",
+							"objectClass": "Runnald",
+							"sid": 398446395186183,
+							"parameters": {
+								"color": "rgbEx(120, 35, 35)"
 							}
 						}
 					],
