@@ -42,9 +42,49 @@
 					"parameters": {
 						"cursor-style": "none"
 					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 714820918131475,
+					"parameters": {
+						"seconds": ".1"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Jugador",
+					"sid": 571117056955832,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.Y"
+					}
 				}
 			],
 			"sid": 567319936255111
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 465262820771970
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Jugador",
+					"sid": 597419331932599,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.Y"
+					}
+				}
+			],
+			"sid": 790341500082846,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -59,10 +99,10 @@
 				{
 					"id": "set-angle-toward-position",
 					"objectClass": "Jugador",
-					"sid": 453692737663264,
+					"sid": 969515606183187,
 					"parameters": {
-						"x": "lerp(Self.x,Mouse.X,.1)",
-						"y": "lerp(Self.y,Mouse.Y,.1)"
+						"x": "lerp(Self.x,Mouse.X,.01)",
+						"y": "lerp(Self.y,Mouse.Y,.01)"
 					}
 				},
 				{
@@ -172,6 +212,18 @@
 								"impulse": "20",
 								"angle": "Jugador.Angle",
 								"image-point": "0"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 230938337836601,
+							"parameters": {
+								"audio-file": "throw",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -364,6 +416,57 @@
 					"sid": 257271854827315
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-between-angles",
+					"objectClass": "Jugador",
+					"sid": 242371747472910,
+					"parameters": {
+						"first-angle": "90",
+						"second-angle": "270"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-flipped",
+					"objectClass": "Jugador",
+					"sid": 613002595195355,
+					"parameters": {
+						"state": "flipped"
+					}
+				}
+			],
+			"sid": 799254083219404
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-between-angles",
+					"objectClass": "Jugador",
+					"sid": 391274807408093,
+					"parameters": {
+						"first-angle": "90",
+						"second-angle": "270"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-flipped",
+					"objectClass": "Jugador",
+					"sid": 590108987617090,
+					"parameters": {
+						"state": "not-flipped"
+					}
+				}
+			],
+			"sid": 752950838181532
 		}
 	],
 	"sid": 969552890602450

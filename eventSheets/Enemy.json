@@ -92,18 +92,6 @@
 							]
 						},
 						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 606896157386687,
-							"parameters": {
-								"audio-file": "PAYASO GOLPEADO",
-								"loop": "not-looping",
-								"volume": "0",
-								"stereo-pan": "0",
-								"tag-optional": "\"\""
-							}
-						},
-						{
 							"id": "subtract-from-eventvar",
 							"objectClass": "System",
 							"sid": 807517007512715,
@@ -138,6 +126,18 @@
 								"on-time": "0.1",
 								"off-time": "0.1",
 								"duration": "1.0"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 673556097128261,
+							"parameters": {
+								"audio-file": "payasodaniomio",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -478,12 +478,11 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 792399745409118,
-							"disabled": true,
+							"sid": 817383717956303,
 							"parameters": {
-								"audio-file": "SALTO",
+								"audio-file": "dobleroar",
 								"loop": "not-looping",
-								"volume": "0",
+								"volume": "-5",
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
 							}
@@ -668,11 +667,11 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 470035530368932,
+									"sid": 883843032560083,
 									"parameters": {
 										"variable": "RunnaldTimeDirectlyUnderPlayer",
 										"comparison": 4,
-										"value": "1"
+										"value": "0.5"
 									}
 								},
 								{
@@ -940,10 +939,10 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 885794456705620,
+									"sid": 829860268043004,
 									"parameters": {
 										"object-to-create": "TryAgain",
-										"layer": "0",
+										"layer": "LayerIndex(\"CartelesFINALES\")",
 										"x": "960",
 										"y": "824",
 										"create-hierarchy": false,

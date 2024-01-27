@@ -43,6 +43,20 @@
 		},
 		{
 			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Fondo en mosaico",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Mapa de teselas",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Timeline",
 			"name": "Controlador de la línea de tiempo",
 			"author": "Scirra",
@@ -106,6 +120,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "destroy",
+			"name": "Destruir fuera de la escena",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "solid",
 			"name": "Sólido",
 			"author": "Scirra",
@@ -164,7 +185,9 @@
 			"BarraDeVidaFondo",
 			"Vidas",
 			"GameOver",
-			"TryAgain"
+			"TryAgain",
+			"MapaDeTeselas",
+			"FondoEnMosaico"
 		],
 		"subfolders": []
 	},
@@ -298,6 +321,54 @@
 					"name": "PAYASO GOLPEADO.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 405120311644333,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ROAR 1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 480833027868700,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ROAR 2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 397342827491315,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ROAR 3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 912703253526728,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "dobleroar.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 443059121016913,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "throw.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 249079994932834,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "payasodaniomio.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 314350805578330,
 					"file-info": {
 						"purpose": "none"
 					}

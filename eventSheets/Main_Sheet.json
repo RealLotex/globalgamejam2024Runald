@@ -166,6 +166,36 @@
 								"x": "Mouse.X",
 								"y": "Mouse.Y-150"
 							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "Jugador",
+							"sid": 686625222936228,
+							"parameters": {
+								"effect": "\"UltimateDropShadowColor\"",
+								"parameter-index": "1",
+								"value": "lerp(45,135,(Self.X/1920))"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "Runnald",
+							"sid": 996009729977312,
+							"parameters": {
+								"effect": "\"UltimateDropShadowColor\"",
+								"parameter-index": "1",
+								"value": "lerp(45,135,(Self.X/1920))"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "Item",
+							"sid": 806660741901441,
+							"parameters": {
+								"effect": "\"UltimateDropShadowColor\"",
+								"parameter-index": "1",
+								"value": "lerp(45,135,(Self.X/1920))"
+							}
 						}
 					],
 					"sid": 271914014686525
@@ -234,6 +264,15 @@
 					"parameters": {
 						"speed": "0"
 					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Item",
+					"sid": 243244137922119,
+					"behaviorType": "DragDrop",
+					"parameters": {
+						"state": "disabled"
+					}
 				}
 			],
 			"sid": 915192494562227
@@ -260,6 +299,14 @@
 					"parameters": {
 						"color": "rgbEx(50, 50, 50)"
 					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "TryAgain",
+					"sid": 589211664792938,
+					"parameters": {
+						"opacity": "99"
+					}
 				}
 			],
 			"sid": 886411812987512
@@ -276,11 +323,12 @@
 					}
 				},
 				{
-					"id": "is-overlapping-another-object",
+					"id": "compare-opacity",
 					"objectClass": "TryAgain",
-					"sid": 690612485536710,
+					"sid": 217466174739389,
 					"parameters": {
-						"object": "Jugador"
+						"comparison": 0,
+						"opacity": "99"
 					}
 				}
 			],
@@ -306,6 +354,25 @@
 						"variable": "GameState",
 						"value": "0"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 245897644321524,
+					"parameters": {
+						"variable": "vidasPlayer",
+						"value": "5"
+					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 357877021559266
+				},
+				{
+					"id": "destroy",
+					"objectClass": "TryAgain",
+					"sid": 920468127713696
 				}
 			],
 			"sid": 476600178113233
