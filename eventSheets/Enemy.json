@@ -53,6 +53,18 @@
 						"4",
 						".1"
 					]
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 899262059282785,
+					"parameters": {
+						"audio-file": "PayasoDaniado",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 185767195811574
@@ -77,34 +89,11 @@
 					}
 				},
 				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 252526945555463,
-					"parameters": {
-						"seconds": "5"
-					}
-				},
-				{
-					"id": "play-timeline",
-					"objectClass": "TimelineController",
-					"sid": 817157037102736,
-					"parameters": {
-						"timeline": "AtaqueLeftRight",
-						"tags": "\"LeftRight\""
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "Runnald",
-					"sid": 102415238581571,
-					"parameters": {
-						"animation": "\"RunnaldJumping\"",
-						"from": "beginning"
-					}
+					"callFunction": "OnEnteredLeftRightLeft",
+					"sid": 334907271419740
 				}
 			],
-			"sid": 969862933500948,
-			"disabled": true
+			"sid": 969862933500948
 		},
 		{
 			"eventType": "block",
@@ -143,6 +132,18 @@
 							"parameters": {
 								"timeline": "AtaqueRightLeft",
 								"tags": "\"RightLeft\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 896926991137505,
+							"parameters": {
+								"audio-file": "slash payaso",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{
@@ -571,9 +572,29 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 123753228073393,
+					"sid": 557074969384313,
 					"parameters": {
-						"seconds": "2"
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 428256282467861,
+					"parameters": {
+						"audio-file": "honk doble",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 231523842922067,
+					"parameters": {
+						"seconds": "1"
 					}
 				},
 				{
@@ -583,6 +604,18 @@
 					"parameters": {
 						"timeline": "AtaqueLeftRight",
 						"tags": "\"LeftRight\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 958336517311668,
+					"parameters": {
+						"audio-file": "slash payaso",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				},
 				{

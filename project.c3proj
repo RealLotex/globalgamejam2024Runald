@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
@@ -106,7 +113,8 @@
 			"PisoInamovible",
 			"Debug",
 			"DetectorAtaqueSalto",
-			"RunnaldDetectorSalto"
+			"RunnaldDetectorSalto",
+			"Audio"
 		],
 		"subfolders": []
 	},
@@ -137,7 +145,72 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "boton 2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 924780221175647,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "game over.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 897841511657129,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "honk simple.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 856048261226120,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "MUSICA PAYASESCA.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 901122667037741,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "slash payaso.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 247229167541149,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "boton 1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 741375721064459,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "honk doble.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 815273052127109,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PayasoDaniado.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 139081945885478,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"music": {

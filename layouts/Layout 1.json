@@ -232,33 +232,6 @@
 					}
 				},
 				{
-					"type": "Video",
-					"properties": {
-						"webm-source": "",
-						"h264-source": "ronald.mp4",
-						"autoplay": "yes",
-						"play-in-background": false,
-						"initially-visible": true
-					},
-					"uid": 5,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1216,
-						"y": -384,
-						"width": 320,
-						"height": 240,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
-					}
-				},
-				{
 					"type": "Jugador",
 					"properties": {
 						"initially-visible": true,

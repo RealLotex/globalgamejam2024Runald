@@ -7,10 +7,6 @@
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "Shakes"
-		},
-		{
-			"eventType": "include",
 			"includeSheet": "Enemy"
 		},
 		{
@@ -58,6 +54,31 @@
 				}
 			],
 			"sid": 656697906339125
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 825035274268598
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 621665353964144,
+					"parameters": {
+						"audio-file": "MUSICA PAYASESCA",
+						"loop": "looping",
+						"volume": "-3",
+						"stereo-pan": "0",
+						"tag-optional": "\"music\""
+					}
+				}
+			],
+			"sid": 559555640858639
 		}
 	],
 	"sid": 750949231229755
