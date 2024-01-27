@@ -7,35 +7,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "BarraDeVidaFondo",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 19,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 279,
-						"y": 160,
-						"width": 1600,
-						"height": 320,
-						"originX": 0.074375,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Fondo",
 					"properties": {
 						"initially-visible": true,
@@ -71,6 +42,35 @@
 							1,
 							1,
 							0.75
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BarraDeVidaFondo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 19,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 279,
+						"y": 160,
+						"width": 1365,
+						"height": 57,
+						"originX": 0.0007326007326007326,
+						"originY": 0.7543859649122807,
+						"color": [
+							1,
+							1,
+							1,
+							1
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -118,12 +118,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 230.879375,
+						"x": 278.5,
 						"y": 160,
-						"width": 953,
-						"height": 320,
-						"originX": 0.074375,
-						"originY": 0.5,
+						"width": 1365,
+						"height": 57,
+						"originX": 0.0007326007326007326,
+						"originY": 0.7543859649122807,
 						"color": [
 							1,
 							1,
@@ -347,8 +347,8 @@
 						}
 					},
 					"world": {
-						"x": 1409,
-						"y": 595,
+						"x": 1412,
+						"y": 565,
 						"width": 134.16,
 						"height": 114.24,
 						"originX": 0.46393762183235865,
@@ -399,8 +399,8 @@
 					"world": {
 						"x": 1220,
 						"y": 635,
-						"width": 183.73205741626793,
-						"height": 183.73205741626793,
+						"width": 275.5980861244019,
+						"height": 275.5980861244019,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

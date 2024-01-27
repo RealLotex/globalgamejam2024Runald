@@ -375,8 +375,10 @@
 	},
 	"timelines": {
 		"items": [
-			"AtaqueLeftRight",
-			"AtaqueRightLeft",
+			"AtaqueLeftRight1",
+			"AtaqueLeftRight2",
+			"AtaqueRightLeft1",
+			"AtaqueRightLeft2",
 			"AtaqueSalto"
 		],
 		"subfolders": [

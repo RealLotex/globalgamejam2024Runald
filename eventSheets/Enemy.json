@@ -17,6 +17,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "vidainicialRunnald",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 707399825442510
+		},
+		{
+			"eventType": "variable",
 			"name": "RunnaldVida",
 			"type": "number",
 			"initialValue": "20",
@@ -131,39 +141,20 @@
 							}
 						},
 						{
-							"id": "set-time-scale",
-							"objectClass": "System",
-							"sid": 683744338571312,
-							"disabled": true,
-							"parameters": {
-								"time-scale": "0"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 800970247561777,
-							"disabled": true,
-							"parameters": {
-								"seconds": ".017"
-							}
-						},
-						{
-							"id": "set-time-scale",
-							"objectClass": "System",
-							"sid": 145494092534485,
-							"disabled": true,
-							"parameters": {
-								"time-scale": "1"
-							}
-						},
-						{
 							"id": "set-animation",
 							"objectClass": "Runnald",
 							"sid": 885599471599441,
 							"parameters": {
 								"animation": "lastAnim",
 								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "BarraDeVida",
+							"sid": 613166898782977,
+							"parameters": {
+								"width": "(1365/vidainicialRunnald)*RunnaldVida"
 							}
 						}
 					],
@@ -179,6 +170,15 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 947810170548730,
+							"parameters": {
+								"variable": "vidainicialRunnald",
+								"value": "RunnaldVida"
+							}
+						},
 						{
 							"id": "set-instvar-value",
 							"objectClass": "Runnald",
@@ -277,11 +277,11 @@
 							}
 						},
 						{
-							"id": "play-timeline",
+							"id": "play-timeline-by-name",
 							"objectClass": "TimelineController",
-							"sid": 445642912066274,
+							"sid": 395809783341521,
 							"parameters": {
-								"timeline": "AtaqueLeftRight",
+								"timeline-name": "\"AtaqueLeftRight\"&str(int(random(1,3)))",
 								"tags": "\"LeftRight\""
 							}
 						},
@@ -370,8 +370,18 @@
 									"id": "play-timeline",
 									"objectClass": "TimelineController",
 									"sid": 256313047273514,
+									"disabled": true,
 									"parameters": {
-										"timeline": "AtaqueRightLeft",
+										"timeline": "AtaqueRightLeft1",
+										"tags": "\"RightLeft\""
+									}
+								},
+								{
+									"id": "play-timeline-by-name",
+									"objectClass": "TimelineController",
+									"sid": 690536913977039,
+									"parameters": {
+										"timeline-name": "\"AtaqueRightLeft\"&str(int(random(1,3)))",
 										"tags": "\"RightLeft\""
 									}
 								},

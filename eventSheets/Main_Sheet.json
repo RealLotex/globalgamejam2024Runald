@@ -12,16 +12,7 @@
 		{
 			"eventType": "block",
 			"conditions": [],
-			"actions": [
-				{
-					"id": "set-text",
-					"objectClass": "Debug",
-					"sid": 422321712680656,
-					"parameters": {
-						"text": "\"gamestate es play\""
-					}
-				}
-			],
+			"actions": [],
 			"sid": 556509642851593,
 			"children": [
 				{
@@ -69,6 +60,15 @@
 								"volume": "-6",
 								"stereo-pan": "0",
 								"tag-optional": "\"music\""
+							}
+						},
+						{
+							"id": "set-world-gravity",
+							"objectClass": "Item",
+							"sid": 965752698058076,
+							"behaviorType": "Physics",
+							"parameters": {
+								"gravity": "50"
 							}
 						}
 					],
