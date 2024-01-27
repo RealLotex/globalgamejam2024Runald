@@ -6,9 +6,9 @@
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Physics",
-			"name": "Physics",
-			"sid": 562956853066501
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 978629719712809
 		}
 	],
 	"effectTypes": [],
@@ -17,14 +17,14 @@
 			{
 				"frames": [
 					{
-						"width": 1920,
-						"height": 200,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 5760,
+						"height": 1080,
+						"originX": 0,
+						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9026689,
+						"imageSpriteId": 2527623,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

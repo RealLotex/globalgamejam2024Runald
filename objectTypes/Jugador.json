@@ -11,14 +11,14 @@
 			{
 				"frames": [
 					{
-						"width": 618,
-						"height": 390,
-						"originX": 1,
-						"originY": 0,
+						"width": 559,
+						"height": 476,
+						"originX": 0.46393762183235865,
+						"originY": 0.6,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3311826,
+						"imageSpriteId": 4498292,
 						"collisionPoly": {
 							"points": [
 								1,
@@ -47,24 +47,24 @@
 			{
 				"frames": [
 					{
-						"width": 618,
-						"height": 577,
-						"originX": 0.4110032362459547,
-						"originY": 0.5251299826689775,
+						"width": 476,
+						"height": 502,
+						"originX": 0.46393762183235865,
+						"originY": 0.6,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6967326,
+						"imageSpriteId": 2049341,
 						"collisionPoly": {
 							"points": [
-								0.994413407821229,
-								0.005988023952095809,
-								0.994413407821229,
-								0.9940119760479041,
-								0.005586592178770999,
-								0.9940119760479041,
-								0.005586592178770999,
-								0.005988023952095809
+								1,
+								0,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0
 							]
 						},
 						"useCollisionPoly": true,
@@ -83,10 +83,46 @@
 			{
 				"frames": [
 					{
+						"width": 513,
+						"height": 560,
+						"originX": 0.46393762183235865,
+						"originY": 0.6,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7003142,
+						"collisionPoly": {
+							"points": [
+								1,
+								0,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 266521576728174,
+				"name": "Suelta",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
 						"width": 681,
 						"height": 577,
-						"originX": 0.3891336270190896,
-						"originY": 0.5320623916811091,
+						"originX": 0.5360623781676414,
+						"originY": 0.6,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -109,7 +145,79 @@
 					}
 				],
 				"sid": 561837752022583,
-				"name": "Suelta",
+				"name": "_Suelta",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 618,
+						"height": 390,
+						"originX": 0.5360623781676414,
+						"originY": 0.6,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 826732,
+						"collisionPoly": {
+							"points": [
+								1,
+								0,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 967050444660204,
+				"name": "_Normal",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 618,
+						"height": 577,
+						"originX": 0.5360623781676414,
+						"originY": 0.6,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9284277,
+						"collisionPoly": {
+							"points": [
+								0.994413407821229,
+								0.005988023952095809,
+								0.994413407821229,
+								0.9940119760479041,
+								0.005586592178770999,
+								0.9940119760479041,
+								0.005586592178770999,
+								0.005988023952095809
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 483420711602521,
+				"name": "_Grab",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

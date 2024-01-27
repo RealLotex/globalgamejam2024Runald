@@ -2,173 +2,41 @@
 	"name": "Main_Sheet",
 	"events": [
 		{
-			"eventType": "comment",
-			"text": "Lagea un poco pero anda"
+			"eventType": "include",
+			"includeSheet": "Jugador"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Shakes"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Enemy"
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 230548676083944
-				}
-			],
-			"actions": [
-				{
-					"id": "set-cursor-style",
-					"objectClass": "Mouse",
-					"sid": 796456025871881,
+					"id": "compare-x",
+					"objectClass": "Piso",
+					"sid": 655513555247366,
 					"parameters": {
-						"cursor-style": "none"
-					}
-				}
-			],
-			"sid": 567319936255111
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 239796024584735
-				}
-			],
-			"actions": [],
-			"sid": 418850124982991
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-click",
-					"objectClass": "Mouse",
-					"sid": 676230486825049,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked"
+						"comparison": 2,
+						"x-co-ordinate": "-3839"
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-animation",
-					"objectClass": "Jugador",
-					"sid": 334509051880163,
+					"id": "set-x",
+					"objectClass": "Piso",
+					"sid": 347202874884536,
 					"parameters": {
-						"animation": "\"Grab\"",
-						"from": "beginning"
+						"x": "0"
 					}
 				}
 			],
-			"sid": 724142461311100
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-button-released",
-					"objectClass": "Mouse",
-					"sid": 631895029519606,
-					"parameters": {
-						"mouse-button": "left"
-					}
-				},
-				{
-					"id": "is-dragging",
-					"objectClass": "Item",
-					"sid": 230008242469450,
-					"behaviorType": "DragDrop"
-				}
-			],
-			"actions": [
-				{
-					"id": "apply-impulse-at-angle",
-					"objectClass": "Item",
-					"sid": 247568508866233,
-					"behaviorType": "Physics",
-					"parameters": {
-						"impulse": "1",
-						"angle": "Jugador.Angle",
-						"image-point": "0"
-					}
-				}
-			],
-			"sid": 683667142902644
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-button-released",
-					"objectClass": "Mouse",
-					"sid": 755535048050285,
-					"parameters": {
-						"mouse-button": "left"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Jugador",
-					"sid": 243679327958430,
-					"parameters": {
-						"animation": "\"Suelta\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 459818778139390,
-					"parameters": {
-						"seconds": "1.0"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "Jugador",
-					"sid": 105486677618051,
-					"parameters": {
-						"animation": "\"Normal\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 937440573083498
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-movement",
-					"objectClass": "Mouse",
-					"sid": 827305177855196
-				}
-			],
-			"actions": [
-				{
-					"id": "set-angle-toward-position",
-					"objectClass": "Jugador",
-					"sid": 664149859919874,
-					"parameters": {
-						"x": "lerp(Self.x,Mouse.X,.1)",
-						"y": "lerp(Self.y,Mouse.Y,.1)"
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "Jugador",
-					"sid": 269146202104109,
-					"parameters": {
-						"x": "lerp(Self.x,Mouse.X,.1)",
-						"y": "lerp(Self.y,Mouse.y,.1)"
-					}
-				}
-			],
-			"sid": 418485558711473
+			"sid": 304917417840216
 		}
 	],
 	"sid": 750949231229755
