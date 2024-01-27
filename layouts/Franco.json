@@ -19,8 +19,37 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 347,
-						"y": 214,
+						"x": 1048,
+						"y": 229,
+						"width": 1774,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 17,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 900,
+						"y": 716,
 						"width": 250,
 						"height": 250,
 						"originX": 0.5,
