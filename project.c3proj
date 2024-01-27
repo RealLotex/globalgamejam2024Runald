@@ -104,7 +104,9 @@
 			"Keyboard",
 			"TimelineController",
 			"PisoInamovible",
-			"Debug"
+			"Debug",
+			"DetectorAtaqueSalto",
+			"RunnaldDetectorSalto"
 		],
 		"subfolders": []
 	},

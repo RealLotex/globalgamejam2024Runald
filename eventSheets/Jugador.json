@@ -2,6 +2,16 @@
 	"name": "Jugador",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "PlayerTimeInUpperSpace",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 706357345110054
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -129,9 +139,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 653897263408970,
+					"sid": 170884148178906,
 					"parameters": {
-						"seconds": "1.0"
+						"seconds": ".5"
 					}
 				},
 				{
@@ -212,6 +222,57 @@
 					"sid": 603930443898428
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Jugador",
+					"sid": 896463890528283,
+					"parameters": {
+						"object": "DetectorAtaqueSalto"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 869180672322019,
+					"parameters": {
+						"variable": "PlayerTimeInUpperSpace",
+						"value": "dt"
+					}
+				}
+			],
+			"sid": 992264115000059
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Jugador",
+					"sid": 295336513661085,
+					"parameters": {
+						"object": "DetectorAtaqueSalto"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 232463166507823,
+					"parameters": {
+						"variable": "PlayerTimeInUpperSpace",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 793300225656577
 		}
 	],
 	"sid": 969552890602450

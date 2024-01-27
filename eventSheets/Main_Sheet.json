@@ -51,9 +51,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Debug",
-					"sid": 342052876811803,
+					"sid": 152816445383949,
 					"parameters": {
-						"text": "\"\""
+						"text": "RunnaldTimeDirectlyUnderPlayer"
 					}
 				}
 			],

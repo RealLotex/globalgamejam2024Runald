@@ -378,6 +378,142 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 12
+			},
+			{
+				"frames": [
+					{
+						"width": 500,
+						"height": 500,
+						"originX": 0.572289156626506,
+						"originY": 0.48148148148148145,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2682680,
+						"collisionPoly": {
+							"points": [
+								0.41599987792968773,
+								0,
+								0.6760000000000003,
+								0,
+								0.676,
+								1,
+								0.416,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 500,
+						"height": 500,
+						"originX": 0.572289156626506,
+						"originY": 0.48148148148148145,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7616343,
+						"collisionPoly": {
+							"points": [
+								0.41599987792968773,
+								0,
+								0.6760000000000003,
+								0,
+								0.676,
+								1,
+								0.416,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 500,
+						"height": 500,
+						"originX": 0.572289156626506,
+						"originY": 0.48148148148148145,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4837645,
+						"collisionPoly": {
+							"points": [
+								0.41599987792968773,
+								0,
+								0.6760000000000003,
+								0,
+								0.676,
+								1,
+								0.416,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 500,
+						"height": 500,
+						"originX": 0.48148148148148145,
+						"originY": 0.42771084337349397,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5074365,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.5840001220703123,
+								0,
+								0.32399999999999973,
+								1,
+								0.32399999999999995,
+								1,
+								0.5840000000000001
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 500,
+						"height": 500,
+						"originX": 0.48148148148148145,
+						"originY": 0.42771084337349397,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7995938,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.5840001220703123,
+								0,
+								0.32399999999999973,
+								1,
+								0.32399999999999995,
+								1,
+								0.5840000000000001
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 998205153413208,
+				"name": "RunnaldJumpingUp",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 12
 			}
 		],
 		"subfolders": []

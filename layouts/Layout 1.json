@@ -177,12 +177,12 @@
 					},
 					"uid": 3,
 					"instanceVariables": {
-						"Estados": "Idle"
+						"Estados": "LeftRightLeft"
 					},
 					"behaviors": {
 						"Physics": {
 							"properties": {
-								"immovable": false,
+								"immovable": true,
 								"collision-mask": "use-collision-polygon",
 								"prevent-rotation": true,
 								"density": 20,
@@ -210,13 +210,13 @@
 								"double-jump": false,
 								"jump-sustain": 0,
 								"default-controls": true,
-								"enabled": true
+								"enabled": false
 							}
 						}
 					},
 					"world": {
-						"x": 336,
-						"y": 656,
+						"x": 290,
+						"y": 768,
 						"width": 500,
 						"height": 500,
 						"originX": 0.572289156626506,
@@ -325,6 +325,64 @@
 						"y": 800,
 						"width": 183.73205741626793,
 						"height": 183.73205741626793,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "DetectorAtaqueSalto",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 14,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 957,
+						"y": 201,
+						"width": 1954,
+						"height": 472,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "RunnaldDetectorSalto",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 15,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 321,
+						"y": 431.5,
+						"width": 372,
+						"height": 861,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

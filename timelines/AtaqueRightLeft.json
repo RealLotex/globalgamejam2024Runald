@@ -6,7 +6,7 @@
 	"ease": "noease",
 	"pathMode": "line",
 	"resizeMode": "size",
-	"playheadTime": 0,
+	"playheadTime": 1,
 	"totalTime": 1,
 	"stepTime": 0.1,
 	"useStepTime": true,
@@ -36,8 +36,8 @@
 			"initialVisibility": true,
 			"id": "",
 			"virtualPosition": {
-				"offsetX": -1184,
-				"offsetY": -288,
+				"offsetX": 290,
+				"offsetY": 768,
 				"useColor": true,
 				"colorSet": false,
 				"relativeFlags": 1663

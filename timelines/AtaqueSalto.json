@@ -6,8 +6,8 @@
 	"ease": "noease",
 	"pathMode": "line",
 	"resizeMode": "size",
-	"playheadTime": 2.783,
-	"totalTime": 5,
+	"playheadTime": 0,
+	"totalTime": 1,
 	"stepTime": 0.1,
 	"useStepTime": true,
 	"showingInterpolationModes": false,
@@ -36,7 +36,6 @@
 			"initialVisibility": true,
 			"id": "",
 			"virtualPosition": {
-				"offsetX": 0,
 				"offsetY": 0,
 				"useColor": true,
 				"colorSet": false,
@@ -47,207 +46,46 @@
 					"time": 0,
 					"tags": "",
 					"enabled": true,
-					"ease": "easeinoutquad",
+					"ease": "easeinoutcubic",
 					"pathMode": "default"
 				},
 				{
 					"time": 0.2,
 					"tags": "",
 					"enabled": true,
-					"ease": "easeinoutquad",
+					"ease": "easeinoutcubic",
 					"pathMode": "default"
 				},
 				{
-					"time": 0.5,
+					"time": 0.4,
 					"tags": "",
 					"enabled": true,
-					"ease": "easeinoutquad",
+					"ease": "easeinoutcubic",
 					"pathMode": "default"
 				},
 				{
-					"time": 1.5,
+					"time": 0.6,
 					"tags": "",
 					"enabled": true,
-					"ease": "easeinoutquad",
+					"ease": "easeinoutcubic",
 					"pathMode": "default"
 				},
 				{
-					"time": 1.8,
+					"time": 0.9,
 					"tags": "",
 					"enabled": true,
-					"ease": "easeinoutquad",
+					"ease": "easeinoutcubic",
 					"pathMode": "default"
 				},
 				{
-					"time": 2,
+					"time": 1,
 					"tags": "",
 					"enabled": true,
-					"ease": "easeinoutquad",
+					"ease": "easeinoutcubic",
 					"pathMode": "default"
 				}
 			],
 			"propertyTracks": [
-				{
-					"property": "offsetX",
-					"source": {
-						"type": "world-instance",
-						"uid": 3
-					},
-					"enabled": false,
-					"interpolationMode": "default",
-					"resultMode": "default",
-					"ease": "default",
-					"pathMode": "default",
-					"propertyKeyframes": [
-						{
-							"time": 0,
-							"enabled": false,
-							"resultMode": "default",
-							"ease": "default",
-							"pathMode": "default",
-							"value": 0,
-							"rValue": 0,
-							"aValue": 224,
-							"addons": [
-								{
-									"id": "cubic-bezier",
-									"data": {
-										"startAnchor": null,
-										"startEnable": false,
-										"endAnchor": null,
-										"endEnable": false
-									}
-								}
-							]
-						},
-						{
-							"time": 0,
-							"enabled": true,
-							"resultMode": "default",
-							"ease": "default",
-							"pathMode": "default",
-							"value": 0,
-							"rValue": 0,
-							"aValue": 224,
-							"addons": [
-								{
-									"id": "cubic-bezier",
-									"data": {
-										"startAnchor": null,
-										"startEnable": false,
-										"endAnchor": null,
-										"endEnable": false
-									}
-								}
-							]
-						},
-						{
-							"time": 0.2,
-							"enabled": false,
-							"resultMode": "default",
-							"ease": "default",
-							"pathMode": "default",
-							"value": 0,
-							"rValue": 0,
-							"aValue": 224,
-							"addons": [
-								{
-									"id": "cubic-bezier",
-									"data": {
-										"startAnchor": null,
-										"startEnable": false,
-										"endAnchor": null,
-										"endEnable": false
-									}
-								}
-							]
-						},
-						{
-							"time": 0.5,
-							"enabled": true,
-							"resultMode": "default",
-							"ease": "default",
-							"pathMode": "default",
-							"value": 0,
-							"rValue": 0,
-							"aValue": 224,
-							"addons": [
-								{
-									"id": "cubic-bezier",
-									"data": {
-										"startAnchor": null,
-										"startEnable": false,
-										"endAnchor": null,
-										"endEnable": false
-									}
-								}
-							]
-						},
-						{
-							"time": 1.5,
-							"enabled": true,
-							"resultMode": "default",
-							"ease": "default",
-							"pathMode": "default",
-							"value": 0,
-							"rValue": 0,
-							"aValue": 224,
-							"addons": [
-								{
-									"id": "cubic-bezier",
-									"data": {
-										"startAnchor": null,
-										"startEnable": false,
-										"endAnchor": null,
-										"endEnable": false
-									}
-								}
-							]
-						},
-						{
-							"time": 1.8,
-							"enabled": false,
-							"resultMode": "default",
-							"ease": "default",
-							"pathMode": "default",
-							"value": 0,
-							"rValue": 0,
-							"aValue": 224,
-							"addons": [
-								{
-									"id": "cubic-bezier",
-									"data": {
-										"startAnchor": null,
-										"startEnable": false,
-										"endAnchor": null,
-										"endEnable": false
-									}
-								}
-							]
-						},
-						{
-							"time": 2,
-							"enabled": false,
-							"resultMode": "default",
-							"ease": "default",
-							"pathMode": "default",
-							"value": 0,
-							"rValue": 0,
-							"aValue": 224,
-							"addons": [
-								{
-									"id": "cubic-bezier",
-									"data": {
-										"startAnchor": null,
-										"startEnable": false,
-										"endAnchor": null,
-										"endEnable": false
-									}
-								}
-							]
-						}
-					]
-				},
 				{
 					"property": "offsetY",
 					"source": {
@@ -303,14 +141,14 @@
 							]
 						},
 						{
-							"time": 0.5,
+							"time": 0.4,
 							"enabled": true,
 							"resultMode": "default",
 							"ease": "default",
 							"pathMode": "default",
-							"value": -544,
-							"rValue": -544,
-							"aValue": 224,
+							"value": -425,
+							"rValue": -425,
+							"aValue": 261,
 							"addons": [
 								{
 									"id": "cubic-bezier",
@@ -324,14 +162,14 @@
 							]
 						},
 						{
-							"time": 1.5,
+							"time": 0.6,
 							"enabled": true,
 							"resultMode": "default",
 							"ease": "default",
 							"pathMode": "default",
-							"value": -544,
-							"rValue": -544,
-							"aValue": 224,
+							"value": -425,
+							"rValue": -425,
+							"aValue": 261,
 							"addons": [
 								{
 									"id": "cubic-bezier",
@@ -345,14 +183,14 @@
 							]
 						},
 						{
-							"time": 1.8,
+							"time": 0.9,
 							"enabled": true,
 							"resultMode": "default",
-							"ease": "easeinoutquad",
+							"ease": "default",
 							"pathMode": "default",
 							"value": 0,
 							"rValue": 0,
-							"aValue": 768,
+							"aValue": 686,
 							"addons": [
 								{
 									"id": "cubic-bezier",
@@ -366,14 +204,14 @@
 							]
 						},
 						{
-							"time": 2,
+							"time": 1,
 							"enabled": true,
 							"resultMode": "default",
-							"ease": "easeinoutquad",
+							"ease": "default",
 							"pathMode": "default",
 							"value": 0,
 							"rValue": 0,
-							"aValue": 768,
+							"aValue": 686,
 							"addons": [
 								{
 									"id": "cubic-bezier",
