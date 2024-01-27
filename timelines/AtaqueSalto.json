@@ -6,7 +6,7 @@
 	"ease": "noease",
 	"pathMode": "line",
 	"resizeMode": "size",
-	"playheadTime": 0,
+	"playheadTime": 0.8,
 	"totalTime": 1,
 	"stepTime": 0.1,
 	"useStepTime": true,
@@ -36,7 +36,7 @@
 			"initialVisibility": true,
 			"id": "",
 			"virtualPosition": {
-				"offsetY": 0,
+				"offsetY": -66.30227518997216,
 				"useColor": true,
 				"colorSet": false,
 				"relativeFlags": 2047
@@ -261,7 +261,7 @@
 		"pathMode": "default",
 		"resizeMode": "default",
 		"expanded": true,
-		"name": "Timelines",
+		"name": "Líneas de tiempo",
 		"items": [],
 		"subfolders": []
 	},

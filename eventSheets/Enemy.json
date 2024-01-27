@@ -16,6 +16,16 @@
 			"sid": 771360371905224
 		},
 		{
+			"eventType": "variable",
+			"name": "RunnaldVida",
+			"type": "number",
+			"initialValue": "20",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 869220281718916
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -64,6 +74,15 @@
 						"volume": "0",
 						"stereo-pan": "0",
 						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 730278383409106,
+					"parameters": {
+						"variable": "RunnaldVida",
+						"value": "1"
 					}
 				}
 			],
@@ -180,21 +199,8 @@
 					],
 					"actions": [
 						{
-							"id": "set-mirrored",
-							"objectClass": "Runnald",
-							"sid": 146042450254164,
-							"parameters": {
-								"state": "not-mirrored"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "Runnald",
-							"sid": 555313796065416,
-							"parameters": {
-								"animation": "\"RunnaldRunning\"",
-								"from": "beginning"
-							}
+							"callFunction": "OnEnteredLeftRightLeft",
+							"sid": 294212118744177
 						}
 					],
 					"sid": 881376480577695
@@ -207,11 +213,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 717821173200890,
+					"sid": 579629394891362,
 					"parameters": {
 						"variable": "PlayerTimeInUpperSpace",
 						"comparison": 4,
-						"value": "5"
+						"value": "3"
 					}
 				},
 				{
@@ -493,15 +499,6 @@
 					}
 				},
 				{
-					"id": "set-animation",
-					"objectClass": "Runnald",
-					"sid": 106608652714900,
-					"parameters": {
-						"animation": "\"RunnaldRunning\"",
-						"from": "beginning"
-					}
-				},
-				{
 					"id": "set-flipped",
 					"objectClass": "Runnald",
 					"sid": 632629092843438,
@@ -536,6 +533,15 @@
 			"eventType": "function-block",
 			"conditions": [],
 			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Runnald",
+					"sid": 336938607872732,
+					"parameters": {
+						"animation": "\"RunnaldRunning\"",
+						"from": "beginning"
+					}
+				},
 				{
 					"id": "set-mirrored",
 					"objectClass": "Runnald",
@@ -629,6 +635,69 @@
 				}
 			],
 			"sid": 585969353316043
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Runnald",
+					"sid": 575542741983655,
+					"parameters": {
+						"object": "Jugador"
+					}
+				},
+				{
+					"id": "is-flashing",
+					"objectClass": "Jugador",
+					"sid": 650958505059659,
+					"behaviorType": "Parpadeo",
+					"isInverted": true
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Jugador",
+					"sid": 783166296333916,
+					"parameters": {
+						"animation": "\"Suelta\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 692771343598112,
+					"parameters": {
+						"audio-file": "JugadorDaniado",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"callFunction": "ShakeScreen",
+					"sid": 519620781453127,
+					"parameters": [
+						"5",
+						".1"
+					]
+				},
+				{
+					"id": "flash",
+					"objectClass": "Jugador",
+					"sid": 850749802531995,
+					"behaviorType": "Parpadeo",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1.0"
+					}
+				}
+			],
+			"sid": 785010760561743
 		}
 	],
 	"sid": 587650480772100

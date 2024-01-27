@@ -242,7 +242,11 @@
 					},
 					"uid": 4,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Parpadeo": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 1312,
 						"y": 544,
@@ -294,8 +298,8 @@
 						}
 					},
 					"world": {
-						"x": 1024,
-						"y": 800,
+						"x": 1220,
+						"y": 635,
 						"width": 183.73205741626793,
 						"height": 183.73205741626793,
 						"originX": 0.5,
