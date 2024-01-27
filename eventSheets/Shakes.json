@@ -1,0 +1,119 @@
+{
+	"name": "Shakes",
+	"events": [
+		{
+			"functionName": "ShakeScreen",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Strength",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 184104782145607
+				},
+				{
+					"name": "Duration",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 875151797591870
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "stop-tweens",
+					"objectClass": "GameManager",
+					"sid": 112544087171846,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"ScreenShake\""
+					}
+				},
+				{
+					"id": "tween-value",
+					"objectClass": "GameManager",
+					"sid": 457186931946614,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"ScreenShake\"",
+						"start-value": "Strength",
+						"end-value": "0",
+						"time": "Duration",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 242375426041436
+		},
+		{
+			"eventType": "comment",
+			"text": "While the screen shake animation is playing, change the layout angle to random values within the established range."
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-playing",
+					"objectClass": "GameManager",
+					"sid": 608841655656571,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"ScreenShake\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layout-angle",
+					"objectClass": "System",
+					"sid": 929734981549815,
+					"parameters": {
+						"angle": "random(-GameManager.Tween.Value(\"ScreenShake\"), GameManager.Tween.Value(\"ScreenShake\"))"
+					}
+				}
+			],
+			"sid": 536125167477068
+		},
+		{
+			"eventType": "comment",
+			"text": "Once the screen shake animation is over, reset the layout angle back to zero."
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "GameManager",
+					"sid": 535096897862297,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"ScreenShake\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layout-angle",
+					"objectClass": "System",
+					"sid": 431519410077475,
+					"parameters": {
+						"angle": "0"
+					}
+				}
+			],
+			"sid": 210767314365482
+		}
+	],
+	"sid": 134081149838757
+}

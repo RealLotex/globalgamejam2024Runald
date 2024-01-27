@@ -3,32 +3,46 @@
 	"plugin-id": "Sprite",
 	"sid": 665839485674599,
 	"isGlobal": false,
-	"instanceVariables": [],
-	"behaviorTypes": [],
+	"instanceVariables": [
+		{
+			"name": "Estados",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 796642729032161
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 996202954365785
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 166,
+						"height": 243,
+						"originX": 0.572289156626506,
+						"originY": 0.48148148148148145,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6355523,
+						"imageSpriteId": 6569818,
 						"collisionPoly": {
 							"points": [
-								0.3680002441406249,
-								0.23599996948242183,
-								0.6280000000000002,
-								0.23199993896484375,
-								0.7240000000000002,
-								1,
-								0.24799987792968756,
-								1
+								0.37349434358527844,
+								0.20987651181319117,
+								0.7650602409638557,
+								0.20576125407905735,
+								0.9096385542168678,
+								0.9958847736625515,
+								0.1927709004965174,
+								0.9958847736625515
 							]
 						},
 						"useCollisionPoly": true,

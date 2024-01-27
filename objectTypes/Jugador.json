@@ -11,14 +11,26 @@
 			{
 				"frames": [
 					{
-						"width": 494,
-						"height": 781,
-						"originX": -0.058704453441295545,
-						"originY": -0.020486555697823303,
+						"width": 618,
+						"height": 390,
+						"originX": 1,
+						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3089806,
+						"imageSpriteId": 3311826,
+						"collisionPoly": {
+							"points": [
+								1,
+								0,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -35,24 +47,60 @@
 			{
 				"frames": [
 					{
-						"width": 577,
-						"height": 781,
-						"originX": 0.3431542461005199,
-						"originY": 0.030729833546734954,
+						"width": 618,
+						"height": 577,
+						"originX": 0.4110032362459547,
+						"originY": 0.5251299826689775,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 793969,
+						"imageSpriteId": 6967326,
 						"collisionPoly": {
 							"points": [
-								0.0005875440658049354,
-								0.0004344048653344917,
-								0.999412455934195,
-								0.0004344048653344917,
-								0.999412455934195,
-								0.9995655951346655,
-								0.0005875440658049354,
-								0.9995655951346655
+								0.994413407821229,
+								0.005988023952095809,
+								0.994413407821229,
+								0.9940119760479041,
+								0.005586592178770999,
+								0.9940119760479041,
+								0.005586592178770999,
+								0.005988023952095809
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 931015201557694,
+				"name": "Grab",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 681,
+						"height": 577,
+						"originX": 0.3891336270190896,
+						"originY": 0.5320623916811091,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8406608,
+						"collisionPoly": {
+							"points": [
+								0.9611374724319989,
+								0.0913898087811131,
+								0.9611374724319989,
+								0.9086101912188869,
+								0.038862527568001015,
+								0.9086101912188869,
+								0.038862527568001015,
+								0.0913898087811131
 							]
 						},
 						"useCollisionPoly": true,
@@ -61,7 +109,7 @@
 					}
 				],
 				"sid": 561837752022583,
-				"name": "Animation 1",
+				"name": "Suelta",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
