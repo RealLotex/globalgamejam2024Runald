@@ -122,7 +122,8 @@
 			"DetectorAtaqueSalto",
 			"RunnaldDetectorSalto",
 			"Audio",
-			"Sprite"
+			"Sprite",
+			"Sprite2"
 		],
 		"subfolders": []
 	},
