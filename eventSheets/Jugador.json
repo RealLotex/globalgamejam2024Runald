@@ -129,19 +129,14 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 459818778139390,
+					"sid": 653897263408970,
 					"parameters": {
 						"seconds": "1.0"
 					}
 				},
 				{
-					"id": "set-animation",
-					"objectClass": "Jugador",
-					"sid": 105486677618051,
-					"parameters": {
-						"animation": "\"Normal\"",
-						"from": "beginning"
-					}
+					"callFunction": "CambiarASuelta",
+					"sid": 966554334259523
 				}
 			],
 			"sid": 937440573083498
@@ -176,6 +171,47 @@
 				}
 			],
 			"sid": 418485558711473
+		},
+		{
+			"functionName": "CambiarASuelta",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 323792361305976,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "mouse-button-is-down",
+							"objectClass": "Mouse",
+							"sid": 382491123454653,
+							"parameters": {
+								"mouse-button": "left"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Jugador",
+							"sid": 446128243648408,
+							"parameters": {
+								"animation": "\"Normal\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 603930443898428
+				}
+			]
 		}
 	],
 	"sid": 969552890602450

@@ -37,6 +37,27 @@
 				}
 			],
 			"sid": 304917417840216
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 565187008517088
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Debug",
+					"sid": 342052876811803,
+					"parameters": {
+						"text": "\"\""
+					}
+				}
+			],
+			"sid": 656697906339125
 		}
 	],
 	"sid": 750949231229755

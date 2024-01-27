@@ -15,6 +15,24 @@
 					"parameters": {
 						"object": "Item"
 					}
+				},
+				{
+					"id": "compare-velocity",
+					"objectClass": "Item",
+					"sid": 940774712557300,
+					"behaviorType": "Physics",
+					"parameters": {
+						"which": "overall-velocity",
+						"comparison": 4,
+						"value": "500"
+					}
+				},
+				{
+					"id": "is-dragging",
+					"objectClass": "Item",
+					"sid": 736968662673872,
+					"behaviorType": "DragDrop",
+					"isInverted": true
 				}
 			],
 			"actions": [
