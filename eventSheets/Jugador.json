@@ -19,7 +19,7 @@
 			"eventType": "variable",
 			"name": "vidasPlayer",
 			"type": "number",
-			"initialValue": "5",
+			"initialValue": "15",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -467,6 +467,55 @@
 				}
 			],
 			"sid": 752950838181532
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 144741273162672,
+					"parameters": {
+						"object": "TryAgain"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "TryAgain",
+					"sid": 875200767101237,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 856264129934990
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 212560427513297,
+					"parameters": {
+						"object": "TryAgain"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "TryAgain",
+					"sid": 371845312764021,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 350255251212899
 		}
 	],
 	"sid": 969552890602450

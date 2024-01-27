@@ -81,6 +81,31 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "compare-x",
+							"objectClass": "FondoEnMosaico2",
+							"sid": 981739939603242,
+							"parameters": {
+								"comparison": 4,
+								"x-co-ordinate": "3859"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "FondoEnMosaico",
+							"sid": 482414794954881,
+							"parameters": {
+								"x": "-3840"
+							}
+						}
+					],
+					"sid": 542745854370371
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-start-of-layout",
 							"objectClass": "System",
 							"sid": 372548544935682
@@ -90,13 +115,13 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 681812071518804,
+							"sid": 861157013313599,
 							"parameters": {
-								"audio-file": "MUSICA PAYASESCA",
-								"loop": "looping",
+								"audio-file": "musica payaso sin tamboresnorm",
+								"loop": "not-looping",
 								"volume": "-6",
 								"stereo-pan": "0",
-								"tag-optional": "\"PLAYmusic\""
+								"tag-optional": "\"PLAYmusicIntro\""
 							}
 						},
 						{
@@ -125,9 +150,9 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 641476923422420,
+							"sid": 586040497266788,
 							"parameters": {
-								"interval-seconds": "5"
+								"interval-seconds": "2.5"
 							}
 						}
 					],
@@ -207,9 +232,25 @@
 							"id": "on-created",
 							"objectClass": "Item",
 							"sid": 497360226814105
+						},
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 899681414420924,
+							"parameters": {
+								"object": "Item"
+							}
 						}
 					],
 					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Item",
+							"sid": 282488679523075,
+							"parameters": {
+								"frame-number": "int(random(0,3))"
+							}
+						},
 						{
 							"id": "set-size",
 							"objectClass": "Item",
@@ -247,11 +288,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 343450190927429,
+					"sid": 832531153302356,
 					"parameters": {
 						"variable": "GameState",
-						"comparison": 0,
-						"value": "1"
+						"comparison": 1,
+						"value": "0"
 					}
 				}
 			],
@@ -272,6 +313,15 @@
 					"behaviorType": "DragDrop",
 					"parameters": {
 						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Jugador",
+					"sid": 731534995561383,
+					"parameters": {
+						"animation": "\"Normal\"",
+						"from": "beginning"
 					}
 				}
 			],
@@ -343,7 +393,7 @@
 					"objectClass": "System",
 					"sid": 924218989541007,
 					"parameters": {
-						"layout": "Layout 1"
+						"layout": "Juego"
 					}
 				},
 				{
@@ -376,6 +426,34 @@
 				}
 			],
 			"sid": 476600178113233
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 733307431414313,
+					"parameters": {
+						"tag": "\"PLAYmusicIntro\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 141076848122068,
+					"parameters": {
+						"audio-file": "musica payaso con tambores norm",
+						"loop": "looping",
+						"volume": "-6",
+						"stereo-pan": "0",
+						"tag-optional": "\"PLAYmusic\""
+					}
+				}
+			],
+			"sid": 989314688938289
 		}
 	],
 	"sid": 750949231229755

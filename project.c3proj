@@ -113,6 +113,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Sin",
+			"name": "Seno",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Tween",
 			"name": "Tween (interpolación)",
 			"author": "Scirra",
@@ -129,6 +136,20 @@
 			"type": "behavior",
 			"id": "solid",
 			"name": "Sólido",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "blurhorizontal",
+			"name": "Desenfoque horizontal",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "exposure",
+			"name": "Exposición",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -152,13 +173,6 @@
 			"id": "vibrance",
 			"name": "Intensidad",
 			"author": "Evan Wallace",
-			"bundled": false
-		},
-		{
-			"type": "effect",
-			"id": "vignette",
-			"name": "Viñeta",
-			"author": "Brad Larson",
 			"bundled": false
 		}
 	],
@@ -187,21 +201,31 @@
 			"GameOver",
 			"TryAgain",
 			"MapaDeTeselas",
-			"FondoEnMosaico"
+			"FondoEnMosaico",
+			"YouWin",
+			"FondoEnMosaico2",
+			"Boton_Jugar",
+			"Boton_Tutorial",
+			"Boton_Creditos",
+			"m_TUTORIAL",
+			"m_CREDITOS"
 		],
 		"subfolders": []
 	},
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"Botones_Menu"
+		],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
-			"Layout 1",
-			"Franco",
-			"init"
+			"init",
+			"Menu",
+			"Juego",
+			"Franco"
 		],
 		"subfolders": []
 	},
@@ -210,7 +234,8 @@
 			"Main_Sheet",
 			"Shakes",
 			"Jugador",
-			"Enemy"
+			"Enemy",
+			"Menu_Sheet"
 		],
 		"subfolders": []
 	},
@@ -377,7 +402,24 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "musica payaso con tambores norm.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 616870686749251,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "musica payaso sin tamboresnorm.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 829314585715769,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {

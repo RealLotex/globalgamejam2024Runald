@@ -29,7 +29,7 @@
 			"eventType": "variable",
 			"name": "RunnaldVida",
 			"type": "number",
-			"initialValue": "20",
+			"initialValue": "1",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -66,12 +66,12 @@
 						{
 							"id": "compare-velocity",
 							"objectClass": "Item",
-							"sid": 423527278231435,
+							"sid": 659839656648506,
 							"behaviorType": "Physics",
 							"parameters": {
 								"which": "overall-velocity",
 								"comparison": 4,
-								"value": "500"
+								"value": "250"
 							}
 						},
 						{
@@ -141,7 +141,124 @@
 							}
 						}
 					],
-					"sid": 860204607918817
+					"sid": 860204607918817,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 592162164293608,
+									"parameters": {
+										"variable": "RunnaldVida",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 940996951719963,
+									"parameters": {
+										"variable": "GameState",
+										"value": "2"
+									}
+								},
+								{
+									"id": "set-default-color",
+									"objectClass": "Runnald",
+									"sid": 728961137341523,
+									"parameters": {
+										"color": "rgbEx(100,100,100)"
+									}
+								},
+								{
+									"id": "stop",
+									"objectClass": "Audio",
+									"sid": 660989503021182,
+									"parameters": {
+										"tag": "\"PLAYmusic\""
+									}
+								},
+								{
+									"id": "stop",
+									"objectClass": "Audio",
+									"sid": 573210353505129,
+									"parameters": {
+										"tag": "\"PLAYmusicIntro\""
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 607239246841856,
+									"parameters": {
+										"audio-file": "WINNNER",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 783098663061992,
+									"parameters": {
+										"object-to-create": "TryAgain",
+										"layer": "LayerIndex(\"CartelesFINALES\")",
+										"x": "960",
+										"y": "824",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 563710841291064,
+									"parameters": {
+										"object-to-create": "YouWin",
+										"layer": "LayerIndex(\"CartelesFINALES\")",
+										"x": "960",
+										"y": "419",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "Runnald",
+									"sid": 623708162883114,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetX",
+										"end-value": "290",
+										"time": "2",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Runnald",
+									"sid": 849624922581059,
+									"parameters": {
+										"animation": "\"RunnaldYouWin\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 126977936403698
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -187,7 +304,18 @@
 					"functionIsAsync": false,
 					"functionParameters": [],
 					"eventType": "function-block",
-					"conditions": [],
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 149198671945902,
+							"parameters": {
+								"variable": "GameState",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
 					"actions": [
 						{
 							"id": "set-default-color",
@@ -198,13 +326,8 @@
 							}
 						},
 						{
-							"id": "set-animation",
-							"objectClass": "Runnald",
-							"sid": 580233333528304,
-							"parameters": {
-								"animation": "\"RunnaldRunning\"",
-								"from": "beginning"
-							}
+							"callFunction": "SetRunnaldAnimToRun",
+							"sid": 794778932456278
 						},
 						{
 							"id": "set-mirrored",
@@ -268,34 +391,8 @@
 							}
 						},
 						{
-							"id": "play-timeline-by-name",
-							"objectClass": "TimelineController",
-							"sid": 395809783341521,
-							"parameters": {
-								"timeline-name": "\"AtaqueLeftRight\"&str(int(random(1,3)))",
-								"tags": "\"LeftRight\""
-							}
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 540072465167414,
-							"parameters": {
-								"audio-file": "slash payaso",
-								"loop": "not-looping",
-								"volume": "-5",
-								"stereo-pan": "0",
-								"tag-optional": "\"\""
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "Runnald",
-							"sid": 665942574922086,
-							"parameters": {
-								"animation": "\"RunnaldJumping\"",
-								"from": "beginning"
-							}
+							"callFunction": "DashLeftRight",
+							"sid": 899335620435191
 						}
 					],
 					"sid": 701483319823759
@@ -358,44 +455,8 @@
 									}
 								},
 								{
-									"id": "play-timeline",
-									"objectClass": "TimelineController",
-									"sid": 256313047273514,
-									"disabled": true,
-									"parameters": {
-										"timeline": "AtaqueRightLeft1",
-										"tags": "\"RightLeft\""
-									}
-								},
-								{
-									"id": "play-timeline-by-name",
-									"objectClass": "TimelineController",
-									"sid": 690536913977039,
-									"parameters": {
-										"timeline-name": "\"AtaqueRightLeft\"&str(int(random(1,3)))",
-										"tags": "\"RightLeft\""
-									}
-								},
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 465986617711033,
-									"parameters": {
-										"audio-file": "slash payaso",
-										"loop": "not-looping",
-										"volume": "-5",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Runnald",
-									"sid": 171032456754250,
-									"parameters": {
-										"animation": "\"RunnaldJumping\"",
-										"from": "beginning"
-									}
+									"callFunction": "DashRightLeft",
+									"sid": 807726521369478
 								}
 							],
 							"sid": 728563334402499
@@ -616,13 +677,8 @@
 									}
 								},
 								{
-									"id": "set-animation",
-									"objectClass": "Runnald",
-									"sid": 871067871078907,
-									"parameters": {
-										"animation": "\"RunnaldRunning\"",
-										"from": "beginning"
-									}
+									"callFunction": "SetRunnaldAnimToRun",
+									"sid": 689110105851586
 								}
 							],
 							"sid": 592897620283225
@@ -743,35 +799,20 @@
 					],
 					"actions": [
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 427031919892556,
-							"parameters": {
-								"seconds": ".2"
-							}
-						},
-						{
-							"id": "set-flipped",
+							"id": "set-animation",
 							"objectClass": "Runnald",
-							"sid": 258865479903047,
+							"sid": 666892478220083,
 							"parameters": {
-								"state": "flipped"
+								"animation": "\"RunnaldLanding\"",
+								"from": "beginning"
 							}
 						},
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 189661309454298,
+							"sid": 615028191413299,
 							"parameters": {
-								"seconds": ".3"
-							}
-						},
-						{
-							"id": "set-flipped",
-							"objectClass": "Runnald",
-							"sid": 828400004706948,
-							"parameters": {
-								"state": "not-flipped"
+								"seconds": ".5"
 							}
 						},
 						{
@@ -862,9 +903,9 @@
 						{
 							"id": "set-animation-frame",
 							"objectClass": "Vidas",
-							"sid": 108429070523352,
+							"sid": 217514277324025,
 							"parameters": {
-								"frame-number": "vidasPlayer"
+								"frame-number": "ceil(vidasPlayer/3)"
 							}
 						},
 						{
@@ -909,11 +950,27 @@
 									}
 								},
 								{
+									"id": "set-default-color",
+									"objectClass": "Runnald",
+									"sid": 789387229443772,
+									"parameters": {
+										"color": "rgbEx(100,100,100)"
+									}
+								},
+								{
 									"id": "stop",
 									"objectClass": "Audio",
 									"sid": 570717147203217,
 									"parameters": {
 										"tag": "\"PLAYmusic\""
+									}
+								},
+								{
+									"id": "stop",
+									"objectClass": "Audio",
+									"sid": 417632036609571,
+									"parameters": {
+										"tag": "\"PLAYmusicIntro\""
 									}
 								},
 								{
@@ -929,11 +986,16 @@
 									}
 								},
 								{
-									"id": "set-visible",
-									"objectClass": "GameOver",
-									"sid": 825336532717839,
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 310706944627815,
 									"parameters": {
-										"visibility": "visible"
+										"object-to-create": "GameOver",
+										"layer": "LayerIndex(\"CartelesFINALES\")",
+										"x": "960",
+										"y": "419",
+										"create-hierarchy": false,
+										"template-name": "\"\""
 									}
 								},
 								{
@@ -948,6 +1010,49 @@
 										"create-hierarchy": false,
 										"template-name": "\"\""
 									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "Runnald",
+									"sid": 779154452622929,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetX",
+										"end-value": "290",
+										"time": "2",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Runnald",
+									"sid": 562676603557988,
+									"parameters": {
+										"animation": "\"RunnaldGameOverstart\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 403154967142874,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Runnald",
+									"sid": 976059666553033,
+									"parameters": {
+										"animation": "\"RunnaldGameOverloop\"",
+										"from": "beginning"
+									}
 								}
 							],
 							"sid": 280867646387571
@@ -955,6 +1060,150 @@
 					]
 				}
 			]
+		},
+		{
+			"functionName": "SetRunnaldAnimToRun",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 164661218059873,
+					"parameters": {
+						"variable": "GameState",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Runnald",
+					"sid": 940659128679594,
+					"parameters": {
+						"animation": "\"RunnaldRunning\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 225673388683632
+		},
+		{
+			"functionName": "DashLeftRight",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 714119359360072,
+					"parameters": {
+						"variable": "GameState",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play-timeline-by-name",
+					"objectClass": "TimelineController",
+					"sid": 395809783341521,
+					"parameters": {
+						"timeline-name": "\"AtaqueLeftRight\"&str(int(random(1,3)))",
+						"tags": "\"LeftRight\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 540072465167414,
+					"parameters": {
+						"audio-file": "slash payaso",
+						"loop": "not-looping",
+						"volume": "-5",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Runnald",
+					"sid": 665942574922086,
+					"parameters": {
+						"animation": "\"RunnaldJumping\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 983939867095543
+		},
+		{
+			"functionName": "DashRightLeft",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 282218754246895,
+					"parameters": {
+						"variable": "GameState",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play-timeline-by-name",
+					"objectClass": "TimelineController",
+					"sid": 690536913977039,
+					"parameters": {
+						"timeline-name": "\"AtaqueRightLeft\"&str(int(random(1,3)))",
+						"tags": "\"RightLeft\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 465986617711033,
+					"parameters": {
+						"audio-file": "slash payaso",
+						"loop": "not-looping",
+						"volume": "-5",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Runnald",
+					"sid": 171032456754250,
+					"parameters": {
+						"animation": "\"RunnaldJumping\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 401909446962982
 		}
 	],
 	"sid": 587650480772100

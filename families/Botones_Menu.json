@@ -1,0 +1,13 @@
+{
+	"name": "Botones_Menu",
+	"plugin-id": "Sprite",
+	"sid": 718775282408190,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Boton_Creditos",
+		"Boton_Jugar",
+		"Boton_Tutorial"
+	]
+}

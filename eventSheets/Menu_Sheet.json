@@ -1,0 +1,225 @@
+{
+	"name": "Menu_Sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 812879775681681,
+					"parameters": {
+						"object": "Botones_Menu"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "mouse-button-is-down",
+					"objectClass": "Mouse",
+					"sid": 909859471616091,
+					"parameters": {
+						"mouse-button": "left"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "Botones_Menu",
+					"sid": 202829830612819,
+					"parameters": {
+						"effect": "\"hl\"",
+						"parameter-index": "0",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "Botones_Menu",
+					"sid": 563795705049119,
+					"parameters": {
+						"scale": "1"
+					}
+				}
+			],
+			"sid": 765355666832021
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 637115514932823,
+					"parameters": {
+						"object": "Botones_Menu"
+					}
+				},
+				{
+					"id": "mouse-button-is-down",
+					"objectClass": "Mouse",
+					"sid": 161564548268185,
+					"parameters": {
+						"mouse-button": "left"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "Botones_Menu",
+					"sid": 212156331176530,
+					"parameters": {
+						"effect": "\"hl\"",
+						"parameter-index": "0",
+						"value": "100"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "Botones_Menu",
+					"sid": 742670229201839,
+					"parameters": {
+						"scale": "1.1"
+					}
+				}
+			],
+			"sid": 377526313507909
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 231359740611528,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Botones_Menu"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-scale",
+					"objectClass": "Botones_Menu",
+					"sid": 492249418966471,
+					"parameters": {
+						"scale": ".9"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "Botones_Menu",
+					"sid": 805120179963858,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				}
+			],
+			"sid": 192524056051464
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 770992137438963,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Boton_Jugar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 494794215020908,
+					"parameters": {
+						"layout": "Juego"
+					}
+				}
+			],
+			"sid": 765162862604710
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 949223704812830,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Boton_Tutorial"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Botones_Menu",
+					"sid": 641687386042858
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 925487527134433,
+					"parameters": {
+						"object-to-create": "m_TUTORIAL",
+						"layer": "0",
+						"x": "960",
+						"y": "540",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 909353767504078
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 733643740360119,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Boton_Creditos"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Botones_Menu",
+					"sid": 404991961381877
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 750843617667736,
+					"parameters": {
+						"object-to-create": "m_CREDITOS",
+						"layer": "0",
+						"x": "960",
+						"y": "540",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 129671921130951
+		}
+	],
+	"sid": 295697076928424
+}

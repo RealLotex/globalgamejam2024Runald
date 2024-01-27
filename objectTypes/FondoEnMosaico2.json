@@ -1,0 +1,32 @@
+{
+	"name": "FondoEnMosaico2",
+	"plugin-id": "TiledBg",
+	"sid": 373751288384773,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bala",
+			"sid": 586751274180527
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "blurhorizontal",
+			"name": "DesenfoqueHorizontal"
+		}
+	],
+	"image": {
+		"width": 1904,
+		"height": 1080,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 9024588,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

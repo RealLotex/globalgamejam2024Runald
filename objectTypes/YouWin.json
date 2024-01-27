@@ -1,0 +1,110 @@
+{
+	"name": "YouWin",
+	"plugin-id": "Sprite",
+	"sid": 563905240224712,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Seno",
+			"sid": 714411965939298
+		},
+		{
+			"behaviorId": "Fade",
+			"name": "Desvanecer",
+			"sid": 944818641469081
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "ultimatedropshadowcolor",
+			"name": "UltimateDropShadowColor"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1920,
+						"height": 1080,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2104038,
+						"collisionPoly": {
+							"points": [
+								0.5,
+								0.31296296296296294,
+								0.8817708333333333,
+								0.3175925925925926,
+								0.9395833333333333,
+								0.3425925925925926,
+								0.9536458333333333,
+								0.4388888888888889,
+								0.9546875,
+								0.5268518518518519,
+								0.9380208333333333,
+								0.5740740740740741,
+								0.9067708333333333,
+								0.6333333333333333,
+								0.49947916666666664,
+								0.687037037037037,
+								0.09427083333333333,
+								0.6296296296296297,
+								0.06354166666666666,
+								0.5731481481481482,
+								0.04583333333333333,
+								0.5231481481481481,
+								0.0453125,
+								0.4398148148148148,
+								0.0671875,
+								0.3314814814814815,
+								0.1140625,
+								0.3212962962962963
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 900352126161994,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1200,
+						"height": 900,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3341985,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 788579636967121,
+				"name": "Animación 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

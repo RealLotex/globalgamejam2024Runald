@@ -17,14 +17,179 @@
 					},
 					"uid": 23,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Seno": {
+							"properties": {
+								"movement": "size",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": -5,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"effects": {
+						"UltimateDropShadowColor": {
+							"isEnabled": true,
+							"parameters": {
+								"distance": 8,
+								"angle": 90,
+								"opacity": 0.75,
+								"hue": 180,
+								"saturation": 0,
+								"brightness": 0,
+								"blurradius": 0
+							}
+						}
+					},
 					"world": {
-						"x": 888,
+						"x": 949,
 						"y": 788,
-						"width": 415.5366256647169,
-						"height": 194.1441611712202,
+						"width": 664,
+						"height": 195,
 						"originX": 0.4959016393442623,
 						"originY": 0.5789473684210527,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GameOver",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 21,
+					"instanceVariables": {},
+					"behaviors": {
+						"Seno": {
+							"properties": {
+								"movement": "angle",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 2,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"Desvanecer": {
+							"properties": {
+								"fade-in-time": 1,
+								"wait-time": 0,
+								"fade-out-time": 0,
+								"destroy": false,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"effects": {
+						"UltimateDropShadowColor": {
+							"isEnabled": true,
+							"parameters": {
+								"distance": 10,
+								"angle": 45,
+								"opacity": 0.75,
+								"hue": 180,
+								"saturation": 0,
+								"brightness": 0,
+								"blurradius": 0
+							}
+						}
+					},
+					"world": {
+						"x": 960,
+						"y": 362,
+						"width": 1200,
+						"height": 900,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "YouWin",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 24,
+					"instanceVariables": {},
+					"behaviors": {
+						"Seno": {
+							"properties": {
+								"movement": "size",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 50,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"Desvanecer": {
+							"properties": {
+								"fade-in-time": 1,
+								"wait-time": 0,
+								"fade-out-time": 0,
+								"destroy": false,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"effects": {
+						"UltimateDropShadowColor": {
+							"isEnabled": true,
+							"parameters": {
+								"distance": 10,
+								"angle": -90,
+								"opacity": 0.75,
+								"hue": 180,
+								"saturation": 0,
+								"brightness": 0,
+								"blurradius": 0
+							}
+						}
+					},
+					"world": {
+						"x": 960,
+						"y": 419,
+						"width": 1920,
+						"height": 1080,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

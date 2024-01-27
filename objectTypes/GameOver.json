@@ -4,8 +4,24 @@
 	"sid": 261211883184444,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
-	"effectTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Seno",
+			"sid": 751131077333499
+		},
+		{
+			"behaviorId": "Fade",
+			"name": "Desvanecer",
+			"sid": 881249732656719
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "ultimatedropshadowcolor",
+			"name": "UltimateDropShadowColor"
+		}
+	],
 	"animations": {
 		"items": [
 			{
@@ -18,7 +34,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4600646,
+						"imageSpriteId": 9815851,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
