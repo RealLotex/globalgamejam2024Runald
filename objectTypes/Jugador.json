@@ -13,8 +13,8 @@
 	],
 	"effectTypes": [
 		{
-			"effectId": "highlightshadow",
-			"name": "BrilloSombra"
+			"effectId": "ultimatedropshadowcolor",
+			"name": "UltimateDropShadowColor"
 		}
 	],
 	"animations": {

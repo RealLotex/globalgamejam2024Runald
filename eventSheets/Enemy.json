@@ -53,16 +53,6 @@
 			"sid": 523142110300956,
 			"children": [
 				{
-					"eventType": "variable",
-					"name": "lastAnim",
-					"type": "string",
-					"initialValue": "",
-					"comment": "",
-					"isStatic": false,
-					"isConstant": false,
-					"sid": 473906880696908
-				},
-				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -123,6 +113,23 @@
 							}
 						},
 						{
+							"id": "set-animation",
+							"objectClass": "Runnald",
+							"sid": 879694621151719,
+							"parameters": {
+								"animation": "\"RunnaldDamaged\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "BarraDeVida",
+							"sid": 497255725542780,
+							"parameters": {
+								"width": "(1365/vidainicialRunnald)*RunnaldVida"
+							}
+						},
+						{
 							"id": "flash",
 							"objectClass": "Runnald",
 							"sid": 256109328102515,
@@ -131,49 +138,6 @@
 								"on-time": "0.1",
 								"off-time": "0.1",
 								"duration": "1.0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 473487022243120,
-							"parameters": {
-								"variable": "lastAnim",
-								"value": "Runnald.AnimationName"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "Runnald",
-							"sid": 592800394695402,
-							"parameters": {
-								"animation": "\"RunnaldDamaged\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 149512150485373,
-							"parameters": {
-								"seconds": ".1"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "Runnald",
-							"sid": 885599471599441,
-							"parameters": {
-								"animation": "lastAnim",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "set-width",
-							"objectClass": "BarraDeVida",
-							"sid": 613166898782977,
-							"parameters": {
-								"width": "(1365/vidainicialRunnald)*RunnaldVida"
 							}
 						}
 					],
@@ -638,9 +602,9 @@
 								{
 									"id": "set-x",
 									"objectClass": "Runnald",
-									"sid": 607013700506951,
+									"sid": 251648758990454,
 									"parameters": {
-										"x": "lerp(Self.x,Mouse.X,.1)"
+										"x": "lerp(Self.x,Mouse.X,.05)"
 									}
 								},
 								{
@@ -885,9 +849,97 @@
 								"off-time": "0.1",
 								"duration": "1.0"
 							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 359138778015147,
+							"parameters": {
+								"variable": "vidasPlayer",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Vidas",
+							"sid": 108429070523352,
+							"parameters": {
+								"frame-number": "vidasPlayer"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Vidas",
+							"sid": 175692590020831,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "Vidas",
+							"sid": 490423018586429,
+							"behaviorType": "Desvanecer"
 						}
 					],
-					"sid": 677614121411078
+					"sid": 677614121411078,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 539031344889839,
+									"parameters": {
+										"variable": "vidasPlayer",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 558476908984214,
+									"parameters": {
+										"variable": "GameState",
+										"value": "1"
+									}
+								},
+								{
+									"id": "stop",
+									"objectClass": "Audio",
+									"sid": 570717147203217,
+									"parameters": {
+										"tag": "\"PLAYmusic\""
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 473110094264456,
+									"parameters": {
+										"audio-file": "game over",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "GameOver",
+									"sid": 825336532717839,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 280867646387571
+						}
+					]
 				}
 			]
 		}

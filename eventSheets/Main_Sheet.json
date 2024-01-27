@@ -20,6 +20,22 @@
 			"includeSheet": "Enemy"
 		},
 		{
+			"eventType": "comment",
+			"text": "GAMESTATES"
+		},
+		{
+			"eventType": "comment",
+			"text": "0 = JUGANDO"
+		},
+		{
+			"eventType": "comment",
+			"text": "1 = GAMEOVER"
+		},
+		{
+			"eventType": "comment",
+			"text": "2 = WINNER"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -74,13 +90,13 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 888350935990000,
+							"sid": 681812071518804,
 							"parameters": {
 								"audio-file": "MUSICA PAYASESCA",
 								"loop": "looping",
 								"volume": "-6",
 								"stereo-pan": "0",
-								"tag-optional": "\"music\""
+								"tag-optional": "\"PLAYmusic\""
 							}
 						},
 						{
@@ -90,6 +106,14 @@
 							"behaviorType": "Physics",
 							"parameters": {
 								"gravity": "50"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Vidas",
+							"sid": 589226973738873,
+							"parameters": {
+								"visibility": "invisible"
 							}
 						}
 					],
@@ -111,10 +135,10 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 875905996940964,
+							"sid": 577204878224398,
 							"parameters": {
 								"object-to-create": "Item",
-								"layer": "1",
+								"layer": "LayerIndex(\"PERSONAJES\")",
 								"x": "random(100,1820)",
 								"y": "972",
 								"create-hierarchy": false,
@@ -123,6 +147,67 @@
 						}
 					],
 					"sid": 565876066340545
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 321662315153135
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Vidas",
+							"sid": 455527079904785,
+							"parameters": {
+								"x": "Mouse.X",
+								"y": "Mouse.Y-150"
+							}
+						}
+					],
+					"sid": 271914014686525
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "Item",
+							"sid": 497360226814105
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "Item",
+							"sid": 183833045467400,
+							"parameters": {
+								"width": "350",
+								"height": "350"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 227005009152209,
+							"parameters": {
+								"seconds": ".1"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Item",
+							"sid": 321301011693994,
+							"parameters": {
+								"width": "300",
+								"height": "300"
+							}
+						}
+					],
+					"sid": 875556242666416
 				}
 			]
 		},
@@ -130,40 +215,28 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-created",
-					"objectClass": "Item",
-					"sid": 633638682498385
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 343450190927429,
+					"parameters": {
+						"variable": "GameState",
+						"comparison": 0,
+						"value": "1"
+					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-size",
-					"objectClass": "Item",
-					"sid": 456832250311271,
+					"id": "set-speed",
+					"objectClass": "Fondo",
+					"sid": 436676828511507,
+					"behaviorType": "Bullet",
 					"parameters": {
-						"width": "350",
-						"height": "350"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 331734400402650,
-					"parameters": {
-						"seconds": ".1"
-					}
-				},
-				{
-					"id": "set-size",
-					"objectClass": "Item",
-					"sid": 304102977754577,
-					"parameters": {
-						"width": "300",
-						"height": "300"
+						"speed": "0"
 					}
 				}
 			],
-			"sid": 658301738611093
+			"sid": 915192494562227
 		}
 	],
 	"sid": 750949231229755

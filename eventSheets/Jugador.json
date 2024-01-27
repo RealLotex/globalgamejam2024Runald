@@ -16,6 +16,16 @@
 			"sid": 706357345110054
 		},
 		{
+			"eventType": "variable",
+			"name": "vidasPlayer",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 160038707427958
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{

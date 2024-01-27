@@ -41,7 +41,7 @@
 							1,
 							1,
 							1,
-							0.75
+							1
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -164,7 +164,99 @@
 			"global": false
 		},
 		{
-			"name": "Layer 0",
+			"name": "Detectores",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "DetectorAtaqueSalto",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 14,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 957,
+						"y": 416,
+						"width": 1954,
+						"height": 902,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "RunnaldDetectorSalto",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 15,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 321,
+						"y": 431.5,
+						"width": 372,
+						"height": 861,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 140202629070045,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "PERSONAJES",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
@@ -304,6 +396,20 @@
 							"properties": {}
 						}
 					},
+					"effects": {
+						"UltimateDropShadowColor": {
+							"isEnabled": true,
+							"parameters": {
+								"distance": 14,
+								"angle": 45,
+								"opacity": 0.75,
+								"hue": 180,
+								"saturation": 0,
+								"brightness": 0,
+								"blurradius": 25
+							}
+						}
+					},
 					"world": {
 						"x": 289.4271374067691,
 						"y": 768.519038076674,
@@ -338,11 +444,16 @@
 						}
 					},
 					"effects": {
-						"BrilloSombra": {
+						"UltimateDropShadowColor": {
 							"isEnabled": true,
 							"parameters": {
-								"shadow-factor": 0,
-								"highlight-factor": 1
+								"distance": 10,
+								"angle": 45,
+								"opacity": 1,
+								"hue": 180,
+								"saturation": 0,
+								"brightness": 0,
+								"blurradius": 50
 							}
 						}
 					},
@@ -353,6 +464,55 @@
 						"height": 114.24,
 						"originX": 0.46393762183235865,
 						"originY": 0.6,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Vidas",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 20,
+					"instanceVariables": {},
+					"behaviors": {
+						"Desvanecer": {
+							"properties": {
+								"fade-in-time": 0.1,
+								"wait-time": 0.5,
+								"fade-out-time": 0.1,
+								"destroy": false,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"effects": {
+						"BrilloSombra": {
+							"isEnabled": true,
+							"parameters": {
+								"shadow-factor": 0.5,
+								"highlight-factor": 1
+							}
+						}
+					},
+					"world": {
+						"x": 1412,
+						"y": 386,
+						"width": 200,
+						"height": 200,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -380,7 +540,7 @@
 								"immovable": false,
 								"collision-mask": "use-collision-polygon",
 								"prevent-rotation": false,
-								"density": 1,
+								"density": 0.001,
 								"friction": 0.5,
 								"elasticity": 0.2,
 								"linear-damping": 0,
@@ -396,69 +556,25 @@
 							}
 						}
 					},
+					"effects": {
+						"UltimateDropShadowColor": {
+							"isEnabled": true,
+							"parameters": {
+								"distance": 10,
+								"angle": 45,
+								"opacity": 1,
+								"hue": 180,
+								"saturation": 0,
+								"brightness": 0,
+								"blurradius": 0
+							}
+						}
+					},
 					"world": {
-						"x": 1220,
-						"y": 635,
+						"x": 1600,
+						"y": 753,
 						"width": 300,
 						"height": 300,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "DetectorAtaqueSalto",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 14,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 957,
-						"y": 416,
-						"width": 1954,
-						"height": 902,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "RunnaldDetectorSalto",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 15,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 321,
-						"y": 431.5,
-						"width": 372,
-						"height": 861,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -473,6 +589,69 @@
 				}
 			],
 			"sid": 327176197337981,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "CartelesFINALES",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "GameOver",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 21,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 960,
+						"y": 540,
+						"width": 1200,
+						"height": 900,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 533957763825112,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -596,7 +775,7 @@
 			],
 			"sid": 566692485531287,
 			"effectTypes": [],
-			"isInitiallyVisible": true,
+			"isInitiallyVisible": false,
 			"isInitiallyInteractive": true,
 			"color": [
 				1,

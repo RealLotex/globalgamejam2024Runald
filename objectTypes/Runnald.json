@@ -34,7 +34,12 @@
 			"sid": 392834662453145
 		}
 	],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "ultimatedropshadowcolor",
+			"name": "UltimateDropShadowColor"
+		}
+	],
 	"animations": {
 		"items": [
 			{

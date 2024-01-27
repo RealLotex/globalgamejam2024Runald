@@ -16,7 +16,7 @@
 		{
 			"type": "plugin",
 			"id": "Keyboard",
-			"name": "Teclado",
+			"name": "Keyboard",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -37,91 +37,106 @@
 		{
 			"type": "plugin",
 			"id": "Text",
-			"name": "Texto",
+			"name": "Text",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Timeline",
-			"name": "Controlador de la línea de tiempo",
+			"name": "Timeline controller",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "video",
-			"name": "Vídeo",
+			"name": "Video",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Bullet",
-			"name": "Bala",
+			"name": "Bullet",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "DragnDrop",
-			"name": "Arrastrar y soltar",
+			"name": "Drag & Drop",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Flash",
-			"name": "Parpadeo",
+			"name": "Flash",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Physics",
-			"name": "Físicas",
+			"name": "Physics",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Platform",
-			"name": "Plataforma",
+			"name": "Platform",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Tween",
-			"name": "Tween (interpolación)",
+			"name": "Tween",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "solid",
-			"name": "Sólido",
+			"name": "Solid",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "effect",
 			"id": "highlightshadow",
-			"name": "Brillo sombra",
+			"name": "Highlight shadow",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "effect",
+			"id": "ultimatedropshadowcolor",
+			"name": "UltimateDropShadowColor",
+			"author": "Zane Little",
+			"bundled": false,
+			"version": "1.1.0.0"
+		},
+		{
+			"type": "effect",
 			"id": "vibrance",
-			"name": "Intensidad",
+			"name": "Vibrance",
 			"author": "Evan Wallace",
 			"bundled": false
 		},
 		{
 			"type": "effect",
 			"id": "vignette",
-			"name": "Viñeta",
+			"name": "Vignette",
 			"author": "Brad Larson",
 			"bundled": false
 		}
@@ -146,7 +161,9 @@
 			"Sprite",
 			"BarraDeVidaBG",
 			"BarraDeVida",
-			"BarraDeVidaFondo"
+			"BarraDeVidaFondo",
+			"Vidas",
+			"GameOver"
 		],
 		"subfolders": []
 	},
@@ -304,7 +321,16 @@
 			"subfolders": []
 		},
 		"font": {
-			"items": [],
+			"items": [
+				{
+					"name": "Circus.ttf",
+					"type": "application/font-sfnt",
+					"sid": 702736877466993,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"icon": {
