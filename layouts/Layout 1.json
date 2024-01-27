@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Piso",
+					"type": "Fondo",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -41,7 +41,7 @@
 							1,
 							1,
 							1,
-							1
+							0.75
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -59,12 +59,12 @@
 				1
 			],
 			"backgroundColor": [
-				1,
-				1,
-				1,
+				0,
+				0,
+				0,
 				1
 			],
-			"isTransparent": true,
+			"isTransparent": false,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -248,8 +248,8 @@
 						}
 					},
 					"world": {
-						"x": 1312,
-						"y": 544,
+						"x": 1373,
+						"y": 582,
 						"width": 134.16,
 						"height": 114.24,
 						"originX": 0.46393762183235865,
@@ -526,7 +526,29 @@
 	],
 	"sid": 736110634137380,
 	"nonworld-instances": [],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "vibrance",
+			"name": "Intensidad",
+			"instance": {
+				"isEnabled": false,
+				"parameters": {
+					"vibrance": 1
+				}
+			}
+		},
+		{
+			"effectId": "vignette",
+			"name": "Viñeta",
+			"instance": {
+				"isEnabled": true,
+				"parameters": {
+					"start-radius": 0.7,
+					"end-radius": 0.75
+				}
+			}
+		}
+	],
 	"width": 1920,
 	"height": 1080,
 	"unboundedScrolling": false,

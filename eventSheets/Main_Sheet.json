@@ -14,7 +14,7 @@
 			"conditions": [
 				{
 					"id": "compare-x",
-					"objectClass": "Piso",
+					"objectClass": "Fondo",
 					"sid": 655513555247366,
 					"parameters": {
 						"comparison": 2,
@@ -25,7 +25,7 @@
 			"actions": [
 				{
 					"id": "set-x",
-					"objectClass": "Piso",
+					"objectClass": "Fondo",
 					"sid": 347202874884536,
 					"parameters": {
 						"x": "0"

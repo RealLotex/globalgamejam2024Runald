@@ -103,12 +103,26 @@
 			"name": "Sólido",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "vibrance",
+			"name": "Intensidad",
+			"author": "Evan Wallace",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "vignette",
+			"name": "Viñeta",
+			"author": "Brad Larson",
+			"bundled": false
 		}
 	],
 	"uniqueId": "7uw2umsb5hu",
 	"objectTypes": {
 		"items": [
-			"Piso",
+			"Fondo",
 			"Runnald",
 			"Jugador",
 			"Video",
