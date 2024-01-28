@@ -1,10 +1,4 @@
-- INSTALL -
-
-Unzip files
-Execute Runald.exe
-Once opened, press "F11" to enable fullscreen (recommended)
-
-- INSTRUCTIONS -
+- DESCRIPTION -
 
 Get ready to escape from Runald!
 
