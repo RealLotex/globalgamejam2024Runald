@@ -1,0 +1,73 @@
+{
+	"name": "BackToMenu",
+	"plugin-id": "Sprite",
+	"sid": 740344397226020,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Seno",
+			"sid": 877960707718610
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "ultimatedropshadowcolor",
+			"name": "UltimateDropShadowColor"
+		},
+		{
+			"effectId": "exposure",
+			"name": "hl"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 580,
+						"height": 171,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4765133,
+						"collisionPoly": {
+							"points": [
+								0.5017241379310344,
+								0.005847953216374269,
+								0.8862068965517241,
+								0.2222222222222222,
+								0.9913793103448276,
+								0.543859649122807,
+								0.846551724137931,
+								0.8245614035087719,
+								0.4982758620689655,
+								0.9941520467836257,
+								0.1103448275862069,
+								0.7719298245614035,
+								0.006896551724137931,
+								0.4619883040935672,
+								0.15517241379310345,
+								0.17543859649122806
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 177836874835804,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

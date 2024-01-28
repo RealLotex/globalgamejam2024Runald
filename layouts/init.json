@@ -45,15 +45,21 @@
 								"brightness": 0,
 								"blurradius": 0
 							}
+						},
+						"hl": {
+							"isEnabled": true,
+							"parameters": {
+								"exposure": 0
+							}
 						}
 					},
 					"world": {
-						"x": 949,
-						"y": 788,
-						"width": 664,
-						"height": 195,
-						"originX": 0.4959016393442623,
-						"originY": 0.5789473684210527,
+						"x": 960,
+						"y": 744,
+						"width": 580,
+						"height": 171,
+						"originX": 0.493993993993994,
+						"originY": 0.5126903553299492,
 						"color": [
 							1,
 							1,
@@ -106,7 +112,7 @@
 							"isEnabled": true,
 							"parameters": {
 								"distance": 10,
-								"angle": 45,
+								"angle": -90,
 								"opacity": 0.75,
 								"hue": 180,
 								"saturation": 0,
@@ -185,9 +191,125 @@
 					},
 					"world": {
 						"x": 960,
-						"y": 419,
+						"y": 360,
 						"width": 1920,
 						"height": 1080,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Boton_VolverMenu",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 30,
+					"instanceVariables": {},
+					"behaviors": {
+						"Seno": {
+							"properties": {
+								"movement": "angle",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 0,
+								"magnitude-random": 5,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
+					"effects": {
+						"hl": {
+							"isEnabled": true,
+							"parameters": {
+								"exposure": 0
+							}
+						}
+					},
+					"world": {
+						"x": 1549,
+						"y": 739,
+						"width": 262,
+						"height": 233,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BackToMenu",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 32,
+					"instanceVariables": {},
+					"behaviors": {
+						"Seno": {
+							"properties": {
+								"movement": "size",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": -5,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"effects": {
+						"UltimateDropShadowColor": {
+							"isEnabled": true,
+							"parameters": {
+								"distance": 8,
+								"angle": 90,
+								"opacity": 0.75,
+								"hue": 180,
+								"saturation": 0,
+								"brightness": 0,
+								"blurradius": 0
+							}
+						},
+						"hl": {
+							"isEnabled": true,
+							"parameters": {
+								"exposure": 0
+							}
+						}
+					},
+					"world": {
+						"x": 960,
+						"y": 949,
+						"width": 580,
+						"height": 171,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

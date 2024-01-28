@@ -1,0 +1,12 @@
+{
+	"name": "Botones_Gameplay",
+	"plugin-id": "Sprite",
+	"sid": 335003399465079,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"BackToMenu",
+		"TryAgain"
+	]
+}

@@ -2,6 +2,67 @@
 	"name": "Menu",
 	"layers": [
 		{
+			"name": "FONDO",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "FondoVideoMenu",
+					"properties": {
+						"webm-source": "",
+						"h264-source": "ronald.mp4",
+						"autoplay": "yes",
+						"play-in-background": false,
+						"initially-visible": true
+					},
+					"uid": 31,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 1920,
+						"height": 1080,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				}
+			],
+			"sid": 755580912732069,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
 			"name": "Capa 0",
 			"overriden": 0,
 			"subLayers": [],
@@ -17,7 +78,22 @@
 					},
 					"uid": 26,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Seno": {
+							"properties": {
+								"movement": "angle",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 0,
+								"magnitude-random": 5,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
 					"effects": {
 						"hl": {
 							"isEnabled": true,
@@ -28,9 +104,9 @@
 					},
 					"world": {
 						"x": 960,
-						"y": 512,
-						"width": 579,
-						"height": 171,
+						"y": 496,
+						"width": 700,
+						"height": 206,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -54,7 +130,22 @@
 					},
 					"uid": 27,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Seno": {
+							"properties": {
+								"movement": "angle",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 0,
+								"magnitude-random": 5,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
 					"effects": {
 						"hl": {
 							"isEnabled": true,
@@ -66,8 +157,8 @@
 					"world": {
 						"x": 960,
 						"y": 704,
-						"width": 579,
-						"height": 171,
+						"width": 578.4997839239008,
+						"height": 170.85226779099662,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -91,7 +182,22 @@
 					},
 					"uid": 28,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Seno": {
+							"properties": {
+								"movement": "angle",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 0,
+								"magnitude-random": 5,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
 					"effects": {
 						"hl": {
 							"isEnabled": true,
@@ -102,9 +208,9 @@
 					},
 					"world": {
 						"x": 960,
-						"y": 896,
-						"width": 580,
-						"height": 172,
+						"y": 880,
+						"width": 438,
+						"height": 130,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -134,7 +240,88 @@
 				1,
 				1
 			],
-			"isTransparent": false,
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "DEDO",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Jugador",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Normal",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 29,
+					"instanceVariables": {},
+					"behaviors": {
+						"Parpadeo": {
+							"properties": {}
+						}
+					},
+					"effects": {
+						"UltimateDropShadowColor": {
+							"isEnabled": true,
+							"parameters": {
+								"distance": 10,
+								"angle": 45,
+								"opacity": 1,
+								"hue": 180,
+								"saturation": 0,
+								"brightness": 0,
+								"blurradius": 50
+							}
+						}
+					},
+					"world": {
+						"x": 1920,
+						"y": 688,
+						"width": 134.16,
+						"height": 114.24,
+						"originX": 0.46393762183235865,
+						"originY": 0.6,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 975980919260504,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,

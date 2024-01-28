@@ -15,6 +15,10 @@
 		{
 			"effectId": "ultimatedropshadowcolor",
 			"name": "UltimateDropShadowColor"
+		},
+		{
+			"effectId": "exposure",
+			"name": "hl"
 		}
 	],
 	"animations": {
@@ -22,27 +26,26 @@
 			{
 				"frames": [
 					{
-						"width": 664,
-						"height": 195,
-						"originX": 0.4959016393442623,
-						"originY": 0.5789473684210527,
+						"width": 580,
+						"height": 171,
+						"originX": 0.493993993993994,
+						"originY": 0.5126903553299492,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1454609,
-						"useCollisionPoly": true,
-						"duration": 1,
-						"tag": ""
-					},
-					{
-						"width": 664,
-						"height": 195,
-						"originX": 0.4959016393442623,
-						"originY": 0.5789473684210527,
-						"originalSource": "",
-						"exportFormat": "lossless",
-						"exportQuality": 0.8,
-						"imageSpriteId": 5733006,
+						"imageSpriteId": 3247552,
+						"collisionPoly": {
+							"points": [
+								0.0015015015015015015,
+								0.005076142131979695,
+								0.9984984984984985,
+								0.005076142131979695,
+								0.9984984984984985,
+								0.9949238578680203,
+								0.0015015015015015015,
+								0.9949238578680203
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

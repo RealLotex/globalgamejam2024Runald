@@ -5,9 +5,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 812879775681681,
+					"id": "is-overlapping-another-object",
+					"objectClass": "Jugador",
+					"sid": 334754989531960,
 					"parameters": {
 						"object": "Botones_Menu"
 					},
@@ -21,6 +21,14 @@
 						"mouse-button": "left"
 					},
 					"isInverted": true
+				},
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 702661500767429,
+					"parameters": {
+						"object": "Botones_Menu"
+					}
 				}
 			],
 			"actions": [
@@ -49,9 +57,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 637115514932823,
+					"id": "is-overlapping-another-object",
+					"objectClass": "Jugador",
+					"sid": 961604993824374,
 					"parameters": {
 						"object": "Botones_Menu"
 					}
@@ -64,25 +72,33 @@
 						"mouse-button": "left"
 					},
 					"isInverted": true
+				},
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 466787538083949,
+					"parameters": {
+						"object": "Botones_Menu"
+					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-effect-parameter",
 					"objectClass": "Botones_Menu",
-					"sid": 212156331176530,
+					"sid": 579068800162372,
 					"parameters": {
 						"effect": "\"hl\"",
 						"parameter-index": "0",
-						"value": "100"
+						"value": "15"
 					}
 				},
 				{
 					"id": "set-scale",
 					"objectClass": "Botones_Menu",
-					"sid": 742670229201839,
+					"sid": 717994910304290,
 					"parameters": {
-						"scale": "1.1"
+						"scale": "1.05"
 					}
 				}
 			],
@@ -92,13 +108,28 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-object-clicked",
+					"id": "on-click",
 					"objectClass": "Mouse",
-					"sid": 231359740611528,
+					"sid": 331318627713887,
 					"parameters": {
 						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "Botones_Menu"
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Jugador",
+					"sid": 743933741529095,
+					"parameters": {
+						"object": "Botones_Menu"
+					}
+				},
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 252116096850213,
+					"parameters": {
+						"object": "Botones_Menu"
 					}
 				}
 			],
@@ -110,14 +141,6 @@
 					"parameters": {
 						"scale": ".9"
 					}
-				},
-				{
-					"id": "set-collisions-enabled",
-					"objectClass": "Botones_Menu",
-					"sid": 805120179963858,
-					"parameters": {
-						"collisions": "disabled"
-					}
 				}
 			],
 			"sid": 192524056051464
@@ -126,13 +149,20 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-object-clicked",
+					"id": "on-click",
 					"objectClass": "Mouse",
-					"sid": 770992137438963,
+					"sid": 661863990727808,
 					"parameters": {
 						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "Boton_Jugar"
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Jugador",
+					"sid": 899410373513908,
+					"parameters": {
+						"object": "Boton_Jugar"
 					}
 				}
 			],
@@ -152,13 +182,20 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-object-clicked",
+					"id": "on-click",
 					"objectClass": "Mouse",
-					"sid": 949223704812830,
+					"sid": 338182664283108,
 					"parameters": {
 						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "Boton_Tutorial"
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Jugador",
+					"sid": 252832699272920,
+					"parameters": {
+						"object": "Boton_Tutorial"
 					}
 				}
 			],
@@ -167,6 +204,14 @@
 					"id": "destroy",
 					"objectClass": "Botones_Menu",
 					"sid": 641687386042858
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "Botones_Menu",
+					"sid": 617091102158363,
+					"parameters": {
+						"scale": "1"
+					}
 				},
 				{
 					"id": "create-object",
@@ -180,6 +225,19 @@
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 741814212828026,
+					"parameters": {
+						"object-to-create": "Boton_VolverMenu",
+						"layer": "0",
+						"x": "1549",
+						"y": "739",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
 				}
 			],
 			"sid": 909353767504078
@@ -188,13 +246,20 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-object-clicked",
+					"id": "on-click",
 					"objectClass": "Mouse",
-					"sid": 733643740360119,
+					"sid": 201344692502904,
 					"parameters": {
 						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "Boton_Creditos"
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Jugador",
+					"sid": 623184756035642,
+					"parameters": {
+						"object": "Boton_Creditos"
 					}
 				}
 			],
@@ -203,6 +268,14 @@
 					"id": "destroy",
 					"objectClass": "Botones_Menu",
 					"sid": 404991961381877
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "Botones_Menu",
+					"sid": 629345122650222,
+					"parameters": {
+						"scale": "1"
+					}
 				},
 				{
 					"id": "create-object",
@@ -216,9 +289,260 @@
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 568834917366844,
+					"parameters": {
+						"object-to-create": "Boton_VolverMenu",
+						"layer": "0",
+						"x": "1549",
+						"y": "739",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
 				}
 			],
 			"sid": 129671921130951
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 143937030564071,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Jugador",
+					"sid": 180397128964864,
+					"parameters": {
+						"object": "Boton_VolverMenu"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 396196346816206,
+					"parameters": {
+						"layout": "Menu"
+					}
+				}
+			],
+			"sid": 626454777663147
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 440883730231483
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 178592703713175,
+					"parameters": {
+						"cursor-style": "none"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 796381629730759,
+					"parameters": {
+						"seconds": ".1"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Jugador",
+					"sid": 824167666713612,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.Y"
+					}
+				}
+			],
+			"sid": 174635325652374
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-movement",
+					"objectClass": "Mouse",
+					"sid": 368784313287266
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "Jugador",
+					"sid": 899356842923405,
+					"parameters": {
+						"x": "lerp(Self.x,Mouse.X,.01)",
+						"y": "lerp(Self.y,Mouse.Y,.01)"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Jugador",
+					"sid": 597303666802771,
+					"parameters": {
+						"x": "lerp(Self.x,Mouse.X,.1)",
+						"y": "lerp(Self.y,Mouse.y,.1)"
+					}
+				}
+			],
+			"sid": 858611924008011
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-between-angles",
+					"objectClass": "Jugador",
+					"sid": 625945260486583,
+					"parameters": {
+						"first-angle": "90",
+						"second-angle": "270"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-flipped",
+					"objectClass": "Jugador",
+					"sid": 122974021470498,
+					"parameters": {
+						"state": "flipped"
+					}
+				}
+			],
+			"sid": 364709022000066
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-between-angles",
+					"objectClass": "Jugador",
+					"sid": 966975089857937,
+					"parameters": {
+						"first-angle": "90",
+						"second-angle": "270"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-flipped",
+					"objectClass": "Jugador",
+					"sid": 121185458369530,
+					"parameters": {
+						"state": "not-flipped"
+					}
+				}
+			],
+			"sid": 588170989592176
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 881456559833478
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 291375398229104,
+					"parameters": {
+						"tag": "\"PLAYmusic\""
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 723195640959158,
+					"parameters": {
+						"tag": "\"PLAYmusicIntro\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Jugador",
+					"sid": 389819510732560,
+					"parameters": {
+						"animation": "\"menu\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-looping",
+					"objectClass": "FondoVideoMenu",
+					"sid": 432108520570079,
+					"parameters": {
+						"mode": "looping"
+					}
+				},
+				{
+					"id": "set-muted",
+					"objectClass": "FondoVideoMenu",
+					"sid": 440076869271839,
+					"parameters": {
+						"mode": "muted"
+					}
+				}
+			],
+			"sid": 388425540430875,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-tag-playing",
+							"objectClass": "Audio",
+							"sid": 332009378506562,
+							"parameters": {
+								"tag": "\"menumusic\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 696558874426652,
+							"parameters": {
+								"audio-file": "MUSICA PAYASESCA",
+								"loop": "looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"menumusic\""
+							}
+						}
+					],
+					"sid": 306239938972469
+				}
+			]
 		}
 	],
 	"sid": 295697076928424

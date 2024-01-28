@@ -3,11 +3,18 @@
 	"plugin-id": "Sprite",
 	"sid": 718775282408190,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Seno",
+			"sid": 957822473077660
+		}
+	],
 	"effectTypes": [],
 	"members": [
 		"Boton_Creditos",
 		"Boton_Jugar",
-		"Boton_Tutorial"
+		"Boton_Tutorial",
+		"Boton_VolverMenu"
 	]
 }

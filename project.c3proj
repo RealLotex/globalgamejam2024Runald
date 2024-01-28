@@ -182,7 +182,7 @@
 			"Fondo",
 			"Runnald",
 			"Jugador",
-			"Video",
+			"FondoVideoMenu",
 			"Mouse",
 			"GameManager",
 			"Item",
@@ -208,7 +208,9 @@
 			"Boton_Tutorial",
 			"Boton_Creditos",
 			"m_TUTORIAL",
-			"m_CREDITOS"
+			"m_CREDITOS",
+			"Boton_VolverMenu",
+			"BackToMenu"
 		],
 		"subfolders": []
 	},
@@ -216,7 +218,8 @@
 	"containers": [],
 	"families": {
 		"items": [
-			"Botones_Menu"
+			"Botones_Menu",
+			"Botones_Gameplay"
 		],
 		"subfolders": []
 	},

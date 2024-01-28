@@ -29,7 +29,7 @@
 			"eventType": "variable",
 			"name": "RunnaldVida",
 			"type": "number",
-			"initialValue": "1",
+			"initialValue": "20",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -206,12 +206,12 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 783098663061992,
+									"sid": 698558398237535,
 									"parameters": {
 										"object-to-create": "TryAgain",
 										"layer": "LayerIndex(\"CartelesFINALES\")",
 										"x": "960",
-										"y": "824",
+										"y": "744",
 										"create-hierarchy": false,
 										"template-name": "\"\""
 									}
@@ -219,12 +219,25 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 563710841291064,
+									"sid": 394608462848620,
+									"parameters": {
+										"object-to-create": "BackToMenu",
+										"layer": "LayerIndex(\"CartelesFINALES\")",
+										"x": "960",
+										"y": "949",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 763175242863459,
 									"parameters": {
 										"object-to-create": "YouWin",
 										"layer": "LayerIndex(\"CartelesFINALES\")",
 										"x": "960",
-										"y": "419",
+										"y": "362",
 										"create-hierarchy": false,
 										"template-name": "\"\""
 									}
@@ -988,12 +1001,12 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 310706944627815,
+									"sid": 691025732657886,
 									"parameters": {
 										"object-to-create": "GameOver",
 										"layer": "LayerIndex(\"CartelesFINALES\")",
 										"x": "960",
-										"y": "419",
+										"y": "362",
 										"create-hierarchy": false,
 										"template-name": "\"\""
 									}
@@ -1001,12 +1014,25 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 829860268043004,
+									"sid": 900452837483864,
 									"parameters": {
 										"object-to-create": "TryAgain",
 										"layer": "LayerIndex(\"CartelesFINALES\")",
 										"x": "960",
-										"y": "824",
+										"y": "744",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 225430415613555,
+									"parameters": {
+										"object-to-create": "BackToMenu",
+										"layer": "LayerIndex(\"CartelesFINALES\")",
+										"x": "960",
+										"y": "949",
 										"create-hierarchy": false,
 										"template-name": "\"\""
 									}
