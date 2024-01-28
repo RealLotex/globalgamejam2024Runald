@@ -636,9 +636,9 @@
 					"behaviors": {
 						"Desvanecer": {
 							"properties": {
-								"fade-in-time": 0.1,
-								"wait-time": 0.5,
-								"fade-out-time": 0.1,
+								"fade-in-time": 0.05,
+								"wait-time": 2,
+								"fade-out-time": 0.05,
 								"destroy": false,
 								"enabled": true,
 								"live-preview": false
@@ -850,8 +850,8 @@
 						}
 					},
 					"world": {
-						"x": -3364,
-						"y": -960,
+						"x": -3301,
+						"y": -1422,
 						"width": 5760,
 						"height": 500,
 						"originX": 0,

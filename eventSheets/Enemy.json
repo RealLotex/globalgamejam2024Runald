@@ -1031,11 +1031,17 @@
 							}
 						},
 						{
+							"id": "restart-fade",
+							"objectClass": "Vidas",
+							"sid": 875829759388040,
+							"behaviorType": "Desvanecer"
+						},
+						{
 							"id": "set-animation-frame",
 							"objectClass": "Vidas",
-							"sid": 217514277324025,
+							"sid": 583309171255731,
 							"parameters": {
-								"frame-number": "ceil(vidasPlayer/3)"
+								"frame-number": "vidasPlayer"
 							}
 						},
 						{

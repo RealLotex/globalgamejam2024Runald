@@ -19,7 +19,7 @@
 			"eventType": "variable",
 			"name": "vidasPlayer",
 			"type": "number",
-			"initialValue": "99999999",
+			"initialValue": "5",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
