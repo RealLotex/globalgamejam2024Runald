@@ -337,121 +337,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-click",
-					"objectClass": "Mouse",
-					"sid": 143937030564071,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked"
-					}
-				},
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Jugador",
-					"sid": 180397128964864,
-					"parameters": {
-						"object": "Boton_VolverMenu"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 396196346816206,
-					"parameters": {
-						"layout": "Menu"
-					}
-				}
-			],
-			"sid": 626454777663147
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-movement",
-					"objectClass": "Mouse",
-					"sid": 368784313287266
-				}
-			],
-			"actions": [
-				{
-					"id": "set-angle-toward-position",
-					"objectClass": "Jugador",
-					"sid": 899356842923405,
-					"parameters": {
-						"x": "lerp(Self.x,Mouse.X,.01)",
-						"y": "lerp(Self.y,Mouse.Y,.01)"
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "Jugador",
-					"sid": 597303666802771,
-					"parameters": {
-						"x": "lerp(Self.x,Mouse.X,.1)",
-						"y": "lerp(Self.y,Mouse.y,.1)"
-					}
-				}
-			],
-			"sid": 858611924008011
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-between-angles",
-					"objectClass": "Jugador",
-					"sid": 625945260486583,
-					"parameters": {
-						"first-angle": "90",
-						"second-angle": "270"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-flipped",
-					"objectClass": "Jugador",
-					"sid": 122974021470498,
-					"parameters": {
-						"state": "flipped"
-					}
-				}
-			],
-			"sid": 364709022000066
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-between-angles",
-					"objectClass": "Jugador",
-					"sid": 966975089857937,
-					"parameters": {
-						"first-angle": "90",
-						"second-angle": "270"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-flipped",
-					"objectClass": "Jugador",
-					"sid": 121185458369530,
-					"parameters": {
-						"state": "not-flipped"
-					}
-				}
-			],
-			"sid": 588170989592176
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
 					"sid": 881456559833478
@@ -810,21 +695,20 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-playback-event",
-					"objectClass": "FondoVideoMenu",
-					"sid": 241719909612440,
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 130614706157654,
 					"parameters": {
-						"event": "ended"
+						"mouse-button": "left",
+						"click-type": "clicked"
 					}
 				},
 				{
-					"id": "compare-instance-variable",
-					"objectClass": "FondoVideoMenu",
-					"sid": 185507969882885,
+					"id": "is-overlapping-another-object",
+					"objectClass": "Jugador",
+					"sid": 980519706267216,
 					"parameters": {
-						"instance-variable": "video",
-						"comparison": 0,
-						"value": "4"
+						"object": "Boton_VolverMenu"
 					}
 				}
 			],
@@ -832,7 +716,7 @@
 				{
 					"id": "set-source",
 					"objectClass": "FondoVideoMenu",
-					"sid": 689996478201220,
+					"sid": 539722586723006,
 					"parameters": {
 						"webm-source": "\"\"",
 						"h264-source": "\"OUTRO UI INSTRUCTIONS.mp4\""
@@ -841,33 +725,33 @@
 				{
 					"id": "play",
 					"objectClass": "FondoVideoMenu",
-					"sid": 527929883351259
+					"sid": 303938443333955
 				},
 				{
 					"id": "set-looping",
 					"objectClass": "FondoVideoMenu",
-					"sid": 293205220878879,
+					"sid": 898175977778509,
 					"parameters": {
-						"mode": "looping"
+						"mode": "not-looping"
 					}
 				},
 				{
 					"id": "set-animation-frame",
 					"objectClass": "FondoMenu",
-					"sid": 929570436128111,
+					"sid": 199749901808001,
 					"parameters": {
-						"frame-number": "2"
+						"frame-number": "3"
 					}
 				},
 				{
 					"id": "destroy",
 					"objectClass": "Boton_VolverMenu",
-					"sid": 170815279129442
+					"sid": 945848528550437
 				},
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 294099438109470,
+					"sid": 141695537590556,
 					"parameters": {
 						"seconds": "0.1"
 					}
@@ -875,14 +759,130 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "FondoVideoMenu",
-					"sid": 298773454910582,
+					"sid": 806988278119496,
 					"parameters": {
 						"instance-variable": "video",
 						"value": "5"
 					}
 				}
 			],
-			"sid": 516288909843837
+			"sid": 326178102100092
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-playback-event",
+					"objectClass": "FondoVideoMenu",
+					"sid": 832576145382826,
+					"parameters": {
+						"event": "ended"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoVideoMenu",
+					"sid": 898235180018641,
+					"parameters": {
+						"instance-variable": "video",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 161733102330720,
+					"parameters": {
+						"layout": "Menu"
+					}
+				}
+			],
+			"sid": 345363038789390
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 682406684841356
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "Jugador",
+					"sid": 124207962103621,
+					"parameters": {
+						"x": "lerp(Self.x,Mouse.X,.1*dt*60)",
+						"y": "lerp(Self.y,Mouse.Y,.1*dt*60)"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Jugador",
+					"sid": 632252400480945,
+					"parameters": {
+						"x": "lerp(Self.x,Mouse.X,.5*dt*60)",
+						"y": "lerp(Self.y,Mouse.y,.5*dt*60)"
+					}
+				}
+			],
+			"sid": 435455537157967
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-between-angles",
+					"objectClass": "Jugador",
+					"sid": 133564150510540,
+					"parameters": {
+						"first-angle": "90",
+						"second-angle": "270"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-flipped",
+					"objectClass": "Jugador",
+					"sid": 323668338591854,
+					"parameters": {
+						"state": "flipped"
+					}
+				}
+			],
+			"sid": 646017070929427
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-between-angles",
+					"objectClass": "Jugador",
+					"sid": 313625370273020,
+					"parameters": {
+						"first-angle": "90",
+						"second-angle": "270"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-flipped",
+					"objectClass": "Jugador",
+					"sid": 914633094010202,
+					"parameters": {
+						"state": "not-flipped"
+					}
+				}
+			],
+			"sid": 869045363696035
 		}
 	],
 	"sid": 295697076928424

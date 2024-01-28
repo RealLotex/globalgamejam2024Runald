@@ -144,6 +144,15 @@
 							"parameters": {
 								"visibility": "invisible"
 							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Jugador",
+							"sid": 581004455806424,
+							"parameters": {
+								"x": "Mouse.X",
+								"y": "Mouse.y"
+							}
 						}
 					],
 					"sid": 943535297714208

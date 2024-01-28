@@ -406,9 +406,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 321,
-						"y": 431.5,
+						"y": 458.5,
 						"width": 372,
-						"height": 861,
+						"height": 915,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -681,7 +681,9 @@
 						"live-preview": false
 					},
 					"uid": 8,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"hasBeenPickedUp": false
+					},
 					"behaviors": {
 						"Physics": {
 							"properties": {
@@ -930,11 +932,11 @@
 						}
 					},
 					"world": {
-						"x": 1412,
-						"y": 565,
-						"width": 134.16,
+						"x": 1449,
+						"y": 709,
+						"width": 134.4,
 						"height": 114.24,
-						"originX": 0.6332403536450804,
+						"originX": 0.6321095672992856,
 						"originY": 0.8595261634065388,
 						"color": [
 							1,

@@ -66,7 +66,7 @@
 						{
 							"id": "compare-velocity",
 							"objectClass": "Item",
-							"sid": 659839656648506,
+							"sid": 255293763766438,
 							"behaviorType": "Physics",
 							"parameters": {
 								"which": "overall-velocity",
@@ -75,9 +75,17 @@
 							}
 						},
 						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Item",
+							"sid": 271140447475350,
+							"parameters": {
+								"instance-variable": "hasBeenPickedUp"
+							}
+						},
+						{
 							"id": "is-dragging",
 							"objectClass": "Item",
-							"sid": 609668943959872,
+							"sid": 947225265016563,
 							"behaviorType": "DragDrop",
 							"isInverted": true
 						}
@@ -835,48 +843,75 @@
 									"isInverted": true
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 374447980585314,
+							"children": [
 								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 499776930866957,
-									"parameters": {
-										"variable": "RunnaldTimeDirectlyUnderPlayer",
-										"value": "0"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Runnald",
-									"sid": 226423954382380,
-									"parameters": {
-										"animation": "\"RunnaldJumpingUp\"",
-										"from": "beginning"
-									}
-								},
-								{
-									"id": "play-timeline",
-									"objectClass": "TimelineController",
-									"sid": 570714704166222,
-									"parameters": {
-										"timeline": "AtaqueSalto",
-										"tags": "\"AtaqueSalto\""
-									}
-								},
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 550895673005782,
-									"parameters": {
-										"audio-file": "slash payaso",
-										"loop": "not-looping",
-										"volume": "5",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-y",
+											"objectClass": "Runnald",
+											"sid": 254867836370356,
+											"parameters": {
+												"comparison": 2,
+												"y-co-ordinate": "825"
+											}
+										},
+										{
+											"id": "compare-y",
+											"objectClass": "Runnald",
+											"sid": 786822781618268,
+											"parameters": {
+												"comparison": 4,
+												"y-co-ordinate": "815"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 109308696157069,
+											"parameters": {
+												"variable": "RunnaldTimeDirectlyUnderPlayer",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Runnald",
+											"sid": 702490995245683,
+											"parameters": {
+												"animation": "\"RunnaldJumpingUp\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "play-timeline",
+											"objectClass": "TimelineController",
+											"sid": 655649850063128,
+											"parameters": {
+												"timeline": "AtaqueSalto",
+												"tags": "\"AtaqueSalto\""
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 886756034197182,
+											"parameters": {
+												"audio-file": "slash payaso",
+												"loop": "not-looping",
+												"volume": "5",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 400972523533627
 								}
-							],
-							"sid": 374447980585314
+							]
 						}
 					]
 				},
