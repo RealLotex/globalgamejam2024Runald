@@ -527,9 +527,25 @@
 		"icon": {
 			"items": [
 				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 242242436777417,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 608570382901315,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
 					"name": "icon-32.png",
 					"type": "image/png",
-					"sid": 201062907143019,
+					"sid": 664103482363509,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -537,23 +553,7 @@
 				{
 					"name": "icon-64.png",
 					"type": "image/png",
-					"sid": 906057372417468,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "loading-logo.png",
-					"type": "image/png",
-					"sid": 765080270761639,
-					"icon-info": {
-						"purpose": "loading-logo"
-					}
-				},
-				{
-					"name": "icon-16.png",
-					"type": "image/png",
-					"sid": 363993646129120,
+					"sid": 368811585673446,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -561,7 +561,7 @@
 				{
 					"name": "icon-128.png",
 					"type": "image/png",
-					"sid": 275164978252296,
+					"sid": 282263932553422,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -569,15 +569,15 @@
 				{
 					"name": "icon-256.png",
 					"type": "image/png",
-					"sid": 629141554110242,
+					"sid": 909580355181138,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
 				},
 				{
-					"name": "icon-512.png",
+					"name": "loading-logo.png",
 					"type": "image/png",
-					"sid": 141869193316681,
+					"sid": 325354922294751,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
