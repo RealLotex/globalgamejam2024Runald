@@ -101,7 +101,7 @@
 				{
 					"type": "Boton_Jugar",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": false,
@@ -134,12 +134,12 @@
 						}
 					},
 					"world": {
-						"x": 960,
-						"y": 496,
-						"width": 700,
-						"height": 206,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 630,
+						"y": 730,
+						"width": 179.87167300380227,
+						"height": 65.97938144329896,
+						"originX": 0.5038022813688213,
+						"originY": 0.4387698929036131,
 						"color": [
 							1,
 							1,
@@ -186,12 +186,12 @@
 						}
 					},
 					"world": {
-						"x": 960,
-						"y": 704,
-						"width": 578.4997839239008,
-						"height": 170.85226779099662,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 1253,
+						"y": 740,
+						"width": 210.875475,
+						"height": 77.58247422680412,
+						"originX": 0.502851711026616,
+						"originY": 0.4252577319587629,
 						"color": [
 							1,
 							1,
@@ -238,12 +238,12 @@
 						}
 					},
 					"world": {
-						"x": 960,
-						"y": 880,
-						"width": 438,
-						"height": 130,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 954,
+						"y": 932,
+						"width": 287.88202247191015,
+						"height": 101.11968085106383,
+						"originX": 0.5065543071161048,
+						"originY": 0.40425531914893614,
 						"color": [
 							1,
 							1,

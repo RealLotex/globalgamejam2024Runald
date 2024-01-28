@@ -2,6 +2,10 @@
 	"name": "Menu_Sheet",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "AmbasEscenas"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -208,6 +212,11 @@
 						"instance-variable": "video",
 						"value": "1"
 					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Botones_Menu",
+					"sid": 790488990667110
 				}
 			],
 			"sid": 765162862604710
@@ -361,44 +370,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 440883730231483
-				}
-			],
-			"actions": [
-				{
-					"id": "set-cursor-style",
-					"objectClass": "Mouse",
-					"sid": 178592703713175,
-					"parameters": {
-						"cursor-style": "none"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 796381629730759,
-					"parameters": {
-						"seconds": ".1"
-					}
-				},
-				{
-					"id": "request-fullscreen",
-					"objectClass": "Navegador",
-					"sid": 988137101189082,
-					"parameters": {
-						"mode": "stretch-letterbox-scale",
-						"navigation-ui": "auto"
-					}
-				}
-			],
-			"sid": 174635325652374
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-movement",
 					"objectClass": "Mouse",
 					"sid": 368784313287266
@@ -527,6 +498,22 @@
 					"parameters": {
 						"mode": "muted"
 					}
+				},
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 178592703713175,
+					"parameters": {
+						"cursor-style": "none"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 429288442598584,
+					"parameters": {
+						"seconds": "3"
+					}
 				}
 			],
 			"sid": 388425540430875,
@@ -613,6 +600,14 @@
 					"sid": 664754893461475,
 					"parameters": {
 						"collisions": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Botones_Menu",
+					"sid": 461491212657232,
+					"parameters": {
+						"visibility": "visible"
 					}
 				}
 			],

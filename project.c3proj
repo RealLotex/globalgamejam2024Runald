@@ -207,7 +207,7 @@
 			"DetectorAtaqueSalto",
 			"RunnaldDetectorSalto",
 			"Audio",
-			"Sprite",
+			"Pororo",
 			"BarraDeVidaBG",
 			"BarraDeVida",
 			"BarraDeVidaFondo",
@@ -229,7 +229,8 @@
 			"Texto",
 			"VIDEO_Cinematica",
 			"DesvanecerNegro",
-			"Navegador"
+			"Navegador",
+			"Sprite"
 		],
 		"subfolders": []
 	},
@@ -259,7 +260,8 @@
 			"Jugador",
 			"Enemy",
 			"Menu_Sheet",
-			"HojaCinematica"
+			"HojaCinematica",
+			"AmbasEscenas"
 		],
 		"subfolders": []
 	},

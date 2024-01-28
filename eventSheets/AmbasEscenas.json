@@ -1,0 +1,52 @@
+{
+	"name": "AmbasEscenas",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 965431625146720,
+					"parameters": {
+						"key": 122
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "request-fullscreen",
+					"objectClass": "Navegador",
+					"sid": 529623962584878,
+					"parameters": {
+						"mode": "stretch-letterbox-scale",
+						"navigation-ui": "auto"
+					}
+				}
+			],
+			"sid": 536199364730084
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 453245330527739,
+					"parameters": {
+						"key": 27
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "cancel-fullscreen",
+					"objectClass": "Navegador",
+					"sid": 557084566043700
+				}
+			],
+			"sid": 511133859653050
+		}
+	],
+	"sid": 104744595132478
+}

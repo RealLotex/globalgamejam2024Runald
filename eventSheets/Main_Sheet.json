@@ -20,6 +20,10 @@
 			"includeSheet": "Enemy"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "AmbasEscenas"
+		},
+		{
 			"eventType": "comment",
 			"text": "GAMESTATES"
 		},
@@ -221,6 +225,14 @@
 								"parameter-index": "1",
 								"value": "lerp(45,135,(Self.X/1920))"
 							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "Pororo",
+							"sid": 986601058331467,
+							"parameters": {
+								"opacity": "Pororo.Opacity-.5"
+							}
 						}
 					],
 					"sid": 271914014686525
@@ -279,6 +291,99 @@
 						}
 					],
 					"sid": 875556242666416
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Item",
+							"sid": 488921919957491,
+							"parameters": {
+								"object": "Runnald"
+							}
+						},
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "Item",
+							"sid": 144650069361528,
+							"parameters": {
+								"comparison": 0,
+								"number": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 637329495258333,
+							"parameters": {
+								"object-to-create": "Pororo",
+								"layer": "\"FONDO\"",
+								"x": "Runnald.x",
+								"y": "Runnald.y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 455412588746160,
+							"parameters": {
+								"object-to-create": "Pororo",
+								"layer": "\"FONDO\"",
+								"x": "Runnald.x",
+								"y": "Runnald.y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 844677920399132,
+							"parameters": {
+								"object-to-create": "Pororo",
+								"layer": "\"FONDO\"",
+								"x": "Runnald.x",
+								"y": "Runnald.y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 677516220451527
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "Pororo",
+							"sid": 907305222766652
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Pororo",
+							"sid": 101582437594712,
+							"parameters": {
+								"frame-number": "int(random(0,2))"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "Pororo",
+							"sid": 632080419775236,
+							"parameters": {
+								"opacity": "100"
+							}
+						}
+					],
+					"sid": 585271104978035
 				}
 			]
 		},
@@ -354,6 +459,40 @@
 				}
 			],
 			"sid": 989314688938289
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-opacity",
+					"objectClass": "Pororo",
+					"sid": 947904440507159,
+					"parameters": {
+						"comparison": 3,
+						"opacity": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Pororo",
+					"sid": 795209059167090
+				}
+			],
+			"sid": 350700737443567
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 790410175140635
+				}
+			],
+			"actions": [],
+			"sid": 161868501084943
 		}
 	],
 	"sid": 750949231229755
