@@ -7,16 +7,47 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "FondoMenu",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 33,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 960,
+						"y": 540,
+						"width": 1920,
+						"height": 1080,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "FondoVideoMenu",
 					"properties": {
 						"webm-source": "",
-						"h264-source": "ronald.mp4",
+						"h264-source": "INTRO UI.mp4",
 						"autoplay": "yes",
 						"play-in-background": false,
 						"initially-visible": true
 					},
 					"uid": 31,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"video": 0
+					},
 					"behaviors": {},
 					"world": {
 						"x": 0,
@@ -73,7 +104,7 @@
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
-						"enable-collisions": true,
+						"enable-collisions": false,
 						"live-preview": false
 					},
 					"uid": 26,
@@ -122,10 +153,10 @@
 				{
 					"type": "Boton_Tutorial",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
-						"enable-collisions": true,
+						"enable-collisions": false,
 						"live-preview": false
 					},
 					"uid": 27,
@@ -174,10 +205,10 @@
 				{
 					"type": "Boton_Creditos",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
-						"enable-collisions": true,
+						"enable-collisions": false,
 						"live-preview": false
 					},
 					"uid": 28,
@@ -288,8 +319,8 @@
 						}
 					},
 					"world": {
-						"x": 1920,
-						"y": 688,
+						"x": 960,
+						"y": 544,
 						"width": 134.16,
 						"height": 114.24,
 						"originX": 0.46393762183235865,

@@ -1,0 +1,27 @@
+{
+	"name": "HojaCinematica",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-ended",
+					"objectClass": "VIDEO_Cinematica",
+					"sid": 250964864010344
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 925226485886755,
+					"parameters": {
+						"layout": "Juego"
+					}
+				}
+			],
+			"sid": 479147275191671
+		}
+	],
+	"sid": 298327725309920
+}

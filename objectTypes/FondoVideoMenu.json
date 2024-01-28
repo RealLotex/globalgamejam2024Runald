@@ -3,7 +3,15 @@
 	"plugin-id": "video",
 	"sid": 556844706382144,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "video",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 684977106303571
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": []
 }

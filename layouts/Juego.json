@@ -33,7 +33,7 @@
 					"world": {
 						"x": 0,
 						"y": 0,
-						"width": 5760,
+						"width": 5760.2047999999995,
 						"height": 1080,
 						"originX": 0,
 						"originY": 0,
@@ -117,6 +117,16 @@
 					"uid": 18,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"AjustarMSL": {
+							"isEnabled": false,
+							"parameters": {
+								"hue": -0.8,
+								"saturation": 0.35,
+								"luminosity": 1
+							}
+						}
+					},
 					"world": {
 						"x": 278.5,
 						"y": 140,
@@ -692,8 +702,8 @@
 						}
 					},
 					"world": {
-						"x": -3795,
-						"y": -204,
+						"x": -3733,
+						"y": -766,
 						"width": 5760,
 						"height": 500,
 						"originX": 0,
@@ -707,6 +717,50 @@
 						"angle": 0,
 						"zElevation": 0,
 						"blendMode": "destination-out"
+					}
+				},
+				{
+					"type": "Texto",
+					"properties": {
+						"text": "RUNALD:",
+						"enable-bbcode": true,
+						"font": "Circus",
+						"size": 48,
+						"line-height": 0,
+						"bold": false,
+						"italic": true,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 35,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 283.327318136633,
+						"y": 29.49634713223068,
+						"width": 406.5251620285105,
+						"height": 68.60282301407054,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				}
 			],
@@ -789,9 +843,171 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Texto",
+					"properties": {
+						"text": "RUNALD:",
+						"enable-bbcode": true,
+						"font": "Circus",
+						"size": 48,
+						"line-height": 0,
+						"bold": false,
+						"italic": true,
+						"color": [
+							0.2980392156862745,
+							0.4235294117647059,
+							0.6235294117647059,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 36,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 280.15245814728286,
+						"y": 28.16524131054905,
+						"width": 406.5251620285105,
+						"height": 68.60282301407054,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Texto",
+					"properties": {
+						"text": "RUNALD:",
+						"enable-bbcode": true,
+						"font": "Circus",
+						"size": 48,
+						"line-height": 0,
+						"bold": false,
+						"italic": true,
+						"color": [
+							0.7647058823529411,
+							0.592156862745098,
+							0.29411764705882354,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 37,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 277.97746529856767,
+						"y": 27.1185419832131,
+						"width": 406.5251620285105,
+						"height": 68.60282301407054,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 524874128140965,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "DESVANECER",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "DesvanecerNegro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 39,
+					"instanceVariables": {},
+					"behaviors": {
+						"Desvanecer": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 3378,
+						"y": -1541,
+						"width": 2238,
+						"height": 1267,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 159519448812975,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,

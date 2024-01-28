@@ -162,6 +162,13 @@
 		},
 		{
 			"type": "effect",
+			"id": "hsladjust",
+			"name": "Ajustar MSL",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
 			"id": "ultimatedropshadowcolor",
 			"name": "[UltimateDropShadowColor]",
 			"author": "Zane Little",
@@ -210,7 +217,11 @@
 			"m_TUTORIAL",
 			"m_CREDITOS",
 			"Boton_VolverMenu",
-			"BackToMenu"
+			"BackToMenu",
+			"FondoMenu",
+			"Texto",
+			"VIDEO_Cinematica",
+			"DesvanecerNegro"
 		],
 		"subfolders": []
 	},
@@ -228,7 +239,8 @@
 			"init",
 			"Menu",
 			"Juego",
-			"Franco"
+			"Franco",
+			"Cinematica"
 		],
 		"subfolders": []
 	},
@@ -238,7 +250,8 @@
 			"Shakes",
 			"Jugador",
 			"Enemy",
-			"Menu_Sheet"
+			"Menu_Sheet",
+			"HojaCinematica"
 		],
 		"subfolders": []
 	},
@@ -434,6 +447,30 @@
 					"file-info": {
 						"purpose": "none"
 					}
+				},
+				{
+					"name": "OUTRO UI.mp4",
+					"type": "video/mp4",
+					"sid": 173316190836709,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "LOOP FONDO SIN UI.mp4",
+					"type": "video/mp4",
+					"sid": 162629015190107,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "INTRO UI.mp4",
+					"type": "video/mp4",
+					"sid": 457153075608824,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
 			"subfolders": []
@@ -578,7 +615,7 @@
 		"zNear": 1,
 		"zFar": 10000,
 		"maxSpriteSheetSize": 2048,
-		"loaderStyle": "splash",
+		"loaderStyle": "percent",
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https",
@@ -588,5 +625,5 @@
 	},
 	"viewportWidth": 1920,
 	"viewportHeight": 1080,
-	"firstLayout": null
+	"firstLayout": "Menu"
 }

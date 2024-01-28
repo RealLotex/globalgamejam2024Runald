@@ -4,7 +4,13 @@
 	"sid": 110413352645987,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Desvanecer",
+			"sid": 810253875126982
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -18,7 +24,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 550492,
+						"imageSpriteId": 9329366,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

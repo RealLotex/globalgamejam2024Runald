@@ -168,11 +168,45 @@
 			],
 			"actions": [
 				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 494794215020908,
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 601737574217766,
 					"parameters": {
-						"layout": "Juego"
+						"tag": "\"menumusic\"",
+						"db": "-100",
+						"duration": "3",
+						"ending": "stop"
+					}
+				},
+				{
+					"id": "set-source",
+					"objectClass": "FondoVideoMenu",
+					"sid": 603368763622251,
+					"parameters": {
+						"webm-source": "\"\"",
+						"h264-source": "\"OUTRO UI.mp4\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "FondoVideoMenu",
+					"sid": 890443487370438
+				},
+				{
+					"id": "set-looping",
+					"objectClass": "FondoVideoMenu",
+					"sid": 715997494875406,
+					"parameters": {
+						"mode": "not-looping"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "FondoVideoMenu",
+					"sid": 633633562405305,
+					"parameters": {
+						"instance-variable": "video",
+						"value": "1"
 					}
 				}
 			],
@@ -201,43 +235,40 @@
 			],
 			"actions": [
 				{
+					"id": "set-source",
+					"objectClass": "FondoVideoMenu",
+					"sid": 889608789700167,
+					"parameters": {
+						"webm-source": "\"\"",
+						"h264-source": "\"OUTRO UI.mp4\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "FondoVideoMenu",
+					"sid": 127584407800742
+				},
+				{
+					"id": "set-looping",
+					"objectClass": "FondoVideoMenu",
+					"sid": 274304478274024,
+					"parameters": {
+						"mode": "not-looping"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "FondoVideoMenu",
+					"sid": 625448833893940,
+					"parameters": {
+						"instance-variable": "video",
+						"value": "2"
+					}
+				},
+				{
 					"id": "destroy",
 					"objectClass": "Botones_Menu",
-					"sid": 641687386042858
-				},
-				{
-					"id": "set-scale",
-					"objectClass": "Botones_Menu",
-					"sid": 617091102158363,
-					"parameters": {
-						"scale": "1"
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 925487527134433,
-					"parameters": {
-						"object-to-create": "m_TUTORIAL",
-						"layer": "0",
-						"x": "960",
-						"y": "540",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 741814212828026,
-					"parameters": {
-						"object-to-create": "Boton_VolverMenu",
-						"layer": "0",
-						"x": "1549",
-						"y": "739",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
+					"sid": 711356085516595
 				}
 			],
 			"sid": 909353767504078
@@ -264,19 +295,6 @@
 				}
 			],
 			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "Botones_Menu",
-					"sid": 404991961381877
-				},
-				{
-					"id": "set-scale",
-					"objectClass": "Botones_Menu",
-					"sid": 629345122650222,
-					"parameters": {
-						"scale": "1"
-					}
-				},
 				{
 					"id": "create-object",
 					"objectClass": "System",
@@ -363,15 +381,6 @@
 					"sid": 796381629730759,
 					"parameters": {
 						"seconds": ".1"
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "Jugador",
-					"sid": 824167666713612,
-					"parameters": {
-						"x": "Mouse.X",
-						"y": "Mouse.Y"
 					}
 				}
 			],
@@ -497,9 +506,9 @@
 				{
 					"id": "set-looping",
 					"objectClass": "FondoVideoMenu",
-					"sid": 432108520570079,
+					"sid": 148580078136147,
 					"parameters": {
-						"mode": "looping"
+						"mode": "not-looping"
 					}
 				},
 				{
@@ -543,6 +552,178 @@
 					"sid": 306239938972469
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-playback-event",
+					"objectClass": "FondoVideoMenu",
+					"sid": 319669560804944,
+					"parameters": {
+						"event": "ended"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoVideoMenu",
+					"sid": 994162218571662,
+					"parameters": {
+						"instance-variable": "video",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-source",
+					"objectClass": "FondoVideoMenu",
+					"sid": 385041506110908,
+					"parameters": {
+						"webm-source": "\"\"",
+						"h264-source": "\"LOOP FONDO SIN UI.mp4\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "FondoVideoMenu",
+					"sid": 204225880637520
+				},
+				{
+					"id": "set-looping",
+					"objectClass": "FondoVideoMenu",
+					"sid": 234097367701471,
+					"parameters": {
+						"mode": "looping"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "Botones_Menu",
+					"sid": 664754893461475,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				}
+			],
+			"sid": 588944382283800
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-playback-event",
+					"objectClass": "FondoVideoMenu",
+					"sid": 522638405072986,
+					"parameters": {
+						"event": "ended"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoVideoMenu",
+					"sid": 239704264806153,
+					"parameters": {
+						"instance-variable": "video",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 159694231818527,
+					"parameters": {
+						"layout": "Juego"
+					}
+				}
+			],
+			"sid": 720043089332772
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-playback-event",
+					"objectClass": "FondoVideoMenu",
+					"sid": 838334619525532,
+					"parameters": {
+						"event": "ended"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoVideoMenu",
+					"sid": 255805581894025,
+					"parameters": {
+						"instance-variable": "video",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-source",
+					"objectClass": "FondoVideoMenu",
+					"sid": 394678688893347,
+					"parameters": {
+						"webm-source": "\"\"",
+						"h264-source": "\"INTRO UI.mp4\""
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "FondoMenu",
+					"sid": 133255365597608,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "FondoVideoMenu",
+					"sid": 842755690117137
+				},
+				{
+					"id": "set-looping",
+					"objectClass": "FondoVideoMenu",
+					"sid": 985370087716305,
+					"parameters": {
+						"mode": "looping"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 465423025166515,
+					"parameters": {
+						"object-to-create": "m_TUTORIAL",
+						"layer": "0",
+						"x": "960",
+						"y": "540",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 560173915197305,
+					"parameters": {
+						"object-to-create": "Boton_VolverMenu",
+						"layer": "0",
+						"x": "1549",
+						"y": "739",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 333220626341477
 		}
 	],
 	"sid": 295697076928424
