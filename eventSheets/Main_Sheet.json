@@ -258,7 +258,7 @@
 						{
 							"id": "set-animation-frame",
 							"objectClass": "Item",
-							"sid": 282488679523075,
+							"sid": 189180616962402,
 							"parameters": {
 								"frame-number": "int(random(0,3))"
 							}
@@ -266,16 +266,16 @@
 						{
 							"id": "set-size",
 							"objectClass": "Item",
-							"sid": 183833045467400,
+							"sid": 823219250568327,
 							"parameters": {
-								"width": "350",
-								"height": "350"
+								"width": "250",
+								"height": "250"
 							}
 						},
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 227005009152209,
+							"sid": 576623197737101,
 							"parameters": {
 								"seconds": ".1"
 							}
@@ -283,78 +283,14 @@
 						{
 							"id": "set-size",
 							"objectClass": "Item",
-							"sid": 321301011693994,
+							"sid": 641203490448858,
 							"parameters": {
-								"width": "300",
-								"height": "300"
+								"width": "200",
+								"height": "200"
 							}
 						}
 					],
 					"sid": 875556242666416
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Item",
-							"sid": 488921919957491,
-							"parameters": {
-								"object": "Runnald"
-							}
-						},
-						{
-							"id": "compare-animation-frame",
-							"objectClass": "Item",
-							"sid": 144650069361528,
-							"parameters": {
-								"comparison": 0,
-								"number": "2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 637329495258333,
-							"parameters": {
-								"object-to-create": "Pororo",
-								"layer": "\"FONDO\"",
-								"x": "Runnald.x",
-								"y": "Runnald.y",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 455412588746160,
-							"parameters": {
-								"object-to-create": "Pororo",
-								"layer": "\"FONDO\"",
-								"x": "Runnald.x",
-								"y": "Runnald.y",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 844677920399132,
-							"parameters": {
-								"object-to-create": "Pororo",
-								"layer": "\"FONDO\"",
-								"x": "Runnald.x",
-								"y": "Runnald.y",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						}
-					],
-					"sid": 677516220451527
 				},
 				{
 					"eventType": "block",
@@ -380,6 +316,37 @@
 							"sid": 632080419775236,
 							"parameters": {
 								"opacity": "100"
+							}
+						},
+						{
+							"id": "apply-impulse-at-angle",
+							"objectClass": "Pororo",
+							"sid": 170003817134319,
+							"behaviorType": "Físicas",
+							"parameters": {
+								"impulse": "150",
+								"angle": "random(0,360)",
+								"image-point": "0"
+							}
+						},
+						{
+							"id": "enabledisable-collisions",
+							"objectClass": "Pororo",
+							"sid": 586786353623582,
+							"behaviorType": "Físicas",
+							"parameters": {
+								"object": "Item",
+								"state": "disable"
+							}
+						},
+						{
+							"id": "enabledisable-collisions",
+							"objectClass": "Pororo",
+							"sid": 139187835691192,
+							"behaviorType": "Físicas",
+							"parameters": {
+								"object": "Runnald",
+								"state": "disable"
 							}
 						}
 					],

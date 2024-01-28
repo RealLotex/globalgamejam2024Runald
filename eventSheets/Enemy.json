@@ -270,6 +270,88 @@
 								}
 							],
 							"sid": 126977936403698
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Item",
+									"sid": 144650069361528,
+									"parameters": {
+										"comparison": 0,
+										"number": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 927723752317568,
+									"parameters": {
+										"object-to-create": "Pororo",
+										"layer": "\"Fondo\"",
+										"x": "Runnald.x",
+										"y": "Runnald.y",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 587216421725020,
+									"parameters": {
+										"object-to-create": "Pororo",
+										"layer": "\"Fondo\"",
+										"x": "Runnald.x",
+										"y": "Runnald.y",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 152902798562374,
+									"parameters": {
+										"object-to-create": "Pororo",
+										"layer": "\"Fondo\"",
+										"x": "Runnald.x",
+										"y": "Runnald.y",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 688567606084248,
+									"parameters": {
+										"object-to-create": "Pororo",
+										"layer": "\"Fondo\"",
+										"x": "Runnald.x",
+										"y": "Runnald.y",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 520585121725621,
+									"parameters": {
+										"object-to-create": "Pororo",
+										"layer": "\"Fondo\"",
+										"x": "Runnald.x",
+										"y": "Runnald.y",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 362485896610083
 						}
 					]
 				},

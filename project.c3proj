@@ -16,14 +16,14 @@
 		{
 			"type": "plugin",
 			"id": "Browser",
-			"name": "Navegador",
+			"name": "Browser",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Keyboard",
-			"name": "Teclado",
+			"name": "Keyboard",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -44,140 +44,140 @@
 		{
 			"type": "plugin",
 			"id": "Text",
-			"name": "Texto",
+			"name": "Text",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "TiledBg",
-			"name": "Fondo en mosaico",
+			"name": "Tiled Background",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Tilemap",
-			"name": "Mapa de teselas",
+			"name": "Tilemap",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Timeline",
-			"name": "Controlador de la línea de tiempo",
+			"name": "Timeline controller",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "video",
-			"name": "Vídeo",
+			"name": "Video",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Bullet",
-			"name": "Bala",
+			"name": "Bullet",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "DragnDrop",
-			"name": "Arrastrar y soltar",
+			"name": "Drag & Drop",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Fade",
-			"name": "Desvanecer",
+			"name": "Fade",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Flash",
-			"name": "Parpadeo",
+			"name": "Flash",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Physics",
-			"name": "Físicas",
+			"name": "Physics",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Platform",
-			"name": "Plataforma",
+			"name": "Platform",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Sin",
-			"name": "Seno",
+			"name": "Sine",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Tween",
-			"name": "Tween (interpolación)",
+			"name": "Tween",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "destroy",
-			"name": "Destruir fuera de la escena",
+			"name": "Destroy outside layout",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "solid",
-			"name": "Sólido",
+			"name": "Solid",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "effect",
 			"id": "blurhorizontal",
-			"name": "Desenfoque horizontal",
+			"name": "Blur horizontal",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "effect",
 			"id": "exposure",
-			"name": "Exposición",
+			"name": "Exposure",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "effect",
 			"id": "highlightshadow",
-			"name": "Brillo sombra",
+			"name": "Highlight shadow",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "effect",
 			"id": "hsladjust",
-			"name": "Ajustar MSL",
+			"name": "Adjust HSL",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "effect",
 			"id": "ultimatedropshadowcolor",
-			"name": "[UltimateDropShadowColor]",
+			"name": "UltimateDropShadowColor",
 			"author": "Zane Little",
 			"bundled": false,
 			"version": "1.1.0.0"
@@ -185,7 +185,7 @@
 		{
 			"type": "effect",
 			"id": "vibrance",
-			"name": "Intensidad",
+			"name": "Vibrance",
 			"author": "Evan Wallace",
 			"bundled": false
 		}
