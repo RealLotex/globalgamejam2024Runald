@@ -382,6 +382,15 @@
 					"parameters": {
 						"seconds": ".1"
 					}
+				},
+				{
+					"id": "request-fullscreen",
+					"objectClass": "Navegador",
+					"sid": 988137101189082,
+					"parameters": {
+						"mode": "stretch-letterbox-scale",
+						"navigation-ui": "auto"
+					}
 				}
 			],
 			"sid": 174635325652374
