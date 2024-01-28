@@ -231,16 +231,6 @@
 								"enabled": false,
 								"live-preview": false
 							}
-						},
-						"Desvanecer": {
-							"properties": {
-								"fade-in-time": 1,
-								"wait-time": 0,
-								"fade-out-time": 0,
-								"destroy": false,
-								"enabled": true,
-								"live-preview": false
-							}
 						}
 					},
 					"effects": {
@@ -254,10 +244,10 @@
 					"world": {
 						"x": 1549,
 						"y": 739,
-						"width": 264,
-						"height": 235,
-						"originX": 0.003787878787878788,
-						"originY": 0.00851063829787234,
+						"width": 320,
+						"height": 320,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

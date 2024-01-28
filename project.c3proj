@@ -483,6 +483,30 @@
 					"file-info": {
 						"purpose": "none"
 					}
+				},
+				{
+					"name": "OUTRO UI INSTRUCTIONS.mp4",
+					"type": "video/mp4",
+					"sid": 228655147835530,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "LOOP FONDO SIN UI INSTRUCTIONS.mp4",
+					"type": "video/mp4",
+					"sid": 336339904239513,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "INTRO UI INSTRUCTIONS.mp4",
+					"type": "video/mp4",
+					"sid": 242236592608417,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
 			"subfolders": []

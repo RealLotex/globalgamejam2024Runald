@@ -565,6 +565,14 @@
 			],
 			"actions": [
 				{
+					"id": "set-animation-frame",
+					"objectClass": "FondoMenu",
+					"sid": 357170615549448,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
 					"id": "set-source",
 					"objectClass": "FondoVideoMenu",
 					"sid": 385041506110908,
@@ -665,18 +673,10 @@
 				{
 					"id": "set-source",
 					"objectClass": "FondoVideoMenu",
-					"sid": 394678688893347,
+					"sid": 129570992703163,
 					"parameters": {
 						"webm-source": "\"\"",
-						"h264-source": "\"INTRO UI.mp4\""
-					}
-				},
-				{
-					"id": "set-animation-frame",
-					"objectClass": "FondoMenu",
-					"sid": 133255365597608,
-					"parameters": {
-						"frame-number": "0"
+						"h264-source": "\"INTRO UI INSTRUCTIONS.mp4\""
 					}
 				},
 				{
@@ -687,39 +687,202 @@
 				{
 					"id": "set-looping",
 					"objectClass": "FondoVideoMenu",
-					"sid": 985370087716305,
+					"sid": 819346773016326,
+					"parameters": {
+						"mode": "not-looping"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "FondoMenu",
+					"sid": 653775343866464,
+					"parameters": {
+						"frame-number": "2"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 100419470842529,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "FondoVideoMenu",
+					"sid": 474028781369905,
+					"parameters": {
+						"instance-variable": "video",
+						"value": "3"
+					}
+				}
+			],
+			"sid": 333220626341477
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-playback-event",
+					"objectClass": "FondoVideoMenu",
+					"sid": 425196213627623,
+					"parameters": {
+						"event": "ended"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoVideoMenu",
+					"sid": 440871113089346,
+					"parameters": {
+						"instance-variable": "video",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-source",
+					"objectClass": "FondoVideoMenu",
+					"sid": 321697873373566,
+					"parameters": {
+						"webm-source": "\"\"",
+						"h264-source": "\"LOOP FONDO SIN UI INSTRUCTIONS.mp4\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "FondoVideoMenu",
+					"sid": 342265139237053
+				},
+				{
+					"id": "set-looping",
+					"objectClass": "FondoVideoMenu",
+					"sid": 303111574421505,
 					"parameters": {
 						"mode": "looping"
 					}
 				},
 				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 465423025166515,
+					"id": "set-animation-frame",
+					"objectClass": "FondoMenu",
+					"sid": 934971002072222,
 					"parameters": {
-						"object-to-create": "m_TUTORIAL",
-						"layer": "0",
-						"x": "960",
-						"y": "540",
-						"create-hierarchy": false,
-						"template-name": "\"\""
+						"frame-number": "3"
 					}
 				},
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 560173915197305,
+					"sid": 478711338505618,
 					"parameters": {
 						"object-to-create": "Boton_VolverMenu",
 						"layer": "0",
-						"x": "1549",
-						"y": "739",
+						"x": "1714",
+						"y": "895",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 114463598024759,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "FondoVideoMenu",
+					"sid": 767932408370848,
+					"parameters": {
+						"instance-variable": "video",
+						"value": "4"
+					}
 				}
 			],
-			"sid": 333220626341477
+			"sid": 870510788445314
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-playback-event",
+					"objectClass": "FondoVideoMenu",
+					"sid": 241719909612440,
+					"parameters": {
+						"event": "ended"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoVideoMenu",
+					"sid": 185507969882885,
+					"parameters": {
+						"instance-variable": "video",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-source",
+					"objectClass": "FondoVideoMenu",
+					"sid": 689996478201220,
+					"parameters": {
+						"webm-source": "\"\"",
+						"h264-source": "\"OUTRO UI INSTRUCTIONS.mp4\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "FondoVideoMenu",
+					"sid": 527929883351259
+				},
+				{
+					"id": "set-looping",
+					"objectClass": "FondoVideoMenu",
+					"sid": 293205220878879,
+					"parameters": {
+						"mode": "looping"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "FondoMenu",
+					"sid": 929570436128111,
+					"parameters": {
+						"frame-number": "2"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Boton_VolverMenu",
+					"sid": 170815279129442
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 294099438109470,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "FondoVideoMenu",
+					"sid": 298773454910582,
+					"parameters": {
+						"instance-variable": "video",
+						"value": "5"
+					}
+				}
+			],
+			"sid": 516288909843837
 		}
 	],
 	"sid": 295697076928424

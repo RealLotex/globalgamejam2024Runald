@@ -4,13 +4,7 @@
 	"sid": 599050282882447,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Fade",
-			"name": "Desvanecer",
-			"sid": 619925957692734
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [
 		{
 			"effectId": "exposure",
@@ -22,14 +16,14 @@
 			{
 				"frames": [
 					{
-						"width": 264,
-						"height": 235,
-						"originX": 0.003787878787878788,
-						"originY": 0.00851063829787234,
+						"width": 320,
+						"height": 320,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4134008,
+						"imageSpriteId": 6853766,
 						"collisionPoly": {
 							"points": [
 								0.003787878787878788,
