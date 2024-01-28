@@ -234,10 +234,10 @@
 						{
 							"id": "apply-impulse-at-angle",
 							"objectClass": "Item",
-							"sid": 393723489716188,
+							"sid": 929310796382852,
 							"behaviorType": "Physics",
 							"parameters": {
-								"impulse": "20",
+								"impulse": "5555555555",
 								"angle": "Jugador.Angle",
 								"image-point": "0"
 							}

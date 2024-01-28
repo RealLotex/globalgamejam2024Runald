@@ -1,0 +1,55 @@
+{
+	"name": "Boton_VolverMenu2",
+	"plugin-id": "Sprite",
+	"sid": 378820342024850,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "exposure",
+			"name": "hl"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 320,
+						"height": 320,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5667255,
+						"collisionPoly": {
+							"points": [
+								0.003787878787878788,
+								0.00851063829787234,
+								0.9962121212121212,
+								0.00851063829787234,
+								0.9962121212121212,
+								1,
+								0.003787878787878788,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 703922681886093,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

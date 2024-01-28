@@ -1,7 +1,7 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 36802,
-	"name": "Runnald",
+	"name": "Runald",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
@@ -232,7 +232,8 @@
 			"Navegador",
 			"Sprite",
 			"Danioextra",
-			"VidasNew"
+			"VidasNew",
+			"Boton_VolverMenu2"
 		],
 		"subfolders": []
 	},
@@ -453,7 +454,7 @@
 		"video": {
 			"items": [
 				{
-					"name": "ronald.mp4",
+					"name": "CutsceneCinematica.mp4",
 					"type": "video/mp4",
 					"sid": 931325760660551,
 					"file-info": {
@@ -504,6 +505,38 @@
 					"name": "INTRO UI INSTRUCTIONS.mp4",
 					"type": "video/mp4",
 					"sid": 242236592608417,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Trailer Entero Con MUSICA.mp4",
+					"type": "video/mp4",
+					"sid": 126082470734815,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "INTRO UI CREDTIS.mp4",
+					"type": "video/mp4",
+					"sid": 822364684354723,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "OUTRO UI CREDITOS.mp4",
+					"type": "video/mp4",
+					"sid": 207960529324687,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "LOOP FONDO SIN UI CREDITS.mp4",
+					"type": "video/mp4",
+					"sid": 468604453493838,
 					"file-info": {
 						"purpose": "none"
 					}
