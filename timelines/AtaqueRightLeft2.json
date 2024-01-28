@@ -6,7 +6,7 @@
 	"ease": "noease",
 	"pathMode": "line",
 	"resizeMode": "size",
-	"playheadTime": 1.0665040000000736,
+	"playheadTime": 1.1,
 	"totalTime": 1.6,
 	"stepTime": 0.1,
 	"useStepTime": true,
@@ -37,7 +37,7 @@
 			"id": "",
 			"virtualPosition": {
 				"offsetX": 256,
-				"offsetY": 768,
+				"offsetY": 820,
 				"useColor": true,
 				"colorSet": false,
 				"relativeFlags": 1663
@@ -217,9 +217,9 @@
 							"resultMode": "default",
 							"ease": "default",
 							"pathMode": "default",
-							"value": 768,
-							"rValue": -0.5190380766739509,
-							"aValue": 768,
+							"value": 820,
+							"rValue": 51.48096192332605,
+							"aValue": 820,
 							"addons": [
 								{
 									"id": "cubic-bezier",
@@ -238,9 +238,9 @@
 							"resultMode": "default",
 							"ease": "default",
 							"pathMode": "default",
-							"value": 768,
-							"rValue": -0.5190380766739509,
-							"aValue": 768,
+							"value": 820,
+							"rValue": 51.48096192332605,
+							"aValue": 820,
 							"addons": [
 								{
 									"id": "cubic-bezier",
@@ -280,9 +280,9 @@
 							"resultMode": "default",
 							"ease": "default",
 							"pathMode": "default",
-							"value": 768,
-							"rValue": -0.5190380766739509,
-							"aValue": 768,
+							"value": 820,
+							"rValue": 51.48096192332605,
+							"aValue": 820,
 							"addons": [
 								{
 									"id": "cubic-bezier",
@@ -301,9 +301,9 @@
 							"resultMode": "default",
 							"ease": "default",
 							"pathMode": "default",
-							"value": 768,
-							"rValue": 0,
-							"aValue": 768,
+							"value": 820,
+							"rValue": 52,
+							"aValue": 820,
 							"addons": [
 								{
 									"id": "cubic-bezier",
@@ -353,7 +353,7 @@
 		"pathMode": "default",
 		"resizeMode": "default",
 		"expanded": true,
-		"name": "Líneas de tiempo",
+		"name": "Timelines",
 		"items": [],
 		"subfolders": []
 	},

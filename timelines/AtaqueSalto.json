@@ -6,7 +6,7 @@
 	"ease": "noease",
 	"pathMode": "line",
 	"resizeMode": "size",
-	"playheadTime": 0.8,
+	"playheadTime": 0,
 	"totalTime": 1,
 	"stepTime": 0.1,
 	"useStepTime": true,
@@ -36,7 +36,7 @@
 			"initialVisibility": true,
 			"id": "",
 			"virtualPosition": {
-				"offsetY": -66.30227518997216,
+				"offsetY": 0,
 				"useColor": true,
 				"colorSet": false,
 				"relativeFlags": 2047
@@ -146,9 +146,9 @@
 							"resultMode": "default",
 							"ease": "default",
 							"pathMode": "default",
-							"value": -425,
-							"rValue": -425,
-							"aValue": 261,
+							"value": -525,
+							"rValue": -525,
+							"aValue": 186,
 							"addons": [
 								{
 									"id": "cubic-bezier",
@@ -167,9 +167,9 @@
 							"resultMode": "default",
 							"ease": "default",
 							"pathMode": "default",
-							"value": -425,
-							"rValue": -425,
-							"aValue": 261,
+							"value": -525,
+							"rValue": -525,
+							"aValue": 186,
 							"addons": [
 								{
 									"id": "cubic-bezier",
@@ -261,7 +261,7 @@
 		"pathMode": "default",
 		"resizeMode": "default",
 		"expanded": true,
-		"name": "Líneas de tiempo",
+		"name": "Timelines",
 		"items": [],
 		"subfolders": []
 	},

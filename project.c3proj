@@ -230,7 +230,9 @@
 			"VIDEO_Cinematica",
 			"DesvanecerNegro",
 			"Navegador",
-			"Sprite"
+			"Sprite",
+			"Danioextra",
+			"VidasNew"
 		],
 		"subfolders": []
 	},

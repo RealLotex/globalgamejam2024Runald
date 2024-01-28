@@ -758,9 +758,9 @@
 								{
 									"id": "set-x",
 									"objectClass": "Runnald",
-									"sid": 251648758990454,
+									"sid": 320647306885133,
 									"parameters": {
-										"x": "lerp(Self.x,Mouse.X,.05)"
+										"x": "lerp(Self.x,Mouse.X,.05*dt*60)"
 									}
 								},
 								{

@@ -120,7 +120,7 @@
 								"period-offset-random": 0,
 								"magnitude": 0,
 								"magnitude-random": 5,
-								"enabled": true,
+								"enabled": false,
 								"live-preview": false
 							}
 						}
@@ -134,10 +134,10 @@
 						}
 					},
 					"world": {
-						"x": 630,
-						"y": 730,
-						"width": 179.87167300380227,
-						"height": 65.97938144329896,
+						"x": 632.9813858682302,
+						"y": 736.2871561603549,
+						"width": 444,
+						"height": 163,
 						"originX": 0.5038022813688213,
 						"originY": 0.4387698929036131,
 						"color": [
@@ -172,7 +172,7 @@
 								"period-offset-random": 0,
 								"magnitude": 0,
 								"magnitude-random": 5,
-								"enabled": true,
+								"enabled": false,
 								"live-preview": false
 							}
 						}
@@ -186,10 +186,10 @@
 						}
 					},
 					"world": {
-						"x": 1253,
-						"y": 740,
-						"width": 210.875475,
-						"height": 77.58247422680412,
+						"x": 1256.0434567335822,
+						"y": 737.573311956835,
+						"width": 471,
+						"height": 173,
 						"originX": 0.502851711026616,
 						"originY": 0.4252577319587629,
 						"color": [
@@ -224,7 +224,7 @@
 								"period-offset-random": 0,
 								"magnitude": 0,
 								"magnitude-random": 5,
-								"enabled": true,
+								"enabled": false,
 								"live-preview": false
 							}
 						}
@@ -238,10 +238,10 @@
 						}
 					},
 					"world": {
-						"x": 954,
-						"y": 932,
-						"width": 287.88202247191015,
-						"height": 101.11968085106383,
+						"x": 960,
+						"y": 937.1078098197991,
+						"width": 551,
+						"height": 193,
 						"originX": 0.5065543071161048,
 						"originY": 0.40425531914893614,
 						"color": [
@@ -321,10 +321,10 @@
 					"world": {
 						"x": 960,
 						"y": 544,
-						"width": 288,
-						"height": 245.04,
-						"originX": 0.48320094217024046,
-						"originY": 0.5466209598432908,
+						"width": 134.16,
+						"height": 114.24,
+						"originX": 0.46483207621518524,
+						"originY": 0.6010504201680671,
 						"color": [
 							1,
 							1,

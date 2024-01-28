@@ -99,10 +99,10 @@
 				{
 					"id": "set-angle-toward-position",
 					"objectClass": "Jugador",
-					"sid": 969515606183187,
+					"sid": 534578838873599,
 					"parameters": {
-						"x": "lerp(Self.x,Mouse.X,.01)",
-						"y": "lerp(Self.y,Mouse.Y,.01)"
+						"x": "lerp(Self.x,Mouse.X,.01*dt*60)",
+						"y": "lerp(Self.y,Mouse.Y,.01*dt*60)"
 					}
 				},
 				{

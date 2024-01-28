@@ -266,10 +266,10 @@
 						{
 							"id": "set-size",
 							"objectClass": "Item",
-							"sid": 823219250568327,
+							"sid": 785705702438078,
 							"parameters": {
-								"width": "250",
-								"height": "250"
+								"width": "400",
+								"height": "400"
 							}
 						},
 						{
@@ -283,10 +283,10 @@
 						{
 							"id": "set-size",
 							"objectClass": "Item",
-							"sid": 641203490448858,
+							"sid": 404566526234225,
 							"parameters": {
-								"width": "200",
-								"height": "200"
+								"width": "350",
+								"height": "350"
 							}
 						}
 					],
@@ -321,10 +321,10 @@
 						{
 							"id": "apply-impulse-at-angle",
 							"objectClass": "Pororo",
-							"sid": 170003817134319,
+							"sid": 342168188669367,
 							"behaviorType": "Físicas",
 							"parameters": {
-								"impulse": "150",
+								"impulse": "150*dt*60",
 								"angle": "random(0,360)",
 								"image-point": "0"
 							}

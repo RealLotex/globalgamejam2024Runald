@@ -9,6 +9,14 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 988044952349169,
+					"parameters": {
+						"object": "Botones_Menu"
+					}
+				},
+				{
 					"id": "is-overlapping-another-object",
 					"objectClass": "Jugador",
 					"sid": 334754989531960,
@@ -25,14 +33,6 @@
 						"mouse-button": "left"
 					},
 					"isInverted": true
-				},
-				{
-					"id": "for-each",
-					"objectClass": "System",
-					"sid": 702661500767429,
-					"parameters": {
-						"object": "Botones_Menu"
-					}
 				}
 			],
 			"actions": [
@@ -61,6 +61,14 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 565863224339640,
+					"parameters": {
+						"object": "Botones_Menu"
+					}
+				},
+				{
 					"id": "is-overlapping-another-object",
 					"objectClass": "Jugador",
 					"sid": 961604993824374,
@@ -76,14 +84,6 @@
 						"mouse-button": "left"
 					},
 					"isInverted": true
-				},
-				{
-					"id": "for-each",
-					"objectClass": "System",
-					"sid": 466787538083949,
-					"parameters": {
-						"object": "Botones_Menu"
-					}
 				}
 			],
 			"actions": [
@@ -114,24 +114,24 @@
 				{
 					"id": "on-click",
 					"objectClass": "Mouse",
-					"sid": 331318627713887,
+					"sid": 778754745835050,
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked"
 					}
 				},
 				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Jugador",
-					"sid": 743933741529095,
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 862952732405735,
 					"parameters": {
 						"object": "Botones_Menu"
 					}
 				},
 				{
-					"id": "for-each",
-					"objectClass": "System",
-					"sid": 252116096850213,
+					"id": "is-overlapping-another-object",
+					"objectClass": "Jugador",
+					"sid": 743933741529095,
 					"parameters": {
 						"object": "Botones_Menu"
 					}
@@ -506,14 +506,6 @@
 					"parameters": {
 						"cursor-style": "none"
 					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 429288442598584,
-					"parameters": {
-						"seconds": "3"
-					}
 				}
 			],
 			"sid": 388425540430875,
@@ -639,9 +631,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 159694231818527,
+					"sid": 836376825066780,
 					"parameters": {
-						"layout": "Juego"
+						"layout": "Cinematica"
 					}
 				}
 			],

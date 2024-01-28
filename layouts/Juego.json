@@ -182,6 +182,152 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Danioextra",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 41,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -524,
+						"y": -260,
+						"width": 500,
+						"height": 1080,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Texto",
+					"properties": {
+						"text": "RUNALD:",
+						"enable-bbcode": true,
+						"font": "Circus",
+						"size": 48,
+						"line-height": 0,
+						"bold": true,
+						"italic": true,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 35,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 283.327318136633,
+						"y": 29.49634713223068,
+						"width": 406.5251620285105,
+						"height": 68.60282301407054,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Texto",
+					"properties": {
+						"text": "RUNALD:",
+						"enable-bbcode": true,
+						"font": "Circus",
+						"size": 48,
+						"line-height": 0,
+						"bold": false,
+						"italic": true,
+						"color": [
+							0.7647058823529411,
+							0.592156862745098,
+							0.29411764705882354,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 37,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 281.97746529856767,
+						"y": 28.1185419832131,
+						"width": 406.5251620285105,
+						"height": 68.60282301407054,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "VidasNew",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 36,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1038,
+						"y": 611,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 761125563461313,
@@ -461,7 +607,7 @@
 					},
 					"world": {
 						"x": 433,
-						"y": 711,
+						"y": 820,
 						"width": 700,
 						"height": 700,
 						"originX": 0.572289156626506,
@@ -578,10 +724,10 @@
 					"world": {
 						"x": 1600,
 						"y": 753,
-						"width": 200,
-						"height": 200,
-						"originX": 0.4875,
-						"originY": 0.50875,
+						"width": 350,
+						"height": 350,
+						"originX": 0.4928571428571429,
+						"originY": 0.505,
 						"color": [
 							1,
 							1,
@@ -718,50 +864,6 @@
 						"zElevation": 0,
 						"blendMode": "destination-out"
 					}
-				},
-				{
-					"type": "Texto",
-					"properties": {
-						"text": "RUNALD:",
-						"enable-bbcode": true,
-						"font": "Circus",
-						"size": 48,
-						"line-height": 0,
-						"bold": false,
-						"italic": true,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"icon-set": -1,
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 35,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 283.327318136633,
-						"y": 29.49634713223068,
-						"width": 406.5251620285105,
-						"height": 68.60282301407054,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 984687178901357,
@@ -830,98 +932,10 @@
 					"world": {
 						"x": 1412,
 						"y": 565,
-						"width": 288,
-						"height": 245.04,
-						"originX": 0.48320094217024046,
-						"originY": 0.5466209598432908,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Texto",
-					"properties": {
-						"text": "RUNALD:",
-						"enable-bbcode": true,
-						"font": "Circus",
-						"size": 48,
-						"line-height": 0,
-						"bold": false,
-						"italic": true,
-						"color": [
-							0.2980392156862745,
-							0.4235294117647059,
-							0.6235294117647059,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"icon-set": -1,
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 36,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 280.15245814728286,
-						"y": 28.16524131054905,
-						"width": 406.5251620285105,
-						"height": 68.60282301407054,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Texto",
-					"properties": {
-						"text": "RUNALD:",
-						"enable-bbcode": true,
-						"font": "Circus",
-						"size": 48,
-						"line-height": 0,
-						"bold": false,
-						"italic": true,
-						"color": [
-							0.7647058823529411,
-							0.592156862745098,
-							0.29411764705882354,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"icon-set": -1,
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 37,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 277.97746529856767,
-						"y": 27.1185419832131,
-						"width": 406.5251620285105,
-						"height": 68.60282301407054,
-						"originX": 0,
-						"originY": 0,
+						"width": 134.16,
+						"height": 114.24,
+						"originX": 0.46483207621518524,
+						"originY": 0.6010504201680671,
 						"color": [
 							1,
 							1,
