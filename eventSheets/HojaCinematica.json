@@ -21,6 +21,28 @@
 				}
 			],
 			"sid": 479147275191671
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 220537453994110
+				}
+			],
+			"actions": [
+				{
+					"id": "request-fullscreen",
+					"objectClass": "Navegador",
+					"sid": 367216631331488,
+					"parameters": {
+						"mode": "stretch-letterbox-scale",
+						"navigation-ui": "auto"
+					}
+				}
+			],
+			"sid": 690826991914816
 		}
 	],
 	"sid": 298327725309920
