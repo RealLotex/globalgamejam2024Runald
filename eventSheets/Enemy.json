@@ -66,12 +66,12 @@
 						{
 							"id": "compare-velocity",
 							"objectClass": "Item",
-							"sid": 577219925525286,
+							"sid": 253392308197068,
 							"behaviorType": "Physics",
 							"parameters": {
 								"which": "overall-velocity",
 								"comparison": 4,
-								"value": "150"
+								"value": "50"
 							}
 						},
 						{
@@ -147,12 +147,12 @@
 						{
 							"id": "flash",
 							"objectClass": "Runnald",
-							"sid": 256109328102515,
+							"sid": 904188894724121,
 							"behaviorType": "Parpadeo",
 							"parameters": {
 								"on-time": "0.1",
 								"off-time": "0.1",
-								"duration": "1.0"
+								"duration": ".1"
 							}
 						}
 					],

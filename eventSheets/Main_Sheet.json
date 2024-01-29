@@ -154,9 +154,9 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 966569097041892,
+							"sid": 356745004345607,
 							"parameters": {
-								"interval-seconds": ".2"
+								"interval-seconds": "2.5"
 							}
 						}
 					],
@@ -258,7 +258,7 @@
 						{
 							"id": "set-animation-frame",
 							"objectClass": "Item",
-							"sid": 189180616962402,
+							"sid": 575646682272209,
 							"parameters": {
 								"frame-number": "int(random(0,3))"
 							}
