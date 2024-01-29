@@ -29,7 +29,7 @@
 			"eventType": "variable",
 			"name": "RunnaldVida",
 			"type": "number",
-			"initialValue": "20",
+			"initialValue": "10",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -57,21 +57,21 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "Runnald",
-							"sid": 757255439417759,
+							"objectClass": "Item",
+							"sid": 935507910299767,
 							"parameters": {
-								"object": "Item"
+								"object": "Runnald"
 							}
 						},
 						{
 							"id": "compare-velocity",
 							"objectClass": "Item",
-							"sid": 255293763766438,
+							"sid": 577219925525286,
 							"behaviorType": "Physics",
 							"parameters": {
 								"which": "overall-velocity",
 								"comparison": 4,
-								"value": "250"
+								"value": "150"
 							}
 						},
 						{
@@ -87,6 +87,13 @@
 							"objectClass": "Item",
 							"sid": 947225265016563,
 							"behaviorType": "DragDrop",
+							"isInverted": true
+						},
+						{
+							"id": "is-flashing",
+							"objectClass": "Runnald",
+							"sid": 728620481129419,
+							"behaviorType": "Parpadeo",
 							"isInverted": true
 						}
 					],
@@ -106,6 +113,18 @@
 							"parameters": {
 								"variable": "RunnaldVida",
 								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 197645635647492,
+							"parameters": {
+								"audio-file": "payasodaniomio",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{
@@ -134,18 +153,6 @@
 								"on-time": "0.1",
 								"off-time": "0.1",
 								"duration": "1.0"
-							}
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 673556097128261,
-							"parameters": {
-								"audio-file": "payasodaniomio",
-								"loop": "not-looping",
-								"volume": "0",
-								"stereo-pan": "0",
-								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -766,7 +773,7 @@
 								{
 									"id": "set-x",
 									"objectClass": "Runnald",
-									"sid": 320647306885133,
+									"sid": 377680911520775,
 									"parameters": {
 										"x": "lerp(Self.x,Mouse.X,.05*dt*60)"
 									}
@@ -1013,12 +1020,12 @@
 						{
 							"id": "flash",
 							"objectClass": "Jugador",
-							"sid": 988166836464915,
+							"sid": 386747609693290,
 							"behaviorType": "Parpadeo",
 							"parameters": {
 								"on-time": "0.1",
 								"off-time": "0.1",
-								"duration": "1.0"
+								"duration": "2"
 							}
 						},
 						{
@@ -1209,6 +1216,52 @@
 					]
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Runnald",
+					"sid": 276678592026723,
+					"parameters": {
+						"animation": "\"RunnaldJumpingUp\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Runnald",
+					"sid": 151564504885467,
+					"parameters": {
+						"animation": "\"RunnaldLanding\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 161789000139227,
+					"parameters": {
+						"seconds": ".5"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Runnald",
+					"sid": 728042653661591,
+					"parameters": {
+						"instance-variable": "Estados",
+						"value": "\"LeftRightLeft\""
+					}
+				},
+				{
+					"callFunction": "OnEnteredLeftRightLeft",
+					"sid": 189724843302872
+				}
+			],
+			"sid": 418462230983596
 		},
 		{
 			"functionName": "SetRunnaldAnimToRun",

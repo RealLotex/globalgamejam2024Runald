@@ -401,6 +401,15 @@
 					"parameters": {
 						"cursor-style": "none"
 					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Jugador",
+					"sid": 591065875282912,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.y"
+					}
 				}
 			],
 			"sid": 388425540430875,
@@ -1052,32 +1061,55 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-tick",
+					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 682406684841356
+					"sid": 342129811221647,
+					"parameters": {
+						"interval-seconds": "0.0167"
+					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-angle-toward-position",
-					"objectClass": "Jugador",
-					"sid": 124207962103621,
-					"parameters": {
-						"x": "lerp(Self.x,Mouse.X,.1*dt*60)",
-						"y": "lerp(Self.y,Mouse.Y,.1*dt*60)"
-					}
-				},
-				{
 					"id": "set-position",
 					"objectClass": "Jugador",
-					"sid": 632252400480945,
+					"sid": 639281066431533,
 					"parameters": {
-						"x": "lerp(Self.x,Mouse.X,.5*dt*60)",
-						"y": "lerp(Self.y,Mouse.y,.5*dt*60)"
+						"x": "lerp(Self.x,Mouse.X,.5)",
+						"y": "lerp(Self.y,Mouse.y,.5)"
 					}
 				}
 			],
-			"sid": 435455537157967
+			"sid": 993398543920404,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 769553298026915,
+							"parameters": {
+								"first-value": "distance(Mouse.X,Mouse.Y,Jugador.X,Jugador.Y)",
+								"comparison": 4,
+								"second-value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle-toward-position",
+							"objectClass": "Jugador",
+							"sid": 487227093550536,
+							"parameters": {
+								"x": "Mouse.X",
+								"y": "Mouse.Y"
+							}
+						}
+					],
+					"sid": 324309477506083
+				}
+			]
 		},
 		{
 			"eventType": "block",

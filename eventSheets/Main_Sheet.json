@@ -131,10 +131,10 @@
 						{
 							"id": "set-world-gravity",
 							"objectClass": "Item",
-							"sid": 965752698058076,
+							"sid": 959027583985846,
 							"behaviorType": "Physics",
 							"parameters": {
-								"gravity": "50"
+								"gravity": "9999999"
 							}
 						},
 						{
@@ -330,10 +330,10 @@
 						{
 							"id": "apply-impulse-at-angle",
 							"objectClass": "Pororo",
-							"sid": 342168188669367,
+							"sid": 997085466597127,
 							"behaviorType": "Físicas",
 							"parameters": {
-								"impulse": "150*dt*60",
+								"impulse": "50",
 								"angle": "random(0,360)",
 								"image-point": "0"
 							}
@@ -467,8 +467,41 @@
 					"sid": 790410175140635
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Debug",
+					"sid": 663048009848485,
+					"parameters": {
+						"text": "dt"
+					}
+				}
+			],
 			"sid": 161868501084943
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "runaldreset",
+					"sid": 713410274815633,
+					"parameters": {
+						"object": "runaldreset"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "Runnald",
+					"sid": 993849979276836,
+					"parameters": {
+						"y": "820"
+					}
+				}
+			],
+			"sid": 325178987540154
 		}
 	],
 	"sid": 750949231229755

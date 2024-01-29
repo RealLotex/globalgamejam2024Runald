@@ -184,7 +184,7 @@
 					}
 				},
 				{
-					"type": "Danioextra",
+					"type": "runaldreset",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -196,9 +196,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -524,
-						"y": -260,
-						"width": 500,
+						"x": 965,
+						"y": 1835,
+						"width": 2046,
 						"height": 1080,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -524,10 +524,10 @@
 						}
 					},
 					"world": {
-						"x": 960,
-						"y": 1136,
-						"width": 1920,
-						"height": 224,
+						"x": 926,
+						"y": 1432,
+						"width": 3726,
+						"height": 816,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1078,7 +1078,7 @@
 			],
 			"sid": 566692485531287,
 			"effectTypes": [],
-			"isInitiallyVisible": false,
+			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
 			"color": [
 				1,

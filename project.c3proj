@@ -231,7 +231,7 @@
 			"DesvanecerNegro",
 			"Navegador",
 			"Sprite",
-			"Danioextra",
+			"runaldreset",
 			"VidasNew",
 			"Boton_VolverMenu2"
 		],
@@ -675,7 +675,7 @@
 		"webgpu": "auto",
 		"gpuPreference": "high-performance",
 		"scriptsType": "module",
-		"framerateMode": "vsync",
+		"framerateMode": "unlimited-tick",
 		"compositingMode": "standard",
 		"sampling": "bilinear",
 		"downscaling": "medium",
