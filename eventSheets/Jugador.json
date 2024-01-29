@@ -257,10 +257,10 @@
 						{
 							"id": "apply-impulse-at-angle",
 							"objectClass": "Item",
-							"sid": 414328368881679,
+							"sid": 777335110573617,
 							"behaviorType": "Physics",
 							"parameters": {
-								"impulse": "5000",
+								"impulse": "9000",
 								"angle": "Jugador.Angle",
 								"image-point": "0"
 							}
@@ -291,16 +291,6 @@
 						}
 					],
 					"actions": [
-						{
-							"id": "enabledisable-collisions",
-							"objectClass": "Item",
-							"sid": 122319930473946,
-							"behaviorType": "Physics",
-							"parameters": {
-								"object": "Item",
-								"state": "disable"
-							}
-						},
 						{
 							"id": "set-position",
 							"objectClass": "Item",

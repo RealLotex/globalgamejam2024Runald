@@ -129,15 +129,6 @@
 							}
 						},
 						{
-							"id": "set-world-gravity",
-							"objectClass": "Item",
-							"sid": 959027583985846,
-							"behaviorType": "Physics",
-							"parameters": {
-								"gravity": "9999999"
-							}
-						},
-						{
 							"id": "set-visible",
 							"objectClass": "Vidas",
 							"sid": 589226973738873,
@@ -163,9 +154,9 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 586040497266788,
+							"sid": 966569097041892,
 							"parameters": {
-								"interval-seconds": "2.5"
+								"interval-seconds": ".2"
 							}
 						}
 					],
@@ -270,6 +261,25 @@
 							"sid": 189180616962402,
 							"parameters": {
 								"frame-number": "int(random(0,3))"
+							}
+						},
+						{
+							"id": "set-world-gravity",
+							"objectClass": "Item",
+							"sid": 241088044493222,
+							"behaviorType": "Physics",
+							"parameters": {
+								"gravity": "50"
+							}
+						},
+						{
+							"id": "enabledisable-collisions",
+							"objectClass": "Item",
+							"sid": 122319930473946,
+							"behaviorType": "Physics",
+							"parameters": {
+								"object": "Item",
+								"state": "disable"
 							}
 						},
 						{

@@ -675,7 +675,7 @@
 		"webgpu": "auto",
 		"gpuPreference": "high-performance",
 		"scriptsType": "module",
-		"framerateMode": "unlimited-tick",
+		"framerateMode": "vsync",
 		"compositingMode": "standard",
 		"sampling": "bilinear",
 		"downscaling": "medium",

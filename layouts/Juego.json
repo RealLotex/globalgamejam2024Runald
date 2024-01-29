@@ -198,7 +198,7 @@
 					"world": {
 						"x": 965,
 						"y": 1835,
-						"width": 2046,
+						"width": 2045.9999999999998,
 						"height": 1080,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -1078,7 +1078,7 @@
 			],
 			"sid": 566692485531287,
 			"effectTypes": [],
-			"isInitiallyVisible": true,
+			"isInitiallyVisible": false,
 			"isInitiallyInteractive": true,
 			"color": [
 				1,
